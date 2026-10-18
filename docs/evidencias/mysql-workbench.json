@@ -1,0 +1,14 @@
+{
+  "verified_on": "2026-10-18",
+  "workbench_connection": "CulturaAccesible Lima",
+  "host": "127.0.0.1",
+  "port": 3307,
+  "database": "culturaaccesible",
+  "user": "cal_app@127.0.0.1",
+  "tables": 7,
+  "total_functions": 57,
+  "official_functions": 49,
+  "demo_functions": 8,
+  "web_mysql_health": "ok",
+  "verification": "Consultas SELECT ejecutadas y resultados visibles en MySQL Workbench. Contraseña introducida por el usuario."
+}

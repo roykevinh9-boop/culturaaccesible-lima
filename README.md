@@ -126,7 +126,7 @@ La instalación se verificó también desde una copia limpia extraída del ZIP e
 
 `scripts/catalog_import.py` aplica las nuevas columnas y carga la instantánea sin duplicar funciones. El inicio lo ejecuta cuando cambia el archivo; no descarga una nueva cartelera. `--force` vuelve a aplicar la instantánea. El hash local evita sobrescribir cambios manuales en cada arranque. La base mantiene los reportes existentes.
 
-La conexión MySQL verificada está en **127.0.0.1:3307**, base **culturaaccesible**, usuario **cal_app**. Es una instancia real con el MySQL instalado en esta PC. Workbench es un cliente opcional: su ventana necesita permiso de control para configurar visualmente la conexión. Las claves están únicamente en `.local/runtime.json`, excluidas de la entrega.
+La conexión MySQL verificada está en **127.0.0.1:3307**, base **culturaaccesible**, usuario **cal_app**. Es una instancia real con el MySQL instalado en esta PC. Workbench tiene guardada la conexión CulturaAccesible Lima. Verificación del 18/10/2026: puerto 3307, usuario cal_app, base culturaaccesible y 57 funciones (49 de cartelera y ocho ejemplos). Las claves están únicamente en `.local/runtime.json`, excluidas de la entrega.
 
 ## AccesI: versión 1.2
 
@@ -137,3 +137,6 @@ La IA local está en `python-service/assistant.py`: clasificador TF-IDF de carac
 El cliente conserva solamente los filtros de conversación en memoria de la pestaña. Nueva conversación, cambio de catálogo o recarga los limpia. No hay almacenamiento del texto conversado ni servicio externo de IA. Una caída de Python produce un aviso; el catálogo sigue disponible. El modelo de predicción de precios sintéticos es independiente y no se usa para clasificar las tarifas oficiales.
 
 Pruebas de la versión: **20 Java + 43 Python + 39 integración + 4 fallos = 106 aprobadas**. La prueba de base nueva incluida corresponde a la migración de datos de la versión 1.1; el nuevo chat se verificó contra los servicios reales en esta PC.
+
+
+La conexión visual de Workbench se completó el 18/10/2026; las notas de permiso pendiente del informe fechado 17/10/2026 reflejan el estado anterior. Las evidencias mysql-workbench-conexion.jpg y mysql-workbench-datos.jpg documentan el estado actualizado.

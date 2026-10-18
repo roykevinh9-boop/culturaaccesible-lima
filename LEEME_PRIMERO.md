@@ -39,7 +39,7 @@ La IA es **local**: TF-IDF y regresión logística clasifican intenciones; un mo
 - Datos: `.local/mysql-data`.
 - Credenciales privadas: `.local/runtime.json`; no compartirlo.
 
-La conexión de la web con este servidor está comprobada. Workbench es un programa para ver la misma base. Su ventana sigue rechazando el permiso de control de la app; todavía no se configuró allí la conexión. Puedes crearla manualmente con estos datos y la clave local. `database/03_consultas.sql` contiene consultas para revisar las 49 funciones de cartelera y los ocho ejemplos.
+La conexión de la web con este servidor está comprobada. Workbench ya tiene guardada la conexión CulturaAccesible Lima. El 18/10/2026 se comprobó visualmente el puerto 3307, el usuario cal_app y la base culturaaccesible, además de las siete tablas y las 57 funciones. Si vuelve a pedir la contraseña, introdúcela desde el archivo local. `database/03_consultas.sql` contiene consultas para revisar las 49 funciones de cartelera y los ocho ejemplos.
 
 ## Iniciar, detener y editar
 
