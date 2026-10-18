@@ -1,0 +1,29 @@
+@startuml
+title Consulta orientativa de precios
+actor Visitante
+participant Vista
+participant Presentador
+participant "Modelo cliente" as Modelo
+participant "Java PricingService" as Java
+participant "Python FastAPI" as Python
+Visitante -> Vista : Consultar precio orientativo
+Vista -> Presentador : acción y mes
+Presentador -> Modelo : estimate(categoría, distrito, mes)
+Modelo -> Java : POST /api/estimates
+Java -> Python : POST /estimate
+alt Datos válidos y servicio disponible
+ Python --> Java : precio, clase, aviso sintético y discrepancia
+ Java --> Modelo : JSON 200
+ Modelo --> Presentador : resultado
+ Presentador -> Vista : mostrar orientación y límites
+else Entrada sin cobertura
+ Python --> Java : 422
+ Java --> Modelo : 422 y explicación
+ Modelo --> Presentador : error comprensible
+ Presentador -> Vista : permitir corregir o seguir con catálogo
+else Servicio Python no disponible
+ Java --> Modelo : 503
+ Modelo --> Presentador : estimación temporalmente no disponible
+ Presentador -> Vista : mantener ficha y catálogo
+end
+@enduml

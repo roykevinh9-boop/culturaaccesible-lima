@@ -1,0 +1,236 @@
+[
+  {
+    "id": "HU01",
+    "title": "Buscar eventos",
+    "phase": 1,
+    "priority": "Alta",
+    "status": "Terminado: verificación técnica local",
+    "story": "Como visitante, quiero buscar eventos por nombre o disciplina para descubrir actividades que me interesen.",
+    "acceptance": [
+      "Dado un término presente en título, disciplina o recinto, cuando busco, entonces obtengo las funciones coincidentes, ignorando diferencias de tildes y mayúsculas.",
+      "Dado un término sin coincidencias, cuando busco, entonces aparece un mensaje de cero resultados y puedo limpiar la búsqueda."
+    ],
+    "evidence": "Java: accentsDoNotBlockSearch, noMatchesReturnsEmpty. Integración 12-14. Navegador."
+  },
+  {
+    "id": "HU02",
+    "title": "Combinar filtros",
+    "phase": 1,
+    "priority": "Alta",
+    "status": "Terminado: verificación técnica local",
+    "story": "Como visitante, quiero filtrar por fecha, distrito, categoría y precio para reducir opciones relevantes.",
+    "acceptance": [
+      "Dado que selecciono varios filtros, cuando busco, entonces cada resultado cumple todos los filtros seleccionados.",
+      "Dado un precio no informado, cuando filtro ingreso gratuito, entonces esa función queda excluida; al limpiar recupero el catálogo."
+    ],
+    "evidence": "Java: filtersCombine, unknownPriceIsNotFree, zeroPriceIsFree. Integración 03-04. Navegador."
+  },
+  {
+    "id": "HU03",
+    "title": "Abrir ficha por función",
+    "phase": 1,
+    "priority": "Alta",
+    "status": "Terminado: verificación técnica local",
+    "story": "Como persona con necesidades de accesibilidad, quiero abrir una ficha por función para comprobar apoyos concretos.",
+    "acceptance": [
+      "Dada una tarjeta, cuando la abro, entonces la ficha identifica la misma función, recinto, fecha y hora.",
+      "Dado que cierro la ficha, cuando regreso al catálogo, entonces se conservan los filtros; un identificador inexistente devuelve 404."
+    ],
+    "evidence": "Integración 07-09. Navegador: abrir/cerrar y enlace directo."
+  },
+  {
+    "id": "HU04",
+    "title": "Estados con fuente y fecha",
+    "phase": 1,
+    "priority": "Alta",
+    "status": "Terminado: verificación técnica local",
+    "story": "Como visitante, quiero ver Disponible, No disponible o No confirmado con fuente y fecha para saber qué puedo dar por verificado.",
+    "acceptance": [
+      "Dada evidencia vigente y de alcance correcto, cuando abro la ficha, entonces leo estado textual, alcance, fuente y fecha.",
+      "Dada evidencia ausente, vencida o insuficiente para la función, cuando consulto, entonces el estado es No confirmado, sin inferir disponibilidad."
+    ],
+    "evidence": "Java: missingEvidenceCannotConfirm, expiredEvidenceCannotConfirm, venueLspDoesNotImplySessionSupport. Integración 07-08."
+  },
+  {
+    "id": "HU05",
+    "title": "Navegación accesible",
+    "phase": 1,
+    "priority": "Alta",
+    "status": "En pruebas",
+    "story": "Como persona que usa teclado o lector de pantalla, quiero recorrer búsqueda y ficha sin ratón para decidir de forma autónoma.",
+    "acceptance": [
+      "Dado el uso de teclado, cuando recorro controles y diálogos, entonces hay etiquetas, foco visible y cierre con Escape que devuelve el foco.",
+      "Dado el uso de lector de pantalla, cuando cambian los resultados, entonces se anuncia el recuento. Debe probarse con una tecnología de apoyo real antes de cerrar la historia."
+    ],
+    "evidence": "Revisión parcial en navegador: etiquetas, diálogo y tamaño 390×844. Falta lector de pantalla y auditoría completa."
+  },
+  {
+    "id": "HU06",
+    "title": "Consultar un apoyo indispensable",
+    "phase": 2,
+    "priority": "Alta",
+    "status": "Por hacer",
+    "story": "Como persona que requiere un apoyo, quiero indicar cuál es indispensable y enviar una consulta escrita para obtener respuesta.",
+    "acceptance": [
+      "Dada una función y consentimiento explícito, cuando envío una consulta válida, entonces obtengo un identificador y estado Enviada.",
+      "Dado que falta consentimiento o contenido obligatorio, cuando envío, entonces se rechaza la consulta sin confirmarla."
+    ],
+    "evidence": "Criterios propuestos; no hay implementación ni prueba de envío real."
+  },
+  {
+    "id": "HU07",
+    "title": "Seguimiento de solicitudes",
+    "phase": 2,
+    "priority": "Alta",
+    "status": "Por hacer",
+    "story": "Como visitante, quiero consultar el estado y el historial de mi solicitud para no confundir envío con confirmación.",
+    "acceptance": [
+      "Dada una solicitud propia, cuando consulto su historial, entonces aparecen cambios con fecha, responsable y apoyo específico.",
+      "Dado un envío sin respuesta, cuando reviso, entonces no se muestra como Confirmada; otra persona no puede consultar mi solicitud sin autorización."
+    ],
+    "evidence": "Criterios propuestos; requiere identidad, permisos y módulo de solicitudes."
+  },
+  {
+    "id": "HU08",
+    "title": "Gestión del organizador",
+    "phase": 2,
+    "priority": "Alta",
+    "status": "Por hacer",
+    "story": "Como organizador, quiero actualizar condiciones por sesión y responder solicitudes para mantener información vigente.",
+    "acceptance": [
+      "Dado un organizador autorizado, cuando actualiza una función o responde, entonces quedan evidencia, fecha y responsable.",
+      "Dado un usuario sin permiso, cuando intenta editar, entonces se rechaza la operación y no cambia la ficha."
+    ],
+    "evidence": "Criterios propuestos; no se entrega panel de organizadores."
+  },
+  {
+    "id": "HU09",
+    "title": "Preferencias opcionales",
+    "phase": 3,
+    "priority": "Media",
+    "status": "Por hacer",
+    "story": "Como visitante frecuente, quiero guardar preferencias de forma opcional para encontrar eventos afines más rápido.",
+    "acceptance": [
+      "Dado consentimiento opcional, cuando guardo preferencias funcionales, entonces puedo recuperarlas y modificarlas.",
+      "Dado que no deseo guardarlas o que las elimino, cuando vuelvo al catálogo, entonces puedo buscar sin registro obligatorio."
+    ],
+    "evidence": "Criterios propuestos; no se almacenan preferencias ni diagnósticos en esta versión."
+  },
+  {
+    "id": "HU10",
+    "title": "Comparar eventos",
+    "phase": 3,
+    "priority": "Media",
+    "status": "Por hacer",
+    "story": "Como visitante, quiero comparar eventos y recibir explicaciones de coincidencia para elegir con menos esfuerzo.",
+    "acceptance": [
+      "Dadas varias funciones, cuando las comparo, entonces veo diferencias de precio, fecha y apoyos con sus fuentes.",
+      "Dado un apoyo No confirmado, cuando se explica una coincidencia, entonces la explicación mantiene esa incertidumbre."
+    ],
+    "evidence": "Criterios propuestos; el filtro de apoyos implementado no equivale al comparador."
+  },
+  {
+    "id": "HU11",
+    "title": "Precio orientativo",
+    "phase": 1,
+    "priority": "Media",
+    "status": "Terminado: verificación técnica local",
+    "story": "Como visitante, quiero consultar un precio orientativo según categoría, distrito y mes para planificar mi presupuesto y verificar la fuente oficial.",
+    "acceptance": [
+      "Dados datos dentro de la cobertura, cuando consulto desde Java, entonces Python devuelve una estimación finita y no negativa con aviso de datos sintéticos.",
+      "Dado un mes decimal, booleano o fuera de rango, cuando consulto, entonces no se produce una predicción. El precio oficial conserva prioridad."
+    ],
+    "evidence": "Python: estimación válida y entradas inválidas. Integración 15-19. Nueva PoC, distinta a la del PDF anterior."
+  },
+  {
+    "id": "HU12",
+    "title": "Clasificar rango de precio",
+    "phase": 2,
+    "priority": "Media",
+    "status": "Terminado: verificación técnica local",
+    "story": "Como visitante que explora entradas con un límite de referencia de S/ 40, quiero consultar el rango estimado de un evento sin precio publicado para priorizar la verificación de su precio oficial.",
+    "acceptance": [
+      "Dados datos válidos, cuando solicito orientación, entonces recibo Hasta S/ 40 o Mayor de S/ 40 como clasificación independiente y de demostración.",
+      "Dado que regresión y clasificación discrepan, cuando se muestran, entonces se advierte la discrepancia y no se garantiza el presupuesto."
+    ],
+    "evidence": "Python y consulta web. Esta extensión se adelanta como demostración, sin cambiar el alcance original de las etapas."
+  },
+  {
+    "id": "HU13",
+    "title": "Filtrar apoyos indispensables",
+    "phase": 1,
+    "priority": "Alta",
+    "status": "Terminado: verificación técnica local",
+    "story": "Como visitante, quiero filtrar eventos por los apoyos de accesibilidad que considero indispensables para encontrar funciones compatibles con mis necesidades.",
+    "acceptance": [
+      "Dados varios apoyos elegidos, cuando aplico el filtro, entonces cada resultado tiene todos esos apoyos en Disponible para el alcance válido.",
+      "Dado un apoyo ausente o vencido, cuando filtro por él, entonces la función queda excluida y se informa si no hay coincidencias."
+    ],
+    "evidence": "Java: supportsRequireAvailable. Integración 05-06. Navegador con filtro LSP."
+  },
+  {
+    "id": "HU14",
+    "title": "Compartir una ficha",
+    "phase": 1,
+    "priority": "Media",
+    "status": "Terminado: verificación técnica local",
+    "story": "Como visitante, quiero compartir un enlace directo a una función y su ficha de accesibilidad para coordinar mi asistencia con un acompañante.",
+    "acceptance": [
+      "Dada una ficha, cuando copio y abro su enlace, entonces se abre la misma función identificada por su ID.",
+      "Dado que el portapapeles no está disponible, cuando intento copiar, entonces aparece un campo seleccionable con el enlace; se explica que requiere acceso a esta aplicación."
+    ],
+    "evidence": "Navegador: enlace profundo y recarga. Copia mediante API de portapapeles con alternativa manual."
+  },
+  {
+    "id": "HU15",
+    "title": "Reportar información incorrecta",
+    "phase": 2,
+    "priority": "Media",
+    "status": "Terminado: verificación técnica local",
+    "story": "Como visitante, quiero reportar información de accesibilidad incorrecta o desactualizada para que el equipo pueda revisarla.",
+    "acceptance": [
+      "Dado un comentario válido, cuando envío el reporte, entonces MySQL lo guarda con identificador y estado Pendiente.",
+      "Dado un comentario inválido o fallo de persistencia, cuando envío, entonces no aparece confirmación de guardado; el reporte no modifica automáticamente la ficha."
+    ],
+    "evidence": "Integración 20-22 y consulta directa a MySQL. Reporte de prueba visible en navegador."
+  },
+  {
+    "id": "HU16",
+    "title": "Revisar evidencias",
+    "phase": 2,
+    "priority": "Alta",
+    "status": "Por hacer",
+    "story": "Como revisor de la plataforma, quiero comprobar las evidencias de cada condición antes de aprobar su publicación para mantener información confiable.",
+    "acceptance": [
+      "Dado un revisor autorizado y evidencia suficiente, cuando aprueba una condición, entonces se registran responsable, fecha, alcance y resultado.",
+      "Dada evidencia insuficiente o permiso ausente, cuando se intenta aprobar, entonces la condición no se publica como Disponible."
+    ],
+    "evidence": "Criterios propuestos. La degradación automática de estados sí funciona; el flujo de aprobación con permisos queda pendiente."
+  },
+  {
+    "id": "HU17",
+    "title": "Avisos de cambios",
+    "phase": 3,
+    "priority": "Media",
+    "status": "Por hacer",
+    "story": "Como visitante, quiero recibir avisos de cambios de fecha, cancelación o apoyos de una función que sigo para reorganizar mi visita.",
+    "acceptance": [
+      "Dada una suscripción consentida, cuando cambia información relevante de la función, entonces recibo un aviso que identifica el cambio.",
+      "Dado que retiro mi suscripción, cuando ocurre otro cambio, entonces no se envía una nueva notificación."
+    ],
+    "evidence": "Criterios propuestos; no se envían correos, mensajes ni notificaciones en esta entrega."
+  },
+  {
+    "id": "HU18",
+    "title": "Búsqueda en lenguaje natural limitado",
+    "phase": 1,
+    "priority": "Media",
+    "status": "Terminado: reglas limitadas verificadas",
+    "story": "Como visitante, quiero consultar el catálogo mediante lenguaje natural para encontrar eventos sin conocer todos los filtros disponibles.",
+    "acceptance": [
+      "Dada una frase con categorías, distritos o apoyos reconocidos, cuando la envío, entonces se proponen filtros visibles que puedo cambiar.",
+      "Dada una frase sin filtros reconocidos, cuando la envío, entonces se explica el límite y se permite usar la búsqueda manual sin inventar eventos."
+    ],
+    "evidence": "Navegador: Teatro en Miraflores con LSP. Implementación por reglas, sin IA generativa ni comprensión general del lenguaje."
+  }
+]

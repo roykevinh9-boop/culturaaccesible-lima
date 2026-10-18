@@ -1,0 +1,41 @@
+categoria,distrito,mes,precio_soles
+Teatro,Miraflores,1,52.49
+Teatro,Miraflores,4,49.65
+Teatro,Miraflores,7,55.45
+Teatro,Miraflores,10,58.23
+Teatro,Cercado de Lima,1,43.46
+Teatro,Cercado de Lima,4,46.17
+Teatro,Cercado de Lima,7,51.62
+Teatro,Cercado de Lima,10,46.87
+Museo,Miraflores,1,20.32
+Museo,Miraflores,4,19.7
+Museo,Miraflores,7,24.89
+Museo,Miraflores,10,31.05
+Museo,Cercado de Lima,1,6.37
+Museo,Cercado de Lima,4,11.39
+Museo,Cercado de Lima,7,19.2
+Museo,Cercado de Lima,10,21.45
+Danza,Miraflores,1,38.3
+Danza,Miraflores,4,45.29
+Danza,Miraflores,7,50.79
+Danza,Miraflores,10,46.06
+Danza,Cercado de Lima,1,34.16
+Danza,Cercado de Lima,4,36.38
+Danza,Cercado de Lima,7,36.1
+Danza,Cercado de Lima,10,37.55
+Música,Miraflores,1,65.67
+Música,Miraflores,4,62.77
+Música,Miraflores,7,63.63
+Música,Miraflores,10,66.97
+Música,Cercado de Lima,1,54.57
+Música,Cercado de Lima,4,55.44
+Música,Cercado de Lima,7,60.77
+Música,Cercado de Lima,10,63.3
+Exposición,Miraflores,1,19.46
+Exposición,Miraflores,4,27.13
+Exposición,Miraflores,7,24.49
+Exposición,Miraflores,10,29.52
+Exposición,Cercado de Lima,1,12.39
+Exposición,Cercado de Lima,4,13.59
+Exposición,Cercado de Lima,7,19.32
+Exposición,Cercado de Lima,10,19.77

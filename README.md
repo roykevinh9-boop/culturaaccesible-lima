@@ -1,0 +1,116 @@
+# CulturaAccesible Lima · Semana 10
+
+PMV1 académico con **Java + Python + MySQL**, interfaz web organizada en **MVP (Modelo-Vista-Presentador)** y pruebas reales de integración.
+
+## Inicio rápido en Windows
+
+1. Extrae el ZIP completo a una carpeta de trabajo.
+2. Verifica que tienes **Java 17 o posterior, Python 3.11/3.12 y MySQL Server 8.0.16 o posterior**.
+3. Haz doble clic en **Abrir-demo.cmd**.
+4. Espera a que aparezca `CulturaAccesible Lima está lista` y abre **http://127.0.0.1:8080**.
+5. Mantén abierta la ventana de inicio. Usa **Ctrl+C** en esa ventana para detener la demostración.
+
+La primera ejecución descarga dependencias oficiales de Python. Java ya está compilado en `app/culturaaccesible.jar`. El programa detecta el Java instalado y el MySQL Server 8.0 habitual. Si utilizas otras rutas, ajusta `Iniciar.ps1`. No requiere modificar el servicio MySQL existente.
+
+El inicio crea una instancia **aislada** de MySQL en el puerto **3307** con datos propios dentro de `.local/mysql-data`, base `culturaaccesible`, un usuario de aplicación y contraseñas aleatorias locales. No usa la contraseña de tu instalación principal. Si el puerto está ocupado por otro servidor, se detiene sin modificarlo.
+
+**Todos los eventos, recintos, condiciones y precios de la semilla son ficticios.** No se ofrecen entradas, reservas, confirmaciones reales ni recomendaciones verificadas para asistir.
+
+## Qué funciona
+
+- Buscar por título, disciplina o recinto, con normalización de tildes.
+- Combinar fecha, distrito, categoría, precio y apoyos indispensables.
+- Distinguir ingreso gratuito de precio no informado.
+- Abrir una ficha por función, con estados textuales, alcance, fuente y revisión.
+- Convertir evidencia ausente o vencida en **No confirmado**.
+- Evitar trasladar automáticamente LSP, subtítulos, audiodescripción y apoyos táctiles del recinto a una función.
+- Compartir enlaces directos a fichas conservando el identificador de función.
+- Registrar reportes de prueba en MySQL con estado **PENDIENTE**.
+- Consultar Python desde Java para obtener precio orientativo y clase hasta/mayor de S/ 40.
+- Explicar el uso de datos sintéticos y avisar si los modelos discrepan.
+- Usar una ayuda de búsqueda **por reglas locales**, sin proveedor de IA generativa.
+- Operar diálogos nativos y cerrar con Escape; diseño adaptado a pantalla pequeña.
+
+## Alcance y límites
+
+El alcance implementado es **descubrir y comprobar**, más la orientación de precios y el reporte de inconsistencias como extensiones académicas. Las 18 historias se encuentran en `docs/historias.json` y en el informe. No se declara que las 18 estén implementadas.
+
+Las cuentas, panel del organizador, solicitudes reales de apoyo, seguimiento de respuestas, preferencias persistentes, comparador, revisión con permisos y notificaciones quedan en el backlog. Tampoco se ha realizado una auditoría WCAG completa ni pruebas con usuarios o lectores de pantalla reales.
+
+La arquitectura **MVP se aplica a la interfaz**: `view.js` presenta, `presenter.js` coordina y `model.js` accede a datos. El servidor Java usa un adaptador HTTP, servicios de negocio y repositorio JDBC. El uso de Spring no convierte por sí solo la interfaz en MVP.
+
+La guía original menciona MVC o hexagonal. Esta entrega usa MVP siguiendo la elección comunicada por el equipo; debe explicarse esa decisión al docente.
+
+## Organización
+
+```text
+CulturaAccesibleLima/
+  Abrir-demo.cmd             Inicio de la demostración
+  Iniciar.ps1                Detección y preparación del entorno
+  app/culturaaccesible.jar   Ejecutable Java con la web incluida
+  backend/                  Código Java, Maven y pruebas de negocio
+  frontend/                 HTML, CSS y módulos MVP en JavaScript
+  python-service/           FastAPI, modelos, datos sintéticos y pruebas
+  database/                 Esquema y semilla MySQL
+  scripts/                  Inicio, compilación y pruebas de integración
+  docs/                     Informe, historias, matrices, diagramas y evidencias
+  .local/                   Datos de ejecución privados, excluidos del ZIP y Git
+```
+
+## Abrir en Visual Studio Code o IntelliJ
+
+En VS Code abre la carpeta completa y utiliza las recomendaciones de `.vscode/extensions.json`. En IntelliJ abre `backend/pom.xml` como proyecto Maven. La parte Python también puede editarse en VS Code. La interfaz se modifica en `frontend/`; luego se recompila Java para actualizar el ejecutable.
+
+Para reconstruir ejecuta `scripts/Compilar.ps1` **con la aplicación detenida**, porque Windows bloquea el archivo JAR en ejecución. El script busca Maven en PATH o en IntelliJ y ejecuta las pruebas antes de copiar el JAR a `app/`.
+
+Para Python, el archivo `requirements-lock.txt` conserva las versiones verificadas. Para un entorno independiente también puedes crear un entorno virtual e instalarlo con `python -m pip install -r python-service/requirements-lock.txt`.
+
+## Pruebas
+
+Con la demo iniciada ejecuta `scripts/Probar.ps1`. Las reglas Java se comprueban al compilar y también pueden ejecutarse desde IntelliJ. Las evidencias de esta sesión están en `docs/evidencias`.
+
+- 20 pruebas de reglas en Java.
+- 16 pruebas del servicio Python.
+- 24 pruebas de integración HTTP/Java/Python/MySQL.
+- 3 pruebas de fallos controlados: ausencia de Python y MySQL, conservando la demo principal.
+- Revisión manual del navegador: filtros, fichas, reportes, estimación, navegación de diálogos y tamaño móvil.
+
+El conjunto de pruebas de integración registra un reporte con texto explícito de prueba. No borra ni modifica información de bases externas. Las cantidades y resultados finales deben contrastarse con los archivos XML/JSON incluidos.
+
+Las pruebas de fallos abren instancias auxiliares en 18080 y 18081, y se cierran al terminar. Se pueden omitir con `scripts/Probar.ps1 -SinFallos`.
+
+## API
+
+| Operación | Ruta |
+|---|---|
+| Salud de Java y MySQL | `GET /api/health` |
+| Distritos, categorías y apoyos | `GET /api/metadata` |
+| Búsqueda y filtros | `GET /api/functions?q=&district=&category=&date=all&price=all&needs=lsp` |
+| Ficha por función | `GET /api/functions/{id}` |
+| Registrar reporte | `POST /api/reports` con `function_id`, `comment` y `condition_id` opcional |
+| Estimación a través de Java | `POST /api/estimates` con `category`, `district` y `month` |
+| Servicio Python | `GET http://127.0.0.1:8001/health` y `/docs` |
+
+El modelo Python utiliza **40 registros sintéticos nuevos**, semilla 42, cinco categorías, dos distritos y meses 1, 4, 7 y 10 como datos de entrenamiento disponibles. Acepta consultas en meses 1 a 12 como interpolación/extrapolación de demostración, sin acreditar estacionalidad. Usa regresión lineal y árbol de clasificación independientes. No reproduce las métricas del PDF previo; sus métricas se recalculan y se presentan como resultados de esta implementación.
+
+## MySQL Workbench
+
+La aplicación guarda la configuración de la instancia de demostración en `.local/runtime.json`. Consulta ese archivo **solo en tu equipo** para crear una conexión local a 127.0.0.1:3307 con el usuario `cal_app`. No publiques ese archivo ni sus contraseñas. El usuario de aplicación tiene permisos de datos sobre una sola base y no permisos globales de administración.
+
+Para un servidor MySQL propio, crea una base vacía y aplica `database/01_schema.sql` y `database/02_demo.sql`. Configura las variables de `.env.example` en el entorno del proceso Java; Java no carga automáticamente archivos `.env`. Esta modalidad es manual y no usa `Iniciar.ps1`.
+
+## GitHub y Trello
+
+Se entrega el código listo para un repositorio. El historial Git local, cuando se incluye en la carpeta de trabajo, registra la implementación asistida. **No se ha publicado un repositorio en GitHub ni creado un tablero en Trello.**
+
+El archivo `repositorio.bundle` conserva el repositorio Git y su commit real de implementación. Para recuperar el historial en otra carpeta se puede usar `git clone repositorio.bundle CulturaAccesibleRepo`. El ejecutable compilado y los archivos de entrega se conservan en el ZIP, fuera del historial de código.
+
+Para GitHub: crea un repositorio vacío en tu cuenta, añade su URL como remoto y sube `main`. Usa ramas `feature/...` y pull requests para cambios siguientes. No subas `.local`, `.env`, contraseñas, datos de MySQL ni carpetas generadas.
+
+Para Trello: crea las listas **Por hacer**, **En desarrollo**, **En pruebas** y **Terminado**. `docs/backlog-trello.csv` facilita copiar las tarjetas con historia, criterios, prioridad y estado. No se presupone una importación CSV nativa de Trello.
+
+## Entrega académica
+
+Lee `docs/Informe_Semana10.pdf`, su versión editable en Markdown, la matriz de herramientas y los diagramas PlantUML/SVG. La asignación nominal de roles es una propuesta para que el equipo la revise. Las evidencias corresponden a verificaciones técnicas locales; no acreditan validación de accesibilidad de recintos reales.
+
+La instalación se verificó también desde una copia limpia extraída del ZIP en una ruta con espacios: descargó dependencias, inicializó otra carpeta MySQL y conectó Java con Python. El resultado está en `docs/evidencias/instalacion-limpia.json`.

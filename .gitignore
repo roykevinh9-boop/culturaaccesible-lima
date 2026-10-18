@@ -1,0 +1,14 @@
+.local/
+.venv/
+**/__pycache__/
+**/.pytest_cache/
+backend/target/
+app/*.jar
+.env
+*.log
+.idea/
+*.iml
+*.bundle
+ENTREGA.json
+SHA256SUMS.json
+Thumbs.db

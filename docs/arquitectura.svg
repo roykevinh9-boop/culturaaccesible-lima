@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="500" height="340" preserveAspectRatio="xMinYMin meet" viewBox="0 0 500 340" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="500" height="340"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-340)" style="clip-path: url(#clip)">
+		<g transform="">
+			<rect x="0" y="240" width="150" height="84" rx="8" ry="8" style="stroke: rgb(86%,89%,86%); stroke-linecap: butt; stroke-width: 1; fill: rgb(92%,95%,90%); fill-rule: evenodd;"/>
+			<text x="12" y="302" style="font-family: SegoeBold; font-size: 10px;fill: rgb(8%,21%,23%); stroke:none;" transform="translate(0,604) scale(1,-1)">Vista</text>
+			<text x="12" y="284" style="font-family: Segoe; font-size: 8px;fill: rgb(36%,42%,42%); stroke:none;" transform="translate(0,568) scale(1,-1)">HTML + CSS</text>
+			<text x="12" y="270" style="font-family: Segoe; font-size: 8px;fill: rgb(36%,42%,42%); stroke:none;" transform="translate(0,540) scale(1,-1)">view.js · pantallas</text>
+			<rect x="175" y="240" width="150" height="84" rx="8" ry="8" style="stroke: rgb(86%,89%,86%); stroke-linecap: butt; stroke-width: 1; fill: rgb(92%,95%,90%); fill-rule: evenodd;"/>
+			<text x="187" y="302" style="font-family: SegoeBold; font-size: 10px;fill: rgb(8%,21%,23%); stroke:none;" transform="translate(0,604) scale(1,-1)">Presentador</text>
+			<text x="187" y="284" style="font-family: Segoe; font-size: 8px;fill: rgb(36%,42%,42%); stroke:none;" transform="translate(0,568) scale(1,-1)">presenter.js</text>
+			<text x="187" y="270" style="font-family: Segoe; font-size: 8px;fill: rgb(36%,42%,42%); stroke:none;" transform="translate(0,540) scale(1,-1)">Acciones y coordinación</text>
+			<rect x="350" y="240" width="150" height="84" rx="8" ry="8" style="stroke: rgb(86%,89%,86%); stroke-linecap: butt; stroke-width: 1; fill: rgb(92%,95%,90%); fill-rule: evenodd;"/>
+			<text x="362" y="302" style="font-family: SegoeBold; font-size: 10px;fill: rgb(8%,21%,23%); stroke:none;" transform="translate(0,604) scale(1,-1)">Modelo cliente</text>
+			<text x="362" y="284" style="font-family: Segoe; font-size: 8px;fill: rgb(36%,42%,42%); stroke:none;" transform="translate(0,568) scale(1,-1)">model.js</text>
+			<text x="362" y="270" style="font-family: Segoe; font-size: 8px;fill: rgb(36%,42%,42%); stroke:none;" transform="translate(0,540) scale(1,-1)">Acceso HTTP / JSON</text>
+			<path d="M 150,282 L 175,282 Z" style="stroke: rgb(9%,42%,38%); stroke-linecap: butt; stroke-width: 1.5;"/>
+			<polygon points="175 282, 168 286, 168 278" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(9%,42%,38%); fill-rule: evenodd;"/>
+			<path d="M 325,282 L 350,282 Z" style="stroke: rgb(9%,42%,38%); stroke-linecap: butt; stroke-width: 1.5;"/>
+			<polygon points="350 282, 343 286, 343 278" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(9%,42%,38%); fill-rule: evenodd;"/>
+			<rect x="170" y="105" width="330" height="91" rx="8" ry="8" style="stroke: rgb(86%,89%,86%); stroke-linecap: butt; stroke-width: 1; fill: rgb(92%,95%,90%); fill-rule: evenodd;"/>
+			<text x="182" y="174" style="font-family: SegoeBold; font-size: 10px;fill: rgb(8%,21%,23%); stroke:none;" transform="translate(0,348) scale(1,-1)">Java · Spring Boot · puerto 8080</text>
+			<text x="182" y="156" style="font-family: Segoe; font-size: 8px;fill: rgb(36%,42%,42%); stroke:none;" transform="translate(0,312) scale(1,-1)">ApiController: transporte HTTP</text>
+			<text x="182" y="142" style="font-family: Segoe; font-size: 8px;fill: rgb(36%,42%,42%); stroke:none;" transform="translate(0,284) scale(1,-1)">CatalogService: reglas de negocio</text>
+			<text x="182" y="128" style="font-family: Segoe; font-size: 8px;fill: rgb(36%,42%,42%); stroke:none;" transform="translate(0,256) scale(1,-1)">CatalogRepository: consultas JDBC parametrizadas</text>
+			<path d="M 425,240 L 425,196 Z" style="stroke: rgb(9%,42%,38%); stroke-linecap: butt; stroke-width: 1.5;"/>
+			<polygon points="425 196, 429 203, 421 203" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(9%,42%,38%); fill-rule: evenodd;"/>
+			<rect x="0" y="0" width="230" height="70" rx="8" ry="8" style="stroke: rgb(86%,89%,86%); stroke-linecap: butt; stroke-width: 1; fill: rgb(92%,95%,90%); fill-rule: evenodd;"/>
+			<text x="12" y="48" style="font-family: SegoeBold; font-size: 10px;fill: rgb(8%,21%,23%); stroke:none;" transform="translate(0,96) scale(1,-1)">Python · puerto 8001</text>
+			<text x="12" y="30" style="font-family: Segoe; font-size: 8px;fill: rgb(36%,42%,42%); stroke:none;" transform="translate(0,60) scale(1,-1)">FastAPI · regresión y clasificación</text>
+			<text x="12" y="16" style="font-family: Segoe; font-size: 8px;fill: rgb(36%,42%,42%); stroke:none;" transform="translate(0,32) scale(1,-1)">40 registros sintéticos de demostración</text>
+			<rect x="270" y="0" width="230" height="70" rx="8" ry="8" style="stroke: rgb(86%,89%,86%); stroke-linecap: butt; stroke-width: 1; fill: rgb(92%,95%,90%); fill-rule: evenodd;"/>
+			<text x="282" y="48" style="font-family: SegoeBold; font-size: 10px;fill: rgb(8%,21%,23%); stroke:none;" transform="translate(0,96) scale(1,-1)">MySQL · puerto 3307</text>
+			<text x="282" y="30" style="font-family: Segoe; font-size: 8px;fill: rgb(36%,42%,42%); stroke:none;" transform="translate(0,60) scale(1,-1)">Base aislada culturaaccesible</text>
+			<text x="282" y="16" style="font-family: Segoe; font-size: 8px;fill: rgb(36%,42%,42%); stroke:none;" transform="translate(0,32) scale(1,-1)">Datos y reportes persistentes</text>
+			<path d="M 245,105 L 115,70 Z" style="stroke: rgb(9%,42%,38%); stroke-linecap: butt; stroke-width: 1.5;"/>
+			<polygon points="115 70, 122.7992 67.95735, 120.7194 75.68228" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(9%,42%,38%); fill-rule: evenodd;"/>
+			<path d="M 385,105 L 385,70 Z" style="stroke: rgb(9%,42%,38%); stroke-linecap: butt; stroke-width: 1.5;"/>
+			<polygon points="385 70, 389 77, 381 77" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(9%,42%,38%); fill-rule: evenodd;"/>
+		</g>
+	</g>
+</svg>

@@ -1,0 +1,11 @@
+{
+  "mae_soles": 3.427,
+  "accuracy": 0.9,
+  "f1_hasta_40": 0.909,
+  "training": 30,
+  "test": 10,
+  "records": 40,
+  "synthetic": true,
+  "seed": 42,
+  "note": "Métricas de esta nueva demostración, no reproducción de los resultados del informe anterior."
+}

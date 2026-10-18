@@ -1,0 +1,54 @@
+/** Vista MVP: presenta datos y notifica acciones; no conoce las consultas SQL. */
+export const $=id=>document.getElementById(id);
+export const element=(tag,cls,text)=>{const e=document.createElement(tag);if(cls)e.className=cls;if(text!==undefined)e.textContent=text;return e;};
+const money=new Intl.NumberFormat('es-PE',{style:'currency',currency:'PEN'});
+const formatDate=value=>new Intl.DateTimeFormat('es-PE',{day:'numeric',month:'short'}).format(new Date(`${value}T12:00:00`));
+const stateText={DISPONIBLE:'Disponible',NO_DISPONIBLE:'No disponible',NO_CONFIRMADO:'No confirmado'};
+const stateClass={DISPONIBLE:'available',NO_DISPONIBLE:'unavailable',NO_CONFIRMADO:'unknown'};
+const art={Teatro:['teatro','◒'],Museo:['museo','▥'],'Música':['musica','♫'],Danza:['danza','〰'],'Exposición':['exposicion','◈']};
+
+export class CatalogView {
+  onOpen=()=>{};
+  metadata(meta){
+    for(const [id,values] of [['district',meta.districts],['category',meta.categories]]) for(const value of values){const option=element('option','',value);option.value=value;$(id).append(option);}
+    $('support-filters').replaceChildren(...meta.supports.map(type=>{const label=element('label','support-chip');const input=element('input');input.type='checkbox';input.name='needs';input.value=type.code;label.append(input,element('span','',type.label));return label;}));
+  }
+  filters(){const data=new FormData($('search-form'));return {q:data.get('q').trim(),date:data.get('date'),district:data.get('district'),category:data.get('category'),price:data.get('price'),needs:data.getAll('needs')};}
+  setFilters(filters){$('search-form').reset();for(const key of ['q','date','district','category','price'])if(filters[key]!==undefined){const id=key==='q'?'search':key;$(id).value=filters[key];}document.querySelectorAll('[name=needs]').forEach(input=>input.checked=(filters.needs||[]).includes(input.value));}
+  loading(value){$('loading').hidden=!value;$('results').setAttribute('aria-busy',String(value));if(value){$('catalog-error').hidden=true;$('empty').hidden=true;$('result-count').textContent='Buscando en el catálogo…';}}
+  error(message){$('catalog-error').textContent=message;$('catalog-error').hidden=false;$('result-count').textContent='No se pudo completar la consulta.';$('results').replaceChildren();$('empty').hidden=true;}
+  results(data){$('results').replaceChildren(...data.items.map(item=>this.card(item)));$('empty').hidden=data.total!==0;$('result-count').textContent=`${data.total} ${data.total===1?'función encontrada':'funciones encontradas'} · datos ficticios`;}
+  card(item){
+    const card=element('article','event-card');
+    const [cls,symbol]=art[item.category]||['museo','◈'];
+    const image=element('div',`event-art ${cls}`);image.setAttribute('aria-hidden','true');image.append(element('span','category-art',symbol),element('span','demo-tag','EJEMPLO FICTICIO'),element('span','event-art-label',`${item.category.toUpperCase()} · LIMA`));
+    const body=element('div','event-body');const meta=element('div','event-meta');meta.append(element('span','event-category',item.category),element('span','',`${formatDate(item.date)} · ${item.time.slice(0,5)}`));
+    const title=element('h3','',item.title);const available=item.conditions.filter(c=>c.state==='DISPONIBLE');
+    const supports=element('div','support-summary');available.slice(0,2).forEach(c=>supports.append(element('span','',c.label)));if(available.length>2)supports.append(element('span','',`+${available.length-2} apoyos`));if(!available.length)supports.append(element('span','pending-summary','Revisar condiciones pendientes'));
+    const button=element('button','card-button','Ver ficha y accesibilidad');button.type='button';button.setAttribute('aria-label',`Ver ficha y accesibilidad de ${item.title}, ${formatDate(item.date)}`);button.append(element('span','','↗'));button.addEventListener('click',()=>this.onOpen(item.id,button));
+    body.append(meta,title,element('p','event-venue',`${item.district} · ${item.venue.replace(' · recinto ficticio','')}`),element('div','event-price',item.official_price===null?'Precio por confirmar':Number(item.official_price)===0?'Ingreso gratuito · ejemplo':`${money.format(item.official_price)} · precio ficticio`),element('p','event-summary',`${available.length} de ${item.conditions.length} condiciones disponibles en el escenario`),supports,button);card.append(image,body);return card;
+  }
+  detail(item,{estimate,report,share}){
+    $('detail-category').textContent=`${item.category} · ${item.district}`;
+    const root=$('detail-content');root.replaceChildren();
+    const title=element('h2','detail-heading',item.title);title.id='detail-title';
+    root.append(title,element('p','detail-subtitle',`${formatDate(item.date)} · ${item.time.slice(0,5)} · ${item.venue}`),element('p','notice','Ejemplo ficticio: los precios, recintos y estados de esta ficha se utilizan para demostrar el sistema. No existe una reserva real.'),element('p','detail-description',item.description));
+    const conditions=element('section','detail-section');conditions.append(element('h3','','Condiciones para tu visita'));const grid=element('div','condition-grid');
+    for(const c of item.conditions){const box=element('article','condition');const head=element('div','condition-head');head.append(element('h4','',c.label),element('span',`state ${stateClass[c.state]||'unknown'}`,stateText[c.state]||'No confirmado'));box.append(head,element('div','condition-scope',c.scope==='RECINTO'?'ALCANCE: RECINTO · NO GARANTIZA CUPO':'ALCANCE: ESTA FUNCIÓN'));
+      if(c.note)box.append(element('p','',c.note));if(c.verification_note)box.append(element('p','',c.verification_note));
+      box.append(element('small','',c.source?`Fuente: ${c.source}`:'Fuente: pendiente de documentar'),element('small','',c.reviewed_at?`Revisión: ${c.reviewed_at}${c.valid_until?` · Vigencia: ${c.valid_until}`:''}`:'Fecha de revisión: no informada'));
+      if(c.source_url){try{const url=new URL(c.source_url);if(['https:','http:'].includes(url.protocol)){const a=element('a','','Consultar evidencia');a.href=url.href;a.target='_blank';a.rel='noopener noreferrer';box.append(a);}}catch{}}
+      grid.append(box);
+    }conditions.append(grid);root.append(conditions);
+    const pricing=element('section','detail-section');pricing.append(element('h3','','Precio y orientación de presupuesto'));
+    if(item.official_price!==null){pricing.append(element('p','',`Precio del escenario: ${Number(item.official_price)===0?'Ingreso gratuito':money.format(item.official_price)}.`),element('p','notice','Cuando un evento real tenga precio oficial, ese valor será la referencia principal. No se sustituye por una predicción.'));}
+    else {
+      pricing.append(element('p','detail-description','Este escenario no tiene precio publicado. Puedes consultar una estimación de demostración con datos sintéticos.'));
+      if(!['Miraflores','Cercado de Lima'].includes(item.district)){pricing.append(element('p','notice','Este distrito no está cubierto por el modelo académico. Puedes seguir revisando la ficha.'));}
+      else {const form=element('form','estimate-form');const label=element('label','','Mes de referencia');const select=element('select');select.setAttribute('aria-label','Mes de referencia para estimar precio');const months=['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'];months.forEach((month,index)=>{const o=element('option','',month);o.value=index+1;select.append(o);});select.value=Number(item.date.slice(5,7));label.append(select);const button=element('button','secondary-button','Consultar precio orientativo');button.type='submit';const output=element('div');output.setAttribute('role','status');output.setAttribute('aria-live','polite');form.append(label,button);form.addEventListener('submit',async event=>{event.preventDefault();button.disabled=true;output.replaceChildren(element('p','','Consultando la estimación…'));try{const value=await estimate({category:item.category,district:item.district,month:Number(select.value)});const result=element('div','price-result');result.append(element('strong','',money.format(value.estimated_price)),element('p','',`Clasificación independiente: ${value.predicted_range}`),element('p','',value.message),element('small','',`Modelo: ${value.model}. El rango es una clase estimada, no un intervalo de confianza.`));if(value.models_disagree)result.append(element('p','notice','Los dos modelos discrepan en el umbral de S/ 40. Esta demostración no permite confirmar tu presupuesto; consulta el precio oficial.'));output.replaceChildren(result);}catch(error){output.replaceChildren(element('p','notice error',error.message));}finally{button.disabled=false;}});pricing.append(form,output);}
+    }root.append(pricing);
+    const actionSection=element('section','detail-section');actionSection.append(element('h3','','Comparte el plan, conserva la información'));const actions=element('div','detail-actions');const copy=element('button','secondary-button','Copiar enlace de esta ficha');copy.type='button';const shareBox=element('div');copy.addEventListener('click',()=>share(item.id,shareBox));actions.append(copy);actionSection.append(actions,shareBox);root.append(actionSection);
+    const reporting=element('section','detail-section');reporting.append(element('h3','','¿Encontraste información para revisar?'));const form=element('form','report-form');const label=element('label','','Describe qué dato necesita revisión');const textarea=element('textarea');textarea.id='report-comment';textarea.required=true;textarea.minLength=10;textarea.maxLength=1000;textarea.rows=3;label.htmlFor=textarea.id;textarea.placeholder='Por ejemplo: la fuente de esta condición parece desactualizada.';const button=element('button','secondary-button','Enviar reporte de prueba');button.type='submit';const status=element('div','report-status');status.setAttribute('role','status');form.append(label,textarea,element('p','','No incluyas diagnósticos, teléfonos ni otros datos personales. El reporte queda pendiente de revisión.'),button,status);form.addEventListener('submit',async event=>{event.preventDefault();button.disabled=true;status.textContent='Guardando reporte…';try{const value=await report({function_id:item.id,comment:textarea.value});status.textContent=`Reporte CAL-${value.id}: ${value.message}`;form.reset();}catch(error){status.textContent=error.message;}finally{button.disabled=false;}});reporting.append(form);root.append(reporting);
+  }
+  toast(message){$('toast').textContent=message;$('toast').hidden=false;clearTimeout(this.toastTimer);this.toastTimer=setTimeout(()=>$('toast').hidden=true,4000);}
+}

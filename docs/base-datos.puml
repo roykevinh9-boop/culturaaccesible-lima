@@ -1,0 +1,78 @@
+@startuml
+title CulturaAccesible Lima · Modelo relacional implementado
+hide circle
+skinparam linetype ortho
+entity recintos {
+* id : BIGINT <<PK>>
+--
+nombre : VARCHAR(160)
+distrito : VARCHAR(80)
+direccion : VARCHAR(200)
+}
+entity eventos {
+* id : BIGINT <<PK>>
+--
+nombre : VARCHAR(180)
+descripcion : TEXT
+categoria : VARCHAR(60)
+es_demo : INT
+}
+entity funciones {
+* id : BIGINT <<PK>>
+--
+evento_id : BIGINT <<FK>>
+recinto_id : BIGINT <<FK>>
+fecha : DATE
+hora : TIME
+precio_oficial : DECIMAL(10,2) NULL
+url_oficial : VARCHAR(600) NULL
+}
+entity tipos_apoyo {
+* id : BIGINT <<PK>>
+--
+codigo : VARCHAR(40) UNIQUE
+nombre : VARCHAR(100)
+}
+entity evidencias {
+* id : BIGINT <<PK>>
+--
+fuente : VARCHAR(200)
+url : VARCHAR(600) NULL
+fecha_revision : DATE
+valida_hasta : DATE NULL
+es_demo : INT
+}
+entity condiciones {
+* id : BIGINT <<PK>>
+--
+tipo_apoyo_id : BIGINT <<FK>>
+alcance : RECINTO / FUNCION
+recinto_id : BIGINT NULL <<FK>>
+funcion_id : BIGINT NULL <<FK>>
+estado : VARCHAR(20)
+evidencia_id : BIGINT NULL <<FK>>
+observacion : VARCHAR(800)
+}
+entity reportes {
+* id : BIGINT <<PK>>
+--
+funcion_id : BIGINT <<FK>>
+condicion_id : BIGINT NULL <<FK>>
+comentario : VARCHAR(1000)
+estado : VARCHAR(20)
+creado_en : TIMESTAMP
+}
+eventos ||--o{ funciones
+recintos ||--o{ funciones
+recintos |o--o{ condiciones
+funciones |o--o{ condiciones
+tipos_apoyo ||--o{ condiciones
+evidencias |o--o{ condiciones
+funciones ||--o{ reportes
+condiciones |o--o{ reportes
+note bottom of condiciones
+Una condición pertenece a un recinto O a una función.
+El CHECK impide referencias simultáneas o vacías.
+UNIQUE por tipo de apoyo y alcance concreto.
+end note
+@enduml

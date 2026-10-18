@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "clean_zip_extraction": true,
+  "path_with_spaces": true,
+  "first_dependency_install": true,
+  "new_mysql_data_directory": true,
+  "functions": 8,
+  "java_mysql_health": {
+    "status": "ok",
+    "database": "mysql",
+    "application": "CulturaAccesible Lima"
+  },
+  "python_estimate_available": true
+}

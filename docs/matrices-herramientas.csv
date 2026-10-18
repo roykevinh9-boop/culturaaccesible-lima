@@ -1,0 +1,51 @@
+﻿Herramienta,Factor,Peso %,Alternativa,Puntaje 1-5,Aporte ponderado
+IDE,Compatibilidad Java/Python,30,Visual Studio Code,5,1.5
+IDE,Accesibilidad del entorno existente,20,Visual Studio Code,5,1.0
+IDE,Facilidad de uso,20,Visual Studio Code,4,0.8
+IDE,Trabajo con Git,15,Visual Studio Code,5,0.75
+IDE,Recursos del equipo,15,Visual Studio Code,4,0.6
+IDE,Compatibilidad Java/Python,30,IntelliJ IDEA,4,1.2
+IDE,Accesibilidad del entorno existente,20,IntelliJ IDEA,5,1.0
+IDE,Facilidad de uso,20,IntelliJ IDEA,4,0.8
+IDE,Trabajo con Git,15,IntelliJ IDEA,5,0.75
+IDE,Recursos del equipo,15,IntelliJ IDEA,3,0.45
+Framework Java,Reglas y mantenibilidad,25,Spring Boot,5,1.25
+Framework Java,Validación y pruebas,25,Spring Boot,5,1.25
+Framework Java,Integración MySQL,20,Spring Boot,5,1.0
+Framework Java,Aprendizaje,20,Spring Boot,3,0.6
+Framework Java,Tiempo inicial,10,Spring Boot,3,0.3
+Framework Java,Reglas y mantenibilidad,25,Javalin,4,1.0
+Framework Java,Validación y pruebas,25,Javalin,3,0.75
+Framework Java,Integración MySQL,20,Javalin,4,0.8
+Framework Java,Aprendizaje,20,Javalin,4,0.8
+Framework Java,Tiempo inicial,10,Javalin,4,0.4
+Servicio Python,Validación de entradas,30,FastAPI,5,1.5
+Servicio Python,Documentación de API,20,FastAPI,5,1.0
+Servicio Python,Uso con modelos Python,20,FastAPI,5,1.0
+Servicio Python,Facilidad de implementación,20,FastAPI,4,0.8
+Servicio Python,Mantenibilidad,10,FastAPI,4,0.4
+Servicio Python,Validación de entradas,30,Flask,3,0.9
+Servicio Python,Documentación de API,20,Flask,3,0.6
+Servicio Python,Uso con modelos Python,20,Flask,5,1.0
+Servicio Python,Facilidad de implementación,20,Flask,5,1.0
+Servicio Python,Mantenibilidad,10,Flask,4,0.4
+Base de datos,Instalación disponible,25,MySQL,5,1.25
+Base de datos,Integridad relacional,25,MySQL,5,1.25
+Base de datos,Conexión desde Java/Python,25,MySQL,5,1.25
+Base de datos,Aprendizaje del equipo,15,MySQL,4,0.6
+Base de datos,Accesibilidad para el piloto,10,MySQL,5,0.5
+Base de datos,Instalación disponible,25,PostgreSQL,2,0.5
+Base de datos,Integridad relacional,25,PostgreSQL,5,1.25
+Base de datos,Conexión desde Java/Python,25,PostgreSQL,5,1.25
+Base de datos,Aprendizaje del equipo,15,PostgreSQL,4,0.6
+Base de datos,Accesibilidad para el piloto,10,PostgreSQL,5,0.5
+Organización,Elección previa del equipo,30,Trello,5,1.5
+Organización,Facilidad del tablero,25,Trello,5,1.25
+Organización,Vinculación con repositorio,20,Trello,3,0.6
+Organización,Acceso para el equipo,15,Trello,5,0.75
+Organización,Claridad de estados,10,Trello,5,0.5
+Organización,Elección previa del equipo,30,GitHub Projects,2,0.6
+Organización,Facilidad del tablero,25,GitHub Projects,4,1.0
+Organización,Vinculación con repositorio,20,GitHub Projects,5,1.0
+Organización,Acceso para el equipo,15,GitHub Projects,5,0.75
+Organización,Claridad de estados,10,GitHub Projects,4,0.4

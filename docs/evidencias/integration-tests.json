@@ -1,0 +1,10 @@
+{
+  "executed_at": "2026-10-17T20:22:48.702853-05:00",
+  "base_url": "http://127.0.0.1:8080",
+  "tests": 24,
+  "failures": 0,
+  "errors": 0,
+  "passed": true,
+  "scope": "HTTP Java + Python + MySQL reales en demostración local",
+  "details": []
+}

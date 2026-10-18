@@ -1,0 +1,33 @@
+@startuml
+title CulturaAccesible Lima · MVP en la interfaz y servicios locales
+left to right direction
+skinparam componentStyle rectangle
+actor Visitante
+package "Navegador · MVP" {
+ component "Vista\nHTML/CSS + view.js" as Vista
+ component "Presentador\npresenter.js" as Presentador
+ component "Modelo cliente\nmodel.js" as Modelo
+}
+package "Java · Spring Boot" {
+ component "Adaptador HTTP\nApiController" as API
+ component "Reglas del catálogo\nCatalogService" as Servicio
+ component "Persistencia JDBC\nCatalogRepository" as Repo
+ component "Cliente de precios\nPricingService" as Cliente
+}
+database "MySQL 8.0\npuerto 3307 · base aislada" as DB
+component "Python · FastAPI\nregresión + clasificación\npuerto 8001" as Python
+Visitante --> Vista
+Vista --> Presentador : acciones
+Presentador --> Vista : mostrar resultados
+Presentador --> Modelo
+Modelo --> API : HTTP / JSON · puerto 8080
+API --> Servicio
+Servicio --> Repo
+Repo --> DB : JDBC parametrizado
+API --> Cliente
+Cliente --> Python : HTTP / JSON
+note bottom of Python
+40 registros sintéticos nuevos.
+Sin confirmación de precios reales.
+end note
+@enduml

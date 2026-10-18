@@ -1,0 +1,192 @@
+[
+  {
+    "tool": "IDE",
+    "factors": [
+      "Compatibilidad Java/Python",
+      "Accesibilidad del entorno existente",
+      "Facilidad de uso",
+      "Trabajo con Git",
+      "Recursos del equipo"
+    ],
+    "weights": [
+      30,
+      20,
+      20,
+      15,
+      15
+    ],
+    "scores": {
+      "Visual Studio Code": [
+        5,
+        5,
+        4,
+        5,
+        4
+      ],
+      "IntelliJ IDEA": [
+        4,
+        5,
+        4,
+        5,
+        3
+      ]
+    },
+    "total": {
+      "Visual Studio Code": 4.65,
+      "IntelliJ IDEA": 4.2
+    },
+    "selected": "Visual Studio Code"
+  },
+  {
+    "tool": "Framework Java",
+    "factors": [
+      "Reglas y mantenibilidad",
+      "Validación y pruebas",
+      "Integración MySQL",
+      "Aprendizaje",
+      "Tiempo inicial"
+    ],
+    "weights": [
+      25,
+      25,
+      20,
+      20,
+      10
+    ],
+    "scores": {
+      "Spring Boot": [
+        5,
+        5,
+        5,
+        3,
+        3
+      ],
+      "Javalin": [
+        4,
+        3,
+        4,
+        4,
+        4
+      ]
+    },
+    "total": {
+      "Spring Boot": 4.4,
+      "Javalin": 3.75
+    },
+    "selected": "Spring Boot"
+  },
+  {
+    "tool": "Servicio Python",
+    "factors": [
+      "Validación de entradas",
+      "Documentación de API",
+      "Uso con modelos Python",
+      "Facilidad de implementación",
+      "Mantenibilidad"
+    ],
+    "weights": [
+      30,
+      20,
+      20,
+      20,
+      10
+    ],
+    "scores": {
+      "FastAPI": [
+        5,
+        5,
+        5,
+        4,
+        4
+      ],
+      "Flask": [
+        3,
+        3,
+        5,
+        5,
+        4
+      ]
+    },
+    "total": {
+      "FastAPI": 4.7,
+      "Flask": 3.9
+    },
+    "selected": "FastAPI"
+  },
+  {
+    "tool": "Base de datos",
+    "factors": [
+      "Instalación disponible",
+      "Integridad relacional",
+      "Conexión desde Java/Python",
+      "Aprendizaje del equipo",
+      "Accesibilidad para el piloto"
+    ],
+    "weights": [
+      25,
+      25,
+      25,
+      15,
+      10
+    ],
+    "scores": {
+      "MySQL": [
+        5,
+        5,
+        5,
+        4,
+        5
+      ],
+      "PostgreSQL": [
+        2,
+        5,
+        5,
+        4,
+        5
+      ]
+    },
+    "total": {
+      "MySQL": 4.85,
+      "PostgreSQL": 4.1
+    },
+    "selected": "MySQL"
+  },
+  {
+    "tool": "Organización",
+    "factors": [
+      "Elección previa del equipo",
+      "Facilidad del tablero",
+      "Vinculación con repositorio",
+      "Acceso para el equipo",
+      "Claridad de estados"
+    ],
+    "weights": [
+      30,
+      25,
+      20,
+      15,
+      10
+    ],
+    "scores": {
+      "Trello": [
+        5,
+        5,
+        3,
+        5,
+        5
+      ],
+      "GitHub Projects": [
+        2,
+        4,
+        5,
+        5,
+        4
+      ]
+    },
+    "total": {
+      "Trello": 4.6,
+      "GitHub Projects": 3.75
+    },
+    "selected": "Trello"
+  }
+]
