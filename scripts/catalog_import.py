@@ -32,24 +32,30 @@ def import_catalog(connection,force=False):
         with connection.cursor() as cursor:
             cursor.execute('SELECT id,codigo FROM tipos_apoyo')
             supports={code:id for id,code in cursor.fetchall()}
+            def catalog_id(table, name):
+                cursor.execute(f'INSERT IGNORE INTO {table}(nombre) VALUES(%s)', (name,))
+                cursor.execute(f'SELECT id FROM {table} WHERE nombre=%s', (name,))
+                return cursor.fetchone()[0]
             venues={}
             for index,item in enumerate(data['items']):
-                venue_key=(item['venue'],item['district'])
+                district_id=catalog_id('distritos',item['district'])
+                category_id=catalog_id('categorias',item['category'])
+                venue_key=(item['venue'],district_id)
                 if venue_key not in venues:
-                    cursor.execute('SELECT id FROM recintos WHERE nombre=%s AND distrito=%s',venue_key)
+                    cursor.execute('SELECT id FROM recintos WHERE nombre=%s AND distrito_id=%s',venue_key)
                     found=cursor.fetchone()
                     if found:venue_id=found[0]
                     else:
-                        cursor.execute('INSERT INTO recintos(nombre,distrito,direccion) VALUES(%s,%s,%s)',(*venue_key,'Consultar dirección y acceso en la fuente oficial.'))
+                        cursor.execute('INSERT INTO recintos(nombre,distrito_id,direccion) VALUES(%s,%s,%s)',(*venue_key,'Consultar dirección y acceso en la fuente oficial.'))
                         venue_id=cursor.lastrowid
                     venues[venue_key]=venue_id
                 venue_id=venues[venue_key]
                 cursor.execute('SELECT id FROM eventos WHERE fuente_id=%s',(item['external_id'],));found=cursor.fetchone()
                 if found:
                     event_id=found[0]
-                    cursor.execute('UPDATE eventos SET nombre=%s,descripcion=%s,categoria=%s,es_demo=0,imagen_url=%s,imagen_alt=%s,imagen_credito=%s WHERE id=%s',(item['title'],item['description'],item['category'],item['image_url'],item['image_alt'],item['image_credit'],event_id))
+                    cursor.execute('UPDATE eventos SET nombre=%s,descripcion=%s,categoria_id=%s,es_demo=0,imagen_url=%s,imagen_alt=%s,imagen_credito=%s WHERE id=%s',(item['title'],item['description'],category_id,item['image_url'],item['image_alt'],item['image_credit'],event_id))
                 else:
-                    cursor.execute('INSERT INTO eventos(nombre,descripcion,categoria,es_demo,fuente_id,imagen_url,imagen_alt,imagen_credito) VALUES(%s,%s,%s,0,%s,%s,%s,%s)',(item['title'],item['description'],item['category'],item['external_id'],item['image_url'],item['image_alt'],item['image_credit']))
+                    cursor.execute('INSERT INTO eventos(nombre,descripcion,categoria_id,es_demo,fuente_id,imagen_url,imagen_alt,imagen_credito) VALUES(%s,%s,%s,0,%s,%s,%s,%s)',(item['title'],item['description'],category_id,item['external_id'],item['image_url'],item['image_alt'],item['image_credit']))
                     event_id=cursor.lastrowid
                 cursor.execute('SELECT id FROM funciones WHERE fuente_id=%s',(item['external_id'],));found=cursor.fetchone()
                 if found:

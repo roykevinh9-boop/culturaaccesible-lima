@@ -67,6 +67,8 @@ def setup(mysql_bin,port):
             cursor.execute("SHOW TABLES LIKE 'funciones'")
             schema_exists=cursor.fetchone() is not None
         execute_sql(connection,ROOT/"database/01_schema.sql")
+        from normalize_database import normalize
+        normalize(connection,mysql_bin,config)
         connection.begin()
         try:
             execute_sql(connection,ROOT/"database/02_demo.sql")

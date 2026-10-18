@@ -32,7 +32,7 @@ La guía menciona MVC o hexagonal; se adoptó MVP por la elección comunicada po
 
 ![Modelo de datos](base-datos.svg)
 
-Tablas: recintos, eventos, funciones, tipos_apoyo, evidencias, condiciones y reportes. Un CHECK obliga a que la condición se asocie a un recinto o a una función, nunca simultáneamente. Se rechazan precios negativos y estados inválidos. Un precio NULL significa no informado, distinto de cero.
+Nueve tablas: categorias, distritos, recintos, eventos, funciones, tipos_apoyo, evidencias, condiciones y reportes. Cada evento referencia una categoría y cada recinto un distrito; los nombres únicos evitan repetirlos en esas entidades. Java recupera los nombres mediante JOIN y conserva el contrato de la API. Un CHECK obliga a que la condición se asocie a un recinto o a una función, nunca simultáneamente. Se rechazan precios negativos y estados inválidos. Un precio NULL significa no informado, distinto de cero.
 
 ## Selección tecnológica
 
@@ -291,6 +291,7 @@ AccesI utiliza TF-IDF y regresión logística para reconocer intenciones, más r
 - Java: 20 pruebas aprobadas.
 - Python: 43 pruebas aprobadas.
 - Fallos controlados de servicios: 4 pruebas aprobadas.
+- Migración, integridad e instalación: 9 pruebas aprobadas.
 - Integración real: 39 pruebas; fallos 0; errores 0.
 
 Nueva PoC sintética: MAE S/ 3.427; accuracy 0.9; F1 clase hasta S/ 40: 0.909. Se utilizan 30 registros de entrenamiento y 10 de prueba, con semilla 42. No se ha realizado selección comparativa de modelos en esta implementación; se mantienen dos modelos académicos predefinidos. Estas métricas no equivalen a validación sobre eventos reales.
@@ -332,10 +333,20 @@ Los resultados técnicos corresponden a ejecución local de esta sesión. No se 
 
 ## Conexión MySQL Workbench verificada el 18/10/2026
 
-La conexión CulturaAccesible Lima quedó guardada y abierta en MySQL Workbench. Se comprobaron mediante SELECT la base culturaaccesible, el puerto 3307 y el usuario cal_app@127.0.0.1. El navegador de esquemas mostró siete tablas. El recuento devolvió 57 funciones: 49 de cartelera y ocho ejemplos ficticios. La página también respondió con estado ok y 49 funciones de cartelera.
+La conexión CulturaAccesible Lima quedó guardada y abierta en MySQL Workbench. Se comprobaron mediante SELECT la base culturaaccesible, el puerto 3307 y el usuario cal_app@127.0.0.1. La captura de Workbench documenta las siete tablas anteriores a la normalización; la versión actual tiene nueve tablas, verificadas mediante SQL y pruebas de migración. El recuento devolvió 57 funciones: 49 de cartelera y ocho ejemplos ficticios. La página también respondió con estado ok y 49 funciones de cartelera.
 
 Las credenciales se introdujeron localmente y no se incluyen en el informe ni en el paquete. La cartelera conserva su fecha de recuperación, 17/10/2026; la verificación de conexión no equivale a una actualización de sus fuentes.
 
 ![Workbench: recuento de funciones](evidencias/mysql-workbench-datos.jpg)
 
 Evidencias: mysql-workbench.json, mysql-workbench-conexion.jpg y mysql-workbench-datos.jpg.
+
+## Normalización de base de datos · versión 1.3
+
+Se agregan categorias y distritos, con nombres únicos. eventos.categoria_id y recintos.distrito_id son claves foráneas obligatorias. Los textos anteriores se trasladaron a los catálogos y se retiraron las columnas duplicadas. La API conserva los nombres mediante JOIN, sin modificar la interfaz ni la IA.
+
+Se guardó un respaldo SQL privado en .local/backups antes de modificar la estructura. El hash de la representación lógica coincide antes y después: se conservaron 6 recintos, 57 eventos, 57 funciones, 7 apoyos, 271 evidencias, 288 condiciones y los 5 reportes que existían. Las pruebas de integración posteriores agregan un reporte identificado como prueba.
+
+Se aprobaron nueve pruebas nuevas en bases efímeras propias: conservación, repetición, ausencia de huérfanos, categoría adicional, claves foráneas, nombres únicos, instalación desde esquema/semilla/importador, CHECK de accesibilidad y carga del SQL completo. Total de esta entrega: 115 pruebas aprobadas.
+
+docs/CulturaAccesibleLima.mwb es el modelo editable con nueve tablas y diez relaciones. database/CulturaAccesibleLima.sql instala una base nueva con 49 funciones recuperadas y ocho ejemplos; excluye reportes privados. 04_normalizar_catalogos.sql adapta una base previa y puede repetirse. Las historias y la arquitectura MVP se mantienen.

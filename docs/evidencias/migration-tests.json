@@ -1,0 +1,8 @@
+{
+  "executed_at": "2026-10-18T17:10:59.813058-05:00",
+  "tests": 9,
+  "failures": 0,
+  "errors": 0,
+  "passed": true,
+  "scope": "Migración 7→9 tablas, conservación, repetición, integridad e instalación nueva en bases efímeras propias."
+}

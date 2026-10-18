@@ -1,0 +1,18 @@
+{
+  "executed_at": "2026-10-18T17:07:59.170300-05:00",
+  "migration": "1.3.0: categorias y distritos normalizados",
+  "data_preserved": true,
+  "sha256_before": "d0141a1bba32e1c15be84341a876737a7a34af922c7d670ae13211a22a714712",
+  "sha256_after": "d0141a1bba32e1c15be84341a876737a7a34af922c7d670ae13211a22a714712",
+  "rows_preserved": {
+    "recintos": 6,
+    "eventos": 57,
+    "funciones": 57,
+    "tipos_apoyo": 7,
+    "evidencias": 271,
+    "condiciones": 288,
+    "reportes": 5
+  },
+  "backup": ".local/backups/antes-normalizacion-20261018-170758-819713.sql",
+  "note": "Respaldo privado excluido de Git y del ZIP; las contraseñas no forman parte de la evidencia."
+}

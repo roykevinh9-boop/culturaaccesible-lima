@@ -76,6 +76,7 @@ Con la demo iniciada ejecuta `scripts/Probar.ps1`. Las reglas Java se comprueban
 - 20 pruebas de reglas en Java.
 - 43 pruebas del servicio Python.
 - 39 pruebas de integración HTTP/Java/Python/MySQL.
+- 9 pruebas de migración, integridad e instalación de MySQL en bases efímeras propias.
 - 4 pruebas de fallos controlados: ausencia de Python y MySQL, conservando la demo principal.
 - Revisión manual del navegador: filtros, fichas, reportes, estimación, navegación de diálogos y tamaño móvil.
 
@@ -136,7 +137,20 @@ La IA local está en `python-service/assistant.py`: clasificador TF-IDF de carac
 
 El cliente conserva solamente los filtros de conversación en memoria de la pestaña. Nueva conversación, cambio de catálogo o recarga los limpia. No hay almacenamiento del texto conversado ni servicio externo de IA. Una caída de Python produce un aviso; el catálogo sigue disponible. El modelo de predicción de precios sintéticos es independiente y no se usa para clasificar las tarifas oficiales.
 
-Pruebas de la versión: **20 Java + 43 Python + 39 integración + 4 fallos = 106 aprobadas**. La prueba de base nueva incluida corresponde a la migración de datos de la versión 1.1; el nuevo chat se verificó contra los servicios reales en esta PC.
+Pruebas de la versión: **20 Java + 43 Python + 39 integración + 4 fallos + 9 migración = 115 aprobadas**. Las pruebas de migración comprueban tanto la versión anterior como una instalación nueva con esquema, semilla e importador, además del SQL completo.
 
 
 La conexión visual de Workbench se completó el 18/10/2026; el informe actualizado el 18/10/2026 incorpora la conexión verificada y su evidencia visual. Las evidencias mysql-workbench-conexion.jpg y mysql-workbench-datos.jpg documentan el estado actualizado.
+
+
+## Base normalizada: versión 1.3
+
+La base tiene **9 tablas**. `categorias` guarda nombres únicos y `eventos.categoria_id` la referencia; `distritos` hace lo mismo con `recintos.distrito_id`. Las otras siete tablas mantienen sus datos y relaciones. Java realiza JOIN y devuelve los mismos nombres a la web y a Python.
+
+- **Ver como el diagrama del equipo:** abre `docs/CulturaAccesibleLima.mwb` en Workbench. Incluye nueve tablas y diez relaciones. `docs/base-datos-workbench.png` permite verlo sin Workbench; PlantUML/SVG documentan una vista resumida.
+- **Base actual:** ya está migrada. El inicio detecta las columnas antiguas y aplica `04_normalizar_catalogos.sql` después de guardar un volcado privado en `.local/backups/`. La migración puede repetirse sin duplicar datos. MySQL confirma los cambios de estructura por sentencia; no debe interrumpirse.
+- **Otra PC / base nueva y vacía:** abre y ejecuta `database/CulturaAccesibleLima.sql`. Incluye las nueve tablas, las fotos y fuentes, 49 funciones recuperadas y ocho ejemplos. No incluye credenciales ni reportes privados. Para conectar la aplicación en esta modalidad, configura las variables de entorno indicadas arriba.
+- **Solo modelado:** `database/05_modelo_workbench.sql` contiene la estructura para importar mediante File → Import → Reverse Engineer MySQL Create Script. El SQL es la referencia para los CHECK.
+- **Conservación:** `docs/evidencias/normalizacion.json` registra hashes iguales antes/después y el recuento de cada tabla. Se conservaron los cinco reportes existentes; la prueba de integración posterior registra otro reporte de prueba.
+
+La captura mysql-workbench-datos.jpg documenta la conexión anterior con siete tablas. El modelo .mwb y los diagramas actuales muestran la estructura mejorada.

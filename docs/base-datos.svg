@@ -2,60 +2,71 @@
 <!DOCTYPE svg
   PUBLIC '-//W3C//DTD SVG 1.0//EN'
   'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
-<svg width="500" height="415" preserveAspectRatio="xMinYMin meet" viewBox="0 0 500 415" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="500" height="450" preserveAspectRatio="xMinYMin meet" viewBox="0 0 500 450" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
 	<title>...</title>
 	<desc>...</desc>
 	<clipPath id="clip">
-		<rect x="0" y="0" width="500" height="415"/>
+		<rect x="0" y="0" width="500" height="450"/>
 	</clipPath>
-	<g id="group" transform="scale(1,-1) translate(0,-415)" style="clip-path: url(#clip)">
+	<g id="group" transform="scale(1,-1) translate(0,-450)" style="clip-path: url(#clip)">
 		<g transform="">
-			<rect x="0" y="320" width="155" height="85" rx="8" ry="8" style="stroke: rgb(86%,89%,86%); stroke-linecap: butt; stroke-width: 1; fill: rgb(92%,95%,90%); fill-rule: evenodd;"/>
-			<text x="12" y="383" style="font-family: SegoeBold; font-size: 10px;fill: rgb(8%,21%,23%); stroke:none;" transform="translate(0,766) scale(1,-1)">eventos</text>
-			<text x="12" y="365" style="font-family: Segoe; font-size: 8px;fill: rgb(36%,42%,42%); stroke:none;" transform="translate(0,730) scale(1,-1)">PK id · nombre</text>
-			<text x="12" y="351" style="font-family: Segoe; font-size: 8px;fill: rgb(36%,42%,42%); stroke:none;" transform="translate(0,702) scale(1,-1)">categoría · descripción</text>
-			<text x="12" y="337" style="font-family: Segoe; font-size: 8px;fill: rgb(36%,42%,42%); stroke:none;" transform="translate(0,674) scale(1,-1)">es_demo</text>
-			<rect x="345" y="320" width="155" height="85" rx="8" ry="8" style="stroke: rgb(86%,89%,86%); stroke-linecap: butt; stroke-width: 1; fill: rgb(92%,95%,90%); fill-rule: evenodd;"/>
-			<text x="357" y="383" style="font-family: SegoeBold; font-size: 10px;fill: rgb(8%,21%,23%); stroke:none;" transform="translate(0,766) scale(1,-1)">recintos</text>
-			<text x="357" y="365" style="font-family: Segoe; font-size: 8px;fill: rgb(36%,42%,42%); stroke:none;" transform="translate(0,730) scale(1,-1)">PK id · nombre</text>
-			<text x="357" y="351" style="font-family: Segoe; font-size: 8px;fill: rgb(36%,42%,42%); stroke:none;" transform="translate(0,702) scale(1,-1)">distrito · dirección</text>
-			<rect x="172" y="205" width="155" height="102" rx="8" ry="8" style="stroke: rgb(86%,89%,86%); stroke-linecap: butt; stroke-width: 1; fill: rgb(92%,95%,90%); fill-rule: evenodd;"/>
-			<text x="184" y="285" style="font-family: SegoeBold; font-size: 10px;fill: rgb(8%,21%,23%); stroke:none;" transform="translate(0,570) scale(1,-1)">funciones</text>
-			<text x="184" y="267" style="font-family: Segoe; font-size: 8px;fill: rgb(36%,42%,42%); stroke:none;" transform="translate(0,534) scale(1,-1)">PK id · FK evento_id</text>
-			<text x="184" y="253" style="font-family: Segoe; font-size: 8px;fill: rgb(36%,42%,42%); stroke:none;" transform="translate(0,506) scale(1,-1)">FK recinto_id</text>
-			<text x="184" y="239" style="font-family: Segoe; font-size: 8px;fill: rgb(36%,42%,42%); stroke:none;" transform="translate(0,478) scale(1,-1)">fecha · hora · precio NULL</text>
-			<text x="184" y="225" style="font-family: Segoe; font-size: 8px;fill: rgb(36%,42%,42%); stroke:none;" transform="translate(0,450) scale(1,-1)">url_oficial</text>
-			<rect x="0" y="80" width="155" height="105" rx="8" ry="8" style="stroke: rgb(86%,89%,86%); stroke-linecap: butt; stroke-width: 1; fill: rgb(92%,95%,90%); fill-rule: evenodd;"/>
-			<text x="12" y="163" style="font-family: SegoeBold; font-size: 10px;fill: rgb(8%,21%,23%); stroke:none;" transform="translate(0,326) scale(1,-1)">tipos_apoyo</text>
-			<text x="12" y="145" style="font-family: Segoe; font-size: 8px;fill: rgb(36%,42%,42%); stroke:none;" transform="translate(0,290) scale(1,-1)">PK id · código UNIQUE</text>
-			<text x="12" y="131" style="font-family: Segoe; font-size: 8px;fill: rgb(36%,42%,42%); stroke:none;" transform="translate(0,262) scale(1,-1)">nombre</text>
-			<rect x="172" y="65" width="155" height="115" rx="8" ry="8" style="stroke: rgb(86%,89%,86%); stroke-linecap: butt; stroke-width: 1; fill: rgb(92%,95%,90%); fill-rule: evenodd;"/>
-			<text x="184" y="158" style="font-family: SegoeBold; font-size: 10px;fill: rgb(8%,21%,23%); stroke:none;" transform="translate(0,316) scale(1,-1)">condiciones</text>
-			<text x="184" y="140" style="font-family: Segoe; font-size: 8px;fill: rgb(36%,42%,42%); stroke:none;" transform="translate(0,280) scale(1,-1)">PK id · FK tipo_apoyo_id</text>
-			<text x="184" y="126" style="font-family: Segoe; font-size: 8px;fill: rgb(36%,42%,42%); stroke:none;" transform="translate(0,252) scale(1,-1)">FK recinto_id O funcion_id</text>
-			<text x="184" y="112" style="font-family: Segoe; font-size: 8px;fill: rgb(36%,42%,42%); stroke:none;" transform="translate(0,224) scale(1,-1)">estado · alcance</text>
-			<text x="184" y="98" style="font-family: Segoe; font-size: 8px;fill: rgb(36%,42%,42%); stroke:none;" transform="translate(0,196) scale(1,-1)">FK evidencia_id</text>
-			<rect x="345" y="80" width="155" height="105" rx="8" ry="8" style="stroke: rgb(86%,89%,86%); stroke-linecap: butt; stroke-width: 1; fill: rgb(92%,95%,90%); fill-rule: evenodd;"/>
-			<text x="357" y="163" style="font-family: SegoeBold; font-size: 10px;fill: rgb(8%,21%,23%); stroke:none;" transform="translate(0,326) scale(1,-1)">evidencias</text>
-			<text x="357" y="145" style="font-family: Segoe; font-size: 8px;fill: rgb(36%,42%,42%); stroke:none;" transform="translate(0,290) scale(1,-1)">PK id · fuente · URL</text>
-			<text x="357" y="131" style="font-family: Segoe; font-size: 8px;fill: rgb(36%,42%,42%); stroke:none;" transform="translate(0,262) scale(1,-1)">fecha_revision</text>
-			<text x="357" y="117" style="font-family: Segoe; font-size: 8px;fill: rgb(36%,42%,42%); stroke:none;" transform="translate(0,234) scale(1,-1)">valida_hasta · es_demo</text>
+			<rect x="0" y="380" width="155" height="62" rx="8" ry="8" style="stroke: rgb(86%,89%,86%); stroke-linecap: butt; stroke-width: 1; fill: rgb(92%,95%,90%); fill-rule: evenodd;"/>
+			<text x="12" y="420" style="font-family: SegoeBold; font-size: 10px;fill: rgb(8%,21%,23%); stroke:none;" transform="translate(0,840) scale(1,-1)">categorias</text>
+			<text x="12" y="402" style="font-family: Segoe; font-size: 8px;fill: rgb(36%,42%,42%); stroke:none;" transform="translate(0,804) scale(1,-1)">PK id · nombre UNIQUE</text>
+			<rect x="345" y="380" width="155" height="62" rx="8" ry="8" style="stroke: rgb(86%,89%,86%); stroke-linecap: butt; stroke-width: 1; fill: rgb(92%,95%,90%); fill-rule: evenodd;"/>
+			<text x="357" y="420" style="font-family: SegoeBold; font-size: 10px;fill: rgb(8%,21%,23%); stroke:none;" transform="translate(0,840) scale(1,-1)">distritos</text>
+			<text x="357" y="402" style="font-family: Segoe; font-size: 8px;fill: rgb(36%,42%,42%); stroke:none;" transform="translate(0,804) scale(1,-1)">PK id · nombre UNIQUE</text>
+			<rect x="0" y="250" width="155" height="115" rx="8" ry="8" style="stroke: rgb(86%,89%,86%); stroke-linecap: butt; stroke-width: 1; fill: rgb(92%,95%,90%); fill-rule: evenodd;"/>
+			<text x="12" y="343" style="font-family: SegoeBold; font-size: 10px;fill: rgb(8%,21%,23%); stroke:none;" transform="translate(0,686) scale(1,-1)">eventos</text>
+			<text x="12" y="325" style="font-family: Segoe; font-size: 8px;fill: rgb(36%,42%,42%); stroke:none;" transform="translate(0,650) scale(1,-1)">PK id · FK categoria_id</text>
+			<text x="12" y="311" style="font-family: Segoe; font-size: 8px;fill: rgb(36%,42%,42%); stroke:none;" transform="translate(0,622) scale(1,-1)">nombre · descripción</text>
+			<text x="12" y="297" style="font-family: Segoe; font-size: 8px;fill: rgb(36%,42%,42%); stroke:none;" transform="translate(0,594) scale(1,-1)">imagen · fuente · es_demo</text>
+			<rect x="345" y="280" width="155" height="85" rx="8" ry="8" style="stroke: rgb(86%,89%,86%); stroke-linecap: butt; stroke-width: 1; fill: rgb(92%,95%,90%); fill-rule: evenodd;"/>
+			<text x="357" y="343" style="font-family: SegoeBold; font-size: 10px;fill: rgb(8%,21%,23%); stroke:none;" transform="translate(0,686) scale(1,-1)">recintos</text>
+			<text x="357" y="325" style="font-family: Segoe; font-size: 8px;fill: rgb(36%,42%,42%); stroke:none;" transform="translate(0,650) scale(1,-1)">PK id · FK distrito_id</text>
+			<text x="357" y="311" style="font-family: Segoe; font-size: 8px;fill: rgb(36%,42%,42%); stroke:none;" transform="translate(0,622) scale(1,-1)">nombre · dirección</text>
+			<rect x="172" y="225" width="155" height="120" rx="8" ry="8" style="stroke: rgb(86%,89%,86%); stroke-linecap: butt; stroke-width: 1; fill: rgb(92%,95%,90%); fill-rule: evenodd;"/>
+			<text x="184" y="323" style="font-family: SegoeBold; font-size: 10px;fill: rgb(8%,21%,23%); stroke:none;" transform="translate(0,646) scale(1,-1)">funciones</text>
+			<text x="184" y="305" style="font-family: Segoe; font-size: 8px;fill: rgb(36%,42%,42%); stroke:none;" transform="translate(0,610) scale(1,-1)">PK id · FK evento_id</text>
+			<text x="184" y="291" style="font-family: Segoe; font-size: 8px;fill: rgb(36%,42%,42%); stroke:none;" transform="translate(0,582) scale(1,-1)">FK recinto_id</text>
+			<text x="184" y="277" style="font-family: Segoe; font-size: 8px;fill: rgb(36%,42%,42%); stroke:none;" transform="translate(0,554) scale(1,-1)">fecha · hora · precio NULL</text>
+			<text x="184" y="263" style="font-family: Segoe; font-size: 8px;fill: rgb(36%,42%,42%); stroke:none;" transform="translate(0,526) scale(1,-1)">fuente · precio_desde</text>
+			<rect x="0" y="65" width="155" height="100" rx="8" ry="8" style="stroke: rgb(86%,89%,86%); stroke-linecap: butt; stroke-width: 1; fill: rgb(92%,95%,90%); fill-rule: evenodd;"/>
+			<text x="12" y="143" style="font-family: SegoeBold; font-size: 10px;fill: rgb(8%,21%,23%); stroke:none;" transform="translate(0,286) scale(1,-1)">tipos_apoyo</text>
+			<text x="12" y="125" style="font-family: Segoe; font-size: 8px;fill: rgb(36%,42%,42%); stroke:none;" transform="translate(0,250) scale(1,-1)">PK id · código UNIQUE</text>
+			<text x="12" y="111" style="font-family: Segoe; font-size: 8px;fill: rgb(36%,42%,42%); stroke:none;" transform="translate(0,222) scale(1,-1)">nombre</text>
+			<rect x="172" y="70" width="155" height="120" rx="8" ry="8" style="stroke: rgb(86%,89%,86%); stroke-linecap: butt; stroke-width: 1; fill: rgb(92%,95%,90%); fill-rule: evenodd;"/>
+			<text x="184" y="168" style="font-family: SegoeBold; font-size: 10px;fill: rgb(8%,21%,23%); stroke:none;" transform="translate(0,336) scale(1,-1)">condiciones</text>
+			<text x="184" y="150" style="font-family: Segoe; font-size: 8px;fill: rgb(36%,42%,42%); stroke:none;" transform="translate(0,300) scale(1,-1)">PK id · FK tipo_apoyo_id</text>
+			<text x="184" y="136" style="font-family: Segoe; font-size: 8px;fill: rgb(36%,42%,42%); stroke:none;" transform="translate(0,272) scale(1,-1)">FK recinto_id O funcion_id</text>
+			<text x="184" y="122" style="font-family: Segoe; font-size: 8px;fill: rgb(36%,42%,42%); stroke:none;" transform="translate(0,244) scale(1,-1)">estado · alcance</text>
+			<text x="184" y="108" style="font-family: Segoe; font-size: 8px;fill: rgb(36%,42%,42%); stroke:none;" transform="translate(0,216) scale(1,-1)">FK evidencia_id</text>
+			<rect x="345" y="65" width="155" height="100" rx="8" ry="8" style="stroke: rgb(86%,89%,86%); stroke-linecap: butt; stroke-width: 1; fill: rgb(92%,95%,90%); fill-rule: evenodd;"/>
+			<text x="357" y="143" style="font-family: SegoeBold; font-size: 10px;fill: rgb(8%,21%,23%); stroke:none;" transform="translate(0,286) scale(1,-1)">evidencias</text>
+			<text x="357" y="125" style="font-family: Segoe; font-size: 8px;fill: rgb(36%,42%,42%); stroke:none;" transform="translate(0,250) scale(1,-1)">PK id · fuente · URL</text>
+			<text x="357" y="111" style="font-family: Segoe; font-size: 8px;fill: rgb(36%,42%,42%); stroke:none;" transform="translate(0,222) scale(1,-1)">revisión · vigencia</text>
+			<text x="357" y="97" style="font-family: Segoe; font-size: 8px;fill: rgb(36%,42%,42%); stroke:none;" transform="translate(0,194) scale(1,-1)">es_demo</text>
 			<rect x="172" y="0" width="155" height="51" rx="8" ry="8" style="stroke: rgb(86%,89%,86%); stroke-linecap: butt; stroke-width: 1; fill: rgb(92%,95%,90%); fill-rule: evenodd;"/>
 			<text x="184" y="29" style="font-family: SegoeBold; font-size: 10px;fill: rgb(8%,21%,23%); stroke:none;" transform="translate(0,58) scale(1,-1)">reportes</text>
 			<text x="184" y="11" style="font-family: Segoe; font-size: 8px;fill: rgb(36%,42%,42%); stroke:none;" transform="translate(0,22) scale(1,-1)">FK función/condición · estado</text>
-			<path d="M 155,350 L 210,307 Z" style="stroke: rgb(9%,42%,38%); stroke-linecap: butt; stroke-width: 1.5;"/>
-			<polygon points="210 307, 206.949 314.4627, 202.0217 308.1602" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(9%,42%,38%); fill-rule: evenodd;"/>
-			<path d="M 345,350 L 290,307 Z" style="stroke: rgb(9%,42%,38%); stroke-linecap: butt; stroke-width: 1.5;"/>
-			<polygon points="290 307, 297.9783 308.1602, 293.051 314.4627" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(9%,42%,38%); fill-rule: evenodd;"/>
-			<path d="M 250,205 L 250,180 Z" style="stroke: rgb(9%,42%,38%); stroke-linecap: butt; stroke-width: 1.5;"/>
-			<polygon points="250 180, 254 187, 246 187" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(9%,42%,38%); fill-rule: evenodd;"/>
-			<path d="M 155,130 L 172,130 Z" style="stroke: rgb(9%,42%,38%); stroke-linecap: butt; stroke-width: 1.5;"/>
-			<polygon points="172 130, 165 134, 165 126" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(9%,42%,38%); fill-rule: evenodd;"/>
-			<path d="M 345,130 L 327,130 Z" style="stroke: rgb(9%,42%,38%); stroke-linecap: butt; stroke-width: 1.5;"/>
-			<path d="M 250,65 L 250,51 Z" style="stroke: rgb(9%,42%,38%); stroke-linecap: butt; stroke-width: 1.5;"/>
+			<path d="M 77,380 L 77,365 Z" style="stroke: rgb(9%,42%,38%); stroke-linecap: butt; stroke-width: 1.5;"/>
+			<polygon points="77 365, 81 372, 73 372" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(9%,42%,38%); fill-rule: evenodd;"/>
+			<path d="M 422,380 L 422,365 Z" style="stroke: rgb(9%,42%,38%); stroke-linecap: butt; stroke-width: 1.5;"/>
+			<polygon points="422 365, 426 372, 418 372" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(9%,42%,38%); fill-rule: evenodd;"/>
+			<path d="M 155,285 L 172,285 Z" style="stroke: rgb(9%,42%,38%); stroke-linecap: butt; stroke-width: 1.5;"/>
+			<polygon points="172 285, 165 289, 165 281" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(9%,42%,38%); fill-rule: evenodd;"/>
+			<path d="M 345,315 L 327,315 Z" style="stroke: rgb(9%,42%,38%); stroke-linecap: butt; stroke-width: 1.5;"/>
+			<polygon points="327 315, 334 311, 334 319" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(9%,42%,38%); fill-rule: evenodd;"/>
+			<path d="M 250,225 L 250,190 Z" style="stroke: rgb(9%,42%,38%); stroke-linecap: butt; stroke-width: 1.5;"/>
+			<polygon points="250 190, 254 197, 246 197" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(9%,42%,38%); fill-rule: evenodd;"/>
+			<path d="M 155,120 L 172,120 Z" style="stroke: rgb(9%,42%,38%); stroke-linecap: butt; stroke-width: 1.5;"/>
+			<polygon points="172 120, 165 124, 165 116" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(9%,42%,38%); fill-rule: evenodd;"/>
+			<path d="M 345,120 L 327,120 Z" style="stroke: rgb(9%,42%,38%); stroke-linecap: butt; stroke-width: 1.5;"/>
+			<polygon points="327 120, 334 116, 334 124" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(9%,42%,38%); fill-rule: evenodd;"/>
+			<path d="M 250,70 L 250,51 Z" style="stroke: rgb(9%,42%,38%); stroke-linecap: butt; stroke-width: 1.5;"/>
 			<polygon points="250 51, 254 58, 246 58" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(9%,42%,38%); fill-rule: evenodd;"/>
-			<text x="4" y="215" style="font-family: Segoe; font-size: 8px;fill: rgb(36%,42%,42%); stroke:none;" transform="translate(0,430) scale(1,-1)">1 evento → N funciones</text>
-			<text x="332" y="215" style="font-family: Segoe; font-size: 8px;fill: rgb(36%,42%,42%); stroke:none;" transform="translate(0,430) scale(1,-1)">1 recinto → N funciones</text>
+			<text x="3" y="207" style="font-family: Segoe; font-size: 8px;fill: rgb(36%,42%,42%); stroke:none;" transform="translate(0,414) scale(1,-1)">1 categoría → N eventos</text>
+			<text x="343" y="207" style="font-family: Segoe; font-size: 8px;fill: rgb(36%,42%,42%); stroke:none;" transform="translate(0,414) scale(1,-1)">1 distrito → N recintos</text>
 		</g>
 	</g>
 </svg>

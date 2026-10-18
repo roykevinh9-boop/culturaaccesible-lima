@@ -39,7 +39,7 @@ La IA es **local**: TF-IDF y regresión logística clasifican intenciones; un mo
 - Datos: `.local/mysql-data`.
 - Credenciales privadas: `.local/runtime.json`; no compartirlo.
 
-La conexión de la web con este servidor está comprobada. Workbench ya tiene guardada la conexión CulturaAccesible Lima. El 18/10/2026 se comprobó visualmente el puerto 3307, el usuario cal_app y la base culturaaccesible, además de las siete tablas y las 57 funciones. Si vuelve a pedir la contraseña, introdúcela desde el archivo local. `database/03_consultas.sql` contiene consultas para revisar las 49 funciones de cartelera y los ocho ejemplos.
+La conexión de la web con este servidor está comprobada. Workbench ya tiene guardada la conexión CulturaAccesible Lima. El 18/10/2026 se comprobó visualmente el puerto 3307, el usuario cal_app y la base culturaaccesible, además de las 57 funciones. Esa captura es anterior a la normalización; ahora hay nueve tablas. Si vuelve a pedir la contraseña, introdúcela desde el archivo local. `database/03_consultas.sql` contiene consultas para revisar las 49 funciones de cartelera y los ocho ejemplos.
 
 ## Iniciar, detener y editar
 
@@ -53,3 +53,9 @@ La conexión de la web con este servidor está comprobada. Workbench ya tiene gu
 ## Límites que debes explicar en la exposición
 
 La cartelera es una instantánea recuperada el **17/10/2026**. Las imágenes y enlaces necesitan Internet. «Desde» indica la tarifa mínima publicada y no el precio de todas las entradas. Un apoyo sin evidencia suficiente se presenta como **No confirmado**. No se venden ni reservan entradas.
+
+## Base mejorada y diagrama
+
+Ahora las categorías y los distritos tienen tablas propias. Un evento guarda `categoria_id` y un recinto `distrito_id`; Java recupera sus nombres al consultar. Esto organiza los datos sin cambiar cómo usas la página o AccesI.
+
+Abre **docs/CulturaAccesibleLima.mwb** en MySQL Workbench para ver las nueve tablas con sus líneas de relación. **docs/base-datos-workbench.png** es la imagen del modelo. **database/CulturaAccesibleLima.sql** contiene el SQL completo para una base nueva, con 57 funciones y sin reportes privados. En esta PC la mejora ya está aplicada y los datos anteriores se conservaron con respaldo local.

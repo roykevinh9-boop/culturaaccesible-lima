@@ -1,4 +1,4 @@
-﻿param([switch]$SinFallos)
+param([switch]$SinFallos)
 $ErrorActionPreference='Stop'
 $projectPath=Split-Path -Parent $PSScriptRoot
 Set-Location -LiteralPath $projectPath
@@ -10,6 +10,8 @@ $env:PYTHONUTF8='1'
 if($LASTEXITCODE -ne 0){throw 'Fallaron las pruebas de Python.'}
 & $pythonExe 'scripts/integration_tests.py'
 if($LASTEXITCODE -ne 0){throw 'Fallaron las pruebas de integración. Verifica que la aplicación esté iniciada.'}
+& $pythonExe 'scripts/migration_tests.py'
+if($LASTEXITCODE -ne 0){throw 'Fallaron las pruebas de migración o instalación de la base.'}
 if(-not $SinFallos){
  & $pythonExe 'scripts/fault_tests.py'
  if($LASTEXITCODE -ne 0){throw 'Fallaron las pruebas de fallos controlados.'}

@@ -1,20 +1,22 @@
 -- Semilla para una base VACÍA. Todos los nombres, precios y apoyos son FICTICIOS.
 -- Las fechas se calculan al cargar la semilla para facilitar la demostración.
-INSERT INTO recintos(id,nombre,distrito,direccion) VALUES
- (1,'Teatro Horizonte · recinto ficticio','Miraflores','Dirección de demostración 101'),
- (2,'Museo Encuentro · recinto ficticio','Cercado de Lima','Dirección de demostración 202'),
- (3,'Casa de las Artes · recinto ficticio','Barranco','Dirección de demostración 303'),
- (4,'Sala Abierta · recinto ficticio','San Borja','Dirección de demostración 404')
+INSERT IGNORE INTO categorias(nombre) VALUES ('Teatro'),('Museo'),('Música'),('Danza'),('Exposición');
+INSERT IGNORE INTO distritos(nombre) VALUES ('Miraflores'),('Cercado de Lima'),('Barranco'),('San Borja');
+INSERT INTO recintos(id,nombre,distrito_id,direccion) VALUES
+ (1,'Teatro Horizonte · recinto ficticio',(SELECT id FROM distritos WHERE nombre='Miraflores'),'Dirección de demostración 101'),
+ (2,'Museo Encuentro · recinto ficticio',(SELECT id FROM distritos WHERE nombre='Cercado de Lima'),'Dirección de demostración 202'),
+ (3,'Casa de las Artes · recinto ficticio',(SELECT id FROM distritos WHERE nombre='Barranco'),'Dirección de demostración 303'),
+ (4,'Sala Abierta · recinto ficticio',(SELECT id FROM distritos WHERE nombre='San Borja'),'Dirección de demostración 404')
  ON DUPLICATE KEY UPDATE id=recintos.id;
-INSERT INTO eventos(id,nombre,descripcion,categoria,es_demo) VALUES
- (1,'Escena abierta con LSP','Una historia sobre la ciudad, presentada con interpretación en LSP y subtítulos. Escenario académico ficticio.','Teatro',1),
- (2,'Museo para escuchar y tocar','Recorrido de demostración con narración y materiales táctiles. No corresponde a una visita real.','Museo',1),
- (3,'Ritmos de nuestra ciudad','Presentación ficticia de música con información de acceso físico y apoyos pendientes de confirmar.','Música',1),
- (4,'Danza en movimiento','Función ficticia de danza contemporánea. El precio todavía no está informado en el escenario.','Danza',1),
- (5,'Colores que nos reúnen','Exposición ficticia de artes visuales de ingreso gratuito. Los estados permiten practicar la lectura de evidencia.','Exposición',1),
- (6,'Historias del barrio','Segunda función teatral de demostración. La evidencia de LSP está vencida para probar su tratamiento.','Teatro',1),
- (7,'Encuentro de voces','Actividad musical ficticia. Algunos apoyos cuentan con declaración negativa explícita.','Música',1),
- (8,'Una ciudad para imaginar','Visita de museo ficticia sin precio publicado para demostrar la consulta a Python.','Museo',1)
+INSERT INTO eventos(id,nombre,descripcion,categoria_id,es_demo) VALUES
+ (1,'Escena abierta con LSP','Una historia sobre la ciudad, presentada con interpretación en LSP y subtítulos. Escenario académico ficticio.',(SELECT id FROM categorias WHERE nombre='Teatro'),1),
+ (2,'Museo para escuchar y tocar','Recorrido de demostración con narración y materiales táctiles. No corresponde a una visita real.',(SELECT id FROM categorias WHERE nombre='Museo'),1),
+ (3,'Ritmos de nuestra ciudad','Presentación ficticia de música con información de acceso físico y apoyos pendientes de confirmar.',(SELECT id FROM categorias WHERE nombre='Música'),1),
+ (4,'Danza en movimiento','Función ficticia de danza contemporánea. El precio todavía no está informado en el escenario.',(SELECT id FROM categorias WHERE nombre='Danza'),1),
+ (5,'Colores que nos reúnen','Exposición ficticia de artes visuales de ingreso gratuito. Los estados permiten practicar la lectura de evidencia.',(SELECT id FROM categorias WHERE nombre='Exposición'),1),
+ (6,'Historias del barrio','Segunda función teatral de demostración. La evidencia de LSP está vencida para probar su tratamiento.',(SELECT id FROM categorias WHERE nombre='Teatro'),1),
+ (7,'Encuentro de voces','Actividad musical ficticia. Algunos apoyos cuentan con declaración negativa explícita.',(SELECT id FROM categorias WHERE nombre='Música'),1),
+ (8,'Una ciudad para imaginar','Visita de museo ficticia sin precio publicado para demostrar la consulta a Python.',(SELECT id FROM categorias WHERE nombre='Museo'),1)
  ON DUPLICATE KEY UPDATE id=eventos.id;
 INSERT INTO funciones(id,evento_id,recinto_id,fecha,hora,precio_oficial,url_oficial) VALUES
  (1,1,1,CURRENT_DATE,'19:00:00',35.00,NULL),

@@ -12,3 +12,4 @@ app/*.jar
 ENTREGA.json
 SHA256SUMS.json
 Thumbs.db
+*.mwb.bak

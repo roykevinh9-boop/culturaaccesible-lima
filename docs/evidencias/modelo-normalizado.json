@@ -1,0 +1,93 @@
+{
+  "verified_at": "2026-10-18T17:15:46.033943-05:00",
+  "tables": [
+    "categorias",
+    "condiciones",
+    "distritos",
+    "eventos",
+    "evidencias",
+    "funciones",
+    "recintos",
+    "reportes",
+    "tipos_apoyo"
+  ],
+  "categories": 7,
+  "districts": 4,
+  "native_model_tables": 9,
+  "native_diagram_figures": 9,
+  "native_diagram_relationships": 10,
+  "columns_match_live_database": true,
+  "foreign_keys": [
+    {
+      "table": "condiciones",
+      "column": "evidencia_id",
+      "references": "evidencias",
+      "referenced_column": "id"
+    },
+    {
+      "table": "condiciones",
+      "column": "funcion_id",
+      "references": "funciones",
+      "referenced_column": "id"
+    },
+    {
+      "table": "condiciones",
+      "column": "recinto_id",
+      "references": "recintos",
+      "referenced_column": "id"
+    },
+    {
+      "table": "condiciones",
+      "column": "tipo_apoyo_id",
+      "references": "tipos_apoyo",
+      "referenced_column": "id"
+    },
+    {
+      "table": "eventos",
+      "column": "categoria_id",
+      "references": "categorias",
+      "referenced_column": "id"
+    },
+    {
+      "table": "funciones",
+      "column": "evento_id",
+      "references": "eventos",
+      "referenced_column": "id"
+    },
+    {
+      "table": "funciones",
+      "column": "recinto_id",
+      "references": "recintos",
+      "referenced_column": "id"
+    },
+    {
+      "table": "recintos",
+      "column": "distrito_id",
+      "references": "distritos",
+      "referenced_column": "id"
+    },
+    {
+      "table": "reportes",
+      "column": "condicion_id",
+      "references": "condiciones",
+      "referenced_column": "id"
+    },
+    {
+      "table": "reportes",
+      "column": "funcion_id",
+      "references": "funciones",
+      "referenced_column": "id"
+    }
+  ],
+  "counts": {
+    "total": 57,
+    "official": 49,
+    "demo": 8
+  },
+  "health": {
+    "application": "CulturaAccesible Lima",
+    "database": "mysql",
+    "status": "ok"
+  },
+  "verification": "SQL y análisis del modelo nativo .mwb; no representa una nueva captura del editor SQL de Workbench."
+}
