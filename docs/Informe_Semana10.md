@@ -356,9 +356,3 @@ docs/CulturaAccesibleLima.mwb es el modelo editable con nueve tablas y diez rela
 ![Modelo de nueve tablas y diez relaciones](base-datos-workbench.png)
 
 La imagen corresponde al modelo editable CulturaAccesibleLima.mwb. Sus tablas y columnas se contrastaron con la base activa. Categorías y distritos se referencian desde eventos y recintos, respectivamente.
-
-## Próxima etapa: prueba gratuita y cuentas
-
-Trabajo futuro: compartir la web desde esta PC mediante un Quick Tunnel de Cloudflare con HTTPS para la prueba del próximo mes. La computadora deberá permanecer encendida y conectada; el enlace es temporal. Se puede restringir el acceso por correo. Fuente: https://developers.cloudflare.com/tunnel/get-started/quick-tunnels/
-
-Se propone agregar registro, inicio y cierre de sesión, usuarios y roles en MySQL, hashes seguros de contraseñas, sesiones protegidas y límites de intentos. Estas funciones requieren una nueva migración, formularios y pruebas; no están implementadas ni se presenta el túnel como ya publicado.
