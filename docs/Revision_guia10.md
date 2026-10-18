@@ -8,7 +8,7 @@ Revisión del 18/10/2026. Fuente: S10-DPS-Guía de trabajo10 (1).pdf, ocho pági
 | Modelo de base de datos, págs. 1 y 3 | Cubierto: esquema SQL, nueve tablas, diez claves foráneas, modelo .mwb, imagen y explicación en el informe. |
 | Matrices de factores ponderados, pág. 3 | Cubierto: IDE, framework Java, servicio Python, MySQL y herramienta de colaboración, con pesos y decisión. |
 | Proyecto organizado en el IDE, págs. 4–5 | Cubierto: Java, Python, interfaz, datos, pruebas, documentación e inicio local. |
-| GitHub e historial, pág. 5 | Pendiente en esta entrega. Existe Git local con commits y un bundle, pero no hay remoto configurado ni evidencia de publicación en GitHub. |
+| GitHub e historial, pág. 5 | Publicado el 18/10/2026 en https://github.com/roykevinh9-boop/culturaaccesible-lima, repositorio privado del equipo con rama main e historial. Se verificó el contenido remoto; evidencia en docs/evidencias/github-publicacion.json. El docente necesita acceso para revisarlo. |
 | Rama de funcionalidad y pull request, pág. 5 | Pendiente: solo consta la rama local main; no se ha abierto un pull request. |
 | Funcionalidad integrada con la base y evidencias, pág. 5 | Cubierto: catálogo, filtros, fichas y reportes con MySQL, integración Python y capturas. |
 | Historias y criterios Dado–Cuando–Entonces, pág. 6 | Cubierto: 18 historias, con criterios y estado. El aumento del 50% procede de la indicación adicional del equipo. |
@@ -17,4 +17,4 @@ Revisión del 18/10/2026. Fuente: S10-DPS-Guía de trabajo10 (1).pdf, ocho pági
 
 La guía pide implementar una funcionalidad prioritaria del PMV1; no exige terminar todas las historias, publicar la web en Internet ni agregar login en esta entrega. La hoja final de prueba gratuita y cuentas se retiró a petición del usuario; se mantiene el diagrama de Workbench. Los pendientes funcionales del backlog y los límites de las pruebas permanecen documentados.
 
-Para cerrar la entrega, el equipo debe resolver la opción de arquitectura, publicar el código en su GitHub con revisión mediante pull request y registrar el seguimiento en un tablero real, incluyendo enlaces y capturas de esos resultados.
+Para cerrar la entrega, el equipo debe resolver la opción de arquitectura, realizar la revisión mediante pull request y registrar el seguimiento en un tablero real, incluyendo enlaces y capturas de esos resultados. La publicación del código ya se completó. El informe PDF conserva la situación anterior a esta subida; esta revisión registra la actualización posterior.
