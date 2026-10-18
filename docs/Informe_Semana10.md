@@ -307,11 +307,11 @@ Nueva PoC sintética: MAE S/ 3.427; accuracy 0.9; F1 clase hasta S/ 40: 0.909. S
 
 ## Organización y Git
 
-Trello: listas Por hacer, En desarrollo, En pruebas y Terminado. El CSV permite copiar tarjetas; no se ha creado un tablero remoto. Se prepara repositorio Git local; la publicación en GitHub y el pull request requieren el repositorio del equipo y siguen pendientes. No se atribuyen acciones remotas inexistentes.
+Trello creado el 18/10/2026: https://trello.com/b/ykyaVYXr/culturaaccesible-lima-semana-10. Contiene 18 tarjetas con historia, prioridad, etapa, criterios y evidencia: 7 Por hacer, 0 En desarrollo, 1 En pruebas y 10 Terminado. El repositorio privado con historial está publicado en https://github.com/roykevinh9-boop/culturaaccesible-lima. La revisión mediante pull request sigue pendiente. Los enlaces requieren acceso autorizado.
 
 ## Instalación
 
-Ejecutar Abrir-demo.cmd con Java 17+, Python 3.11/3.12 y MySQL Server 8.0.16+. La primera ejecución necesita Internet para las dependencias. La demo utiliza MySQL aislado en 3307, Python 8001 y Java 8080. Las credenciales aleatorias y los datos quedan en .local, excluidos del paquete. Mantener abierta la ventana; Ctrl+C detiene los componentes. Ver README.md para compilación, pruebas, Workbench y un MySQL propio.
+Ejecutar Abrir-demo.cmd con Java 17+, Python 3.11/3.12 y MySQL Server 8.0.16+. La primera ejecución necesita Internet para las dependencias. La demo utiliza MySQL aislado en 3307, Python 8001 y Java 8080. Las credenciales aleatorias y los datos quedan en .local, excluidos del paquete. Mantener abierta la ventana; Ctrl+C detiene los componentes. La sección de instalación explica cómo iniciar, compilar y probar. Los archivos de lectura inicial se retiraron a petición del equipo.
 
 ## Límites y siguientes pasos
 

@@ -1,0 +1,112 @@
+{
+  "board": "https://trello.com/b/ykyaVYXr/culturaaccesible-lima-semana-10",
+  "name": "CulturaAccesible Lima - Semana 10",
+  "visibility": "private",
+  "verified_at": "2026-10-18T23:44:36.647Z",
+  "lists": [
+    "Por hacer",
+    "En desarrollo",
+    "En pruebas",
+    "Terminado"
+  ],
+  "counts": {
+    "Por hacer": 7,
+    "En desarrollo": 0,
+    "En pruebas": 1,
+    "Terminado": 10
+  },
+  "description_checks": 18,
+  "cards": [
+    {
+      "title": "HU06 - Consultar un apoyo indispensable",
+      "url": "https://trello.com/c/HI5d4eFE/1-hu06-consultar-un-apoyo-indispensable",
+      "list": "Por hacer"
+    },
+    {
+      "title": "HU07 - Seguimiento de solicitudes",
+      "url": "https://trello.com/c/wBEpDcDG/2-hu07-seguimiento-de-solicitudes",
+      "list": "Por hacer"
+    },
+    {
+      "title": "HU08 - Gestión del organizador",
+      "url": "https://trello.com/c/3vIsACRx/3-hu08-gesti%C3%B3n-del-organizador",
+      "list": "Por hacer"
+    },
+    {
+      "title": "HU09 - Preferencias opcionales",
+      "url": "https://trello.com/c/Dhg6mgG8/4-hu09-preferencias-opcionales",
+      "list": "Por hacer"
+    },
+    {
+      "title": "HU10 - Comparar eventos",
+      "url": "https://trello.com/c/wZnpUgQP/5-hu10-comparar-eventos",
+      "list": "Por hacer"
+    },
+    {
+      "title": "HU16 - Revisar evidencias",
+      "url": "https://trello.com/c/wgxhY1Nx/6-hu16-revisar-evidencias",
+      "list": "Por hacer"
+    },
+    {
+      "title": "HU17 - Avisos de cambios",
+      "url": "https://trello.com/c/266Me56v/7-hu17-avisos-de-cambios",
+      "list": "Por hacer"
+    },
+    {
+      "title": "HU05 - Navegación accesible",
+      "url": "https://trello.com/c/PYCaawkE/8-hu05-navegaci%C3%B3n-accesible",
+      "list": "En pruebas"
+    },
+    {
+      "title": "HU01 - Buscar eventos",
+      "url": "https://trello.com/c/29eRkJp2/9-hu01-buscar-eventos",
+      "list": "Terminado"
+    },
+    {
+      "title": "HU02 - Combinar filtros",
+      "url": "https://trello.com/c/8oTn2sPa/10-hu02-combinar-filtros",
+      "list": "Terminado"
+    },
+    {
+      "title": "HU03 - Abrir ficha por función",
+      "url": "https://trello.com/c/hvzW3nkg/11-hu03-abrir-ficha-por-funci%C3%B3n",
+      "list": "Terminado"
+    },
+    {
+      "title": "HU04 - Estados con fuente y fecha",
+      "url": "https://trello.com/c/xzjBGGY8/12-hu04-estados-con-fuente-y-fecha",
+      "list": "Terminado"
+    },
+    {
+      "title": "HU11 - Precio orientativo",
+      "url": "https://trello.com/c/ZJZUU274/13-hu11-precio-orientativo",
+      "list": "Terminado"
+    },
+    {
+      "title": "HU12 - Clasificar rango de precio",
+      "url": "https://trello.com/c/cJwWu1r9/14-hu12-clasificar-rango-de-precio",
+      "list": "Terminado"
+    },
+    {
+      "title": "HU13 - Filtrar apoyos indispensables",
+      "url": "https://trello.com/c/MtjjZ8YT/15-hu13-filtrar-apoyos-indispensables",
+      "list": "Terminado"
+    },
+    {
+      "title": "HU14 - Compartir una ficha",
+      "url": "https://trello.com/c/lsubrUya/16-hu14-compartir-una-ficha",
+      "list": "Terminado"
+    },
+    {
+      "title": "HU15 - Reportar información incorrecta",
+      "url": "https://trello.com/c/2z5IlkAM/17-hu15-reportar-informaci%C3%B3n-incorrecta",
+      "list": "Terminado"
+    },
+    {
+      "title": "HU18 - Búsqueda en lenguaje natural limitado",
+      "url": "https://trello.com/c/HJYLsHgM/18-hu18-b%C3%BAsqueda-en-lenguaje-natural-limitado",
+      "list": "Terminado"
+    }
+  ],
+  "notes": "Terminado significa verificación técnica local; HU05 sigue En pruebas. Sin atribuir aprobación docente o aportes individuales."
+}
