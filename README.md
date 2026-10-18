@@ -139,4 +139,4 @@ El cliente conserva solamente los filtros de conversación en memoria de la pest
 Pruebas de la versión: **20 Java + 43 Python + 39 integración + 4 fallos = 106 aprobadas**. La prueba de base nueva incluida corresponde a la migración de datos de la versión 1.1; el nuevo chat se verificó contra los servicios reales en esta PC.
 
 
-La conexión visual de Workbench se completó el 18/10/2026; las notas de permiso pendiente del informe fechado 17/10/2026 reflejan el estado anterior. Las evidencias mysql-workbench-conexion.jpg y mysql-workbench-datos.jpg documentan el estado actualizado.
+La conexión visual de Workbench se completó el 18/10/2026; el informe actualizado el 18/10/2026 incorpora la conexión verificada y su evidencia visual. Las evidencias mysql-workbench-conexion.jpg y mysql-workbench-datos.jpg documentan el estado actualizado.

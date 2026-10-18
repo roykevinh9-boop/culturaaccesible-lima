@@ -1,6 +1,6 @@
 # CulturaAccesible Lima · Informe de Semana 10
 
-Diseño e implementación del PMV1 con Java, Python y MySQL. Fecha: 17 de octubre de 2026. Curso: Diseño de Productos y Servicios. Sección: 34971. Docente: Jorge Alfredo Guevara Jimenez.
+Diseño e implementación del PMV1 con Java, Python y MySQL. Actualizado: 18 de octubre de 2026. Curso: Diseño de Productos y Servicios. Sección: 34971. Docente: Jorge Alfredo Guevara Jimenez.
 
 ## Alcance y procedencia
 
@@ -299,7 +299,7 @@ Nueva PoC sintética: MAE S/ 3.427; accuracy 0.9; F1 clase hasta S/ 40: 0.909. S
 
 | Planificar | Hacer | Verificar | Actuar |
 |---|---|---|---|
-| Evitar estados confiables sin respaldo vigente. | Degradar datos ausentes, vencidos o de alcance incorrecto a No confirmado. | Pruebas Java y filtros reales LSP. | Mantener casos de regresión. |
+| Evitar estados confiables sin respaldo vigente. | Degradar datos ausentes, vencidos o de alcance incorrecto a No confirmado. | Pruebas Java y filtros LSP en los ejemplos. | Mantener casos de regresión. |
 | Evitar aceptar 6.5 como mes entero. | Rechazar coerción de decimales y escalares en Java; StrictInt en Python. | Integración 16-18 y casos Python. | Conservar validación en ambos límites de API. |
 | Explicar desacuerdo de regresión y clasificación. | Añadir bandera models_disagree y aviso visible. | Navegador: Danza/Miraflores/octubre produce S/ 49.98 y clase Hasta S/ 40 con advertencia. | Verificar precio oficial y mejorar datos antes de uso real. |
 | Cargar SQL con punto y coma dentro de textos. | Ejecutar sentencias múltiples mediante el controlador y hacer la semilla idempotente. | Inicialización y recarga sin duplicados. | Conservar script reproducible y pruebas de integridad. |
@@ -330,8 +330,12 @@ Pendientes: autenticación y permisos, solicitudes reales, panel organizador, re
 
 Los resultados técnicos corresponden a ejecución local de esta sesión. No se inventan entrevistas, confirmaciones de organizadores, publicaciones remotas ni aportes personales.
 
-## AccesI: conversación conectada
+## Conexión MySQL Workbench verificada el 18/10/2026
 
-El chatbot utiliza IA local de intenciones (TF-IDF + regresión logística) y reglas sobre los eventos consultados en MySQL. Saluda, recuerda el mes entre mensajes, interpreta días exactos y compara tarifas publicadas. No es un modelo generativo y no utiliza un proveedor externo. Los criterios se mantienen en memoria; Nueva conversación los borra. LEEME_PRIMERO.md incluye la explicación y ejemplos.
+La conexión CulturaAccesible Lima quedó guardada y abierta en MySQL Workbench. Se comprobaron mediante SELECT la base culturaaccesible, el puerto 3307 y el usuario cal_app@127.0.0.1. El navegador de esquemas mostró siete tablas. El recuento devolvió 57 funciones: 49 de cartelera y ocho ejemplos ficticios. La página también respondió con estado ok y 49 funciones de cartelera.
 
-Versión actual: 20 pruebas Java, 43 Python, 39 integración y 4 de fallos, 106 aprobadas. Revisión móvil a 390×844 con texto al 125%.
+Las credenciales se introdujeron localmente y no se incluyen en el informe ni en el paquete. La cartelera conserva su fecha de recuperación, 17/10/2026; la verificación de conexión no equivale a una actualización de sus fuentes.
+
+![Workbench: recuento de funciones](evidencias/mysql-workbench-datos.jpg)
+
+Evidencias: mysql-workbench.json, mysql-workbench-conexion.jpg y mysql-workbench-datos.jpg.
