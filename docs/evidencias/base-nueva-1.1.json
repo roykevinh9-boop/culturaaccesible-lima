@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "version": "1.1.0",
+  "new_mysql_data_directory": true,
+  "path_with_spaces": true,
+  "functions": 57,
+  "official_functions": 49,
+  "demo_functions": 8,
+  "scope": "Inicialización de esquema, migración e importación sobre una base MySQL nueva en puerto auxiliar; sin reutilizar datos anteriores. Dependencias Python ya disponibles."
+}

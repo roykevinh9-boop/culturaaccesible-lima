@@ -10,7 +10,9 @@ import urllib.error
 ROOT=Path(__file__).resolve().parents[1]
 BASE=os.environ.get('CAL_TEST_URL','http://127.0.0.1:8080')
 
-def request(path,payload=None):
+def request(path,payload=None,source='demo'):
+    if path.split('?')[0] in ['/api/functions','/api/metadata']:
+        path+=('&' if '?' in path else '?')+'source='+source
     req=urllib.request.Request(BASE+path,data=None if payload is None else json.dumps(payload).encode(),headers={'Content-Type':'application/json'})
     try:
         with urllib.request.urlopen(req,timeout=12) as response:return response.status,json.load(response)
@@ -60,6 +62,24 @@ class IntegrationTests(unittest.TestCase):
         _,function=request('/api/functions/2');cid=next(c['id'] for c in function['conditions'] if c['code']=='tactil');self.assertEqual(request('/api/reports',{'function_id':1,'condition_id':cid,'comment':'Prueba de condición ajena a esta función.'})[0],400)
     def test_23_metadata(self):
         status,data=request('/api/metadata');self.assertEqual(status,200);self.assertEqual(len(data['supports']),7);self.assertEqual(len(data['districts']),4)
+    def test_25_official_default_catalog(self):
+        status,data=request('/api/functions',source='official');self.assertEqual(status,200);self.assertEqual(data['total'],49);self.assertTrue(all(not f['demo'] and f['image_url'].startswith('https://') and f['official_url'].startswith('https://') for f in data['items']))
+    def test_26_nullable_hours_are_preserved(self):
+        _,data=request('/api/functions',source='official');self.assertTrue(any(f['time'] is None for f in data['items']));self.assertFalse(any(f['time']=='00:00:00' for f in data['items']))
+    def test_27_invalid_source(self):self.assertEqual(request('/api/functions',source='inventado')[0],400)
+    def test_28_official_metadata(self):
+        _,data=request('/api/metadata',source='official');self.assertFalse(data['demo']);self.assertIn('San Borja',data['districts'])
+    def test_29_all_catalogs_are_explicit(self):
+        _,data=request('/api/functions',source='all');self.assertEqual(data['total'],57);self.assertEqual(sum(f['demo'] for f in data['items']),8)
+    def test_30_catalog_import_is_idempotent(self):
+        import pymysql,sys
+        sys.path.insert(0,str(ROOT/'scripts'))
+        from catalog_import import import_catalog
+        config=json.loads((ROOT/'.local/runtime.json').read_text())
+        with pymysql.connect(host='127.0.0.1',port=config['db_port'],user='root',password=config['root_password'],database=config['db_name'],autocommit=True) as db:
+            with db.cursor() as cursor:cursor.execute('SELECT COUNT(*) FROM funciones');before=cursor.fetchone()[0]
+            import_catalog(db,force=True)
+            with db.cursor() as cursor:cursor.execute('SELECT COUNT(*) FROM funciones');self.assertEqual(cursor.fetchone()[0],before)
     def test_24_negative_price_mysql_constraint(self):
         import pymysql
         config=json.loads((ROOT/'.local/runtime.json').read_text())

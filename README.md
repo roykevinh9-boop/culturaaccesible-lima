@@ -14,7 +14,7 @@ La primera ejecución descarga dependencias oficiales de Python. Java ya está c
 
 El inicio crea una instancia **aislada** de MySQL en el puerto **3307** con datos propios dentro de `.local/mysql-data`, base `culturaaccesible`, un usuario de aplicación y contraseñas aleatorias locales. No usa la contraseña de tu instalación principal. Si el puerto está ocupado por otro servidor, se detiene sin modificarlo.
 
-**Todos los eventos, recintos, condiciones y precios de la semilla son ficticios.** No se ofrecen entradas, reservas, confirmaciones reales ni recomendaciones verificadas para asistir.
+La cartelera principal incorpora **49 funciones recuperadas de la web del equipo el 17/10/2026**, con fotos remotas, créditos y enlaces a fuentes oficiales. Es una instantánea; no se actualiza automáticamente y no acredita una nueva verificación independiente de cada actividad. Los horarios que no se pudieron confirmar quedan pendientes. Los ocho ejemplos ficticios de la semilla se consultan en un modo separado. No se venden ni reservan entradas.
 
 ## Qué funciona
 
@@ -29,13 +29,15 @@ El inicio crea una instancia **aislada** de MySQL en el puerto **3307** con dato
 - Consultar Python desde Java para obtener precio orientativo y clase hasta/mayor de S/ 40.
 - Explicar el uso de datos sintéticos y avisar si los modelos discrepan.
 - Usar una ayuda de búsqueda **por reglas locales**, sin proveedor de IA generativa.
+- Mostrar fotos con texto alternativo y crédito; abrir la fuente oficial de cada función.
+- Cambiar tamaño de texto, contraste, subrayado y movimiento; ajustes guardados en este navegador.
 - Operar diálogos nativos y cerrar con Escape; diseño adaptado a pantalla pequeña.
 
 ## Alcance y límites
 
 El alcance implementado es **descubrir y comprobar**, más la orientación de precios y el reporte de inconsistencias como extensiones académicas. Las 18 historias se encuentran en `docs/historias.json` y en el informe. No se declara que las 18 estén implementadas.
 
-Las cuentas, panel del organizador, solicitudes reales de apoyo, seguimiento de respuestas, preferencias persistentes, comparador, revisión con permisos y notificaciones quedan en el backlog. Tampoco se ha realizado una auditoría WCAG completa ni pruebas con usuarios o lectores de pantalla reales.
+Las cuentas, panel del organizador, solicitudes reales de apoyo, seguimiento de respuestas, preferencias de perfil, comparador, revisión con permisos y notificaciones quedan en el backlog. Tampoco se ha realizado una auditoría WCAG completa ni pruebas con usuarios o lectores de pantalla reales.
 
 La arquitectura **MVP se aplica a la interfaz**: `view.js` presenta, `presenter.js` coordina y `model.js` accede a datos. El servidor Java usa un adaptador HTTP, servicios de negocio y repositorio JDBC. El uso de Spring no convierte por sí solo la interfaz en MVP.
 
@@ -59,7 +61,7 @@ CulturaAccesibleLima/
 
 ## Abrir en Visual Studio Code o IntelliJ
 
-En VS Code abre la carpeta completa y utiliza las recomendaciones de `.vscode/extensions.json`. En IntelliJ abre `backend/pom.xml` como proyecto Maven. La parte Python también puede editarse en VS Code. La interfaz se modifica en `frontend/`; luego se recompila Java para actualizar el ejecutable.
+En VS Code abre `CulturaAccesibleLima.code-workspace` y usa Terminal → Ejecutar tarea para iniciar, compilar o probar. También puedes abrir la carpeta completa y utiliza las recomendaciones de `.vscode/extensions.json`. En IntelliJ abre `backend/pom.xml` como proyecto Maven. La parte Python también puede editarse en VS Code. La interfaz se modifica en `frontend/`; luego se recompila Java para actualizar el ejecutable.
 
 Para reconstruir ejecuta `scripts/Compilar.ps1` **con la aplicación detenida**, porque Windows bloquea el archivo JAR en ejecución. El script busca Maven en PATH o en IntelliJ y ejecuta las pruebas antes de copiar el JAR a `app/`.
 
@@ -71,7 +73,7 @@ Con la demo iniciada ejecuta `scripts/Probar.ps1`. Las reglas Java se comprueban
 
 - 20 pruebas de reglas en Java.
 - 16 pruebas del servicio Python.
-- 24 pruebas de integración HTTP/Java/Python/MySQL.
+- 30 pruebas de integración HTTP/Java/Python/MySQL.
 - 3 pruebas de fallos controlados: ausencia de Python y MySQL, conservando la demo principal.
 - Revisión manual del navegador: filtros, fichas, reportes, estimación, navegación de diálogos y tamaño móvil.
 
@@ -84,8 +86,8 @@ Las pruebas de fallos abren instancias auxiliares en 18080 y 18081, y se cierran
 | Operación | Ruta |
 |---|---|
 | Salud de Java y MySQL | `GET /api/health` |
-| Distritos, categorías y apoyos | `GET /api/metadata` |
-| Búsqueda y filtros | `GET /api/functions?q=&district=&category=&date=all&price=all&needs=lsp` |
+| Distritos, categorías y apoyos | `GET /api/metadata?source=official` |
+| Búsqueda y filtros | `GET /api/functions?source=official&q=&district=&category=&date=all&price=all&needs=lsp` |
 | Ficha por función | `GET /api/functions/{id}` |
 | Registrar reporte | `POST /api/reports` con `function_id`, `comment` y `condition_id` opcional |
 | Estimación a través de Java | `POST /api/estimates` con `category`, `district` y `month` |
@@ -114,3 +116,11 @@ Para Trello: crea las listas **Por hacer**, **En desarrollo**, **En pruebas** y 
 Lee `docs/Informe_Semana10.pdf`, su versión editable en Markdown, la matriz de herramientas y los diagramas PlantUML/SVG. La asignación nominal de roles es una propuesta para que el equipo la revise. Las evidencias corresponden a verificaciones técnicas locales; no acreditan validación de accesibilidad de recintos reales.
 
 La instalación se verificó también desde una copia limpia extraída del ZIP en una ruta con espacios: descargó dependencias, inicializó otra carpeta MySQL y conectó Java con Python. El resultado está en `docs/evidencias/instalacion-limpia.json`.
+
+## Cartelera y conexión local actualizadas
+
+`source=official` es el catálogo predeterminado; `source=demo` devuelve los ocho ejemplos ficticios y `source=all` sirve para inspección explícita. `database/catalogo-oficial.json` conserva la procedencia de las 49 funciones. No se atribuyen los apoyos del recinto a una función cuando requieren confirmación por sesión. Los precios «Desde» conservan ese calificativo; NULL no se convierte en cero. Hora NULL se muestra como pendiente.
+
+`scripts/catalog_import.py` aplica las nuevas columnas y carga la instantánea sin duplicar funciones. El inicio lo ejecuta cuando cambia el archivo; no descarga una nueva cartelera. `--force` vuelve a aplicar la instantánea. El hash local evita sobrescribir cambios manuales en cada arranque. La base mantiene los reportes existentes.
+
+La conexión MySQL verificada está en **127.0.0.1:3307**, base **culturaaccesible**, usuario **cal_app**. Es una instancia real con el MySQL instalado en esta PC. Workbench es un cliente opcional: su ventana necesita permiso de control para configurar visualmente la conexión. Las claves están únicamente en `.local/runtime.json`, excluidas de la entrega.

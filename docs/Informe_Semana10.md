@@ -4,7 +4,7 @@ Diseño e implementación del PMV1 con Java, Python y MySQL. Fecha: 17 de octubr
 
 ## Alcance y procedencia
 
-Se conserva la propuesta de valor de los trabajos previos: ayudar a personas con necesidades de accesibilidad a comprobar condiciones de eventos culturales de Lima. La implementación es una demostración local nueva con datos ficticios. La web publicada se utilizó como referencia funcional y no fue modificada.
+Se conserva la propuesta de valor de los trabajos previos: ayudar a personas con necesidades de accesibilidad a comprobar condiciones de eventos culturales de Lima. La implementación local incluye 49 funciones recuperadas de la web del equipo el 17/10/2026 y ocho ejemplos ficticios separados. La PoC Python utiliza datos sintéticos. La web publicada se utilizó como referencia funcional y no fue modificada.
 
 La base de historias suma 10 del APF2 más 2 de IA de la Semana 9: 12. El incremento del 50% agrega 6 y produce 18. Las historias de IA se renumeran HU11 y HU12, conservando su significado. La indicación MVP se entiende como Modelo-Vista-Presentador en la interfaz.
 
@@ -291,7 +291,7 @@ La ayuda de lenguaje natural usa reglas locales para reconocer una lista de cate
 - Java: 20 pruebas aprobadas.
 - Python: 16 pruebas aprobadas.
 - Fallos controlados de servicios: 3 pruebas aprobadas.
-- Integración real: 24 pruebas; fallos 0; errores 0.
+- Integración real: 30 pruebas; fallos 0; errores 0.
 
 Nueva PoC sintética: MAE S/ 3.427; accuracy 0.9; F1 clase hasta S/ 40: 0.909. Se utilizan 30 registros de entrenamiento y 10 de prueba, con semilla 42. No se ha realizado selección comparativa de modelos en esta implementación; se mantienen dos modelos académicos predefinidos. Estas métricas no equivalen a validación sobre eventos reales.
 
@@ -299,7 +299,7 @@ Nueva PoC sintética: MAE S/ 3.427; accuracy 0.9; F1 clase hasta S/ 40: 0.909. S
 
 | Planificar | Hacer | Verificar | Actuar |
 |---|---|---|---|
-| Evitar estados confiables sin respaldo vigente. | Degradar datos ausentes, vencidos o de alcance incorrecto a No confirmado. | Pruebas Java y filtros reales LSP. | Mantener casos de regresión. |
+| Evitar estados confiables sin respaldo vigente. | Degradar datos ausentes, vencidos o de alcance incorrecto a No confirmado. | Pruebas Java y filtros LSP de los ejemplos. | Mantener casos de regresión. |
 | Evitar aceptar 6.5 como mes entero. | Rechazar coerción de decimales y escalares en Java; StrictInt en Python. | Integración 16-18 y casos Python. | Conservar validación en ambos límites de API. |
 | Explicar desacuerdo de regresión y clasificación. | Añadir bandera models_disagree y aviso visible. | Navegador: Danza/Miraflores/octubre produce S/ 49.98 y clase Hasta S/ 40 con advertencia. | Verificar precio oficial y mejorar datos antes de uso real. |
 | Cargar SQL con punto y coma dentro de textos. | Ejecutar sentencias múltiples mediante el controlador y hacer la semilla idempotente. | Inicialización y recarga sin duplicados. | Conservar script reproducible y pruebas de integridad. |
@@ -329,3 +329,11 @@ Pendientes: autenticación y permisos, solicitudes reales, panel organizador, re
 - scikit-learn: https://scikit-learn.org/stable/modules/model_evaluation.html
 
 Los resultados técnicos corresponden a ejecución local de esta sesión. No se inventan entrevistas, confirmaciones de organizadores, publicaciones remotas ni aportes personales.
+
+## Cartelera y accesibilidad actualizadas
+
+49 funciones recuperadas de la web del equipo el 17/10/2026, con fotos remotas, créditos y fuentes oficiales. Ocho ejemplos ficticios separados. La instantánea no se actualiza automáticamente; no se declara verificación independiente de las 49 funciones. Los horarios faltantes permanecen pendientes y los precios Desde conservan ese calificativo.
+
+Panel de texto, contraste, subrayado y movimiento, con preferencias en el navegador. MySQL local en 127.0.0.1:3307, base culturaaccesible, usuario cal_app. Proyecto y tareas disponibles en CulturaAccesibleLima.code-workspace. Workbench sigue pendiente del permiso de control de su ventana.
+
+69 pruebas aprobadas y carga de las 57 funciones comprobada sobre una base MySQL nueva.

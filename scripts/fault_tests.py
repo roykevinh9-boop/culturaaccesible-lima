@@ -44,7 +44,7 @@ class FaultTests(unittest.TestCase):
     def test_python_unavailable_preserves_catalog(self):
         status,data=call(18080,'/api/estimates',{'category':'Teatro','district':'Miraflores','month':6})
         self.assertEqual(status,503);self.assertIn('catálogo',data['message'])
-        status,data=call(18080,'/api/functions');self.assertEqual(status,200);self.assertEqual(data['total'],8)
+        status,data=call(18080,'/api/functions?source=official');self.assertEqual(status,200);self.assertEqual(data['total'],49)
     def test_database_unavailable_never_confirms_report(self):
         status,data=call(18081,'/api/reports',{'function_id':1,'comment':'Prueba de fallo: no debe confirmarse ningún guardado.'})
         self.assertEqual(status,503);self.assertNotIn('id',data);self.assertIn('no está confirmada',data['message'])

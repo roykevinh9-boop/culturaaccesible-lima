@@ -21,19 +21,28 @@ public class CatalogService {
     }
 
     public Map<String,Object> metadata() {
-        var functions=all();
+        return metadata("official");
+    }
+    public Map<String,Object> metadata(String source) {
+        var functions=filterCatalog(all(),source);
         return Map.of("districts", functions.stream().map(f->f.get("district")).distinct().sorted(Comparator.comparing(Object::toString)).toList(),
           "categories", functions.stream().map(f->f.get("category")).distinct().sorted(Comparator.comparing(Object::toString)).toList(),
-          "supports", repository.supportTypes(), "today", LocalDate.now(clock).toString(), "demo", true);
+          "supports", repository.supportTypes(), "today", LocalDate.now(clock).toString(), "demo", "demo".equals(source),"consulted_at","2026-10-17");
+    }
+    public List<Map<String,Object>> filterCatalog(List<Map<String,Object>> items,String source) {
+        if(!Set.of("official","demo","all").contains(source)) throw new IllegalArgumentException("Catálogo no reconocido.");
+        return items.stream().filter(f->"all".equals(source)||((Boolean)f.get("demo"))=="demo".equals(source)).toList();
     }
 
     private List<Map<String,Object>> all() {
         return repository.functions().stream().map(row -> {
             Map<String,Object> result=new LinkedHashMap<>();
             result.put("id", ((Number)row.get("id")).longValue());
-            for (String key:List.of("title","description","category","venue","district","address","official_url")) result.put(key,row.get(key));
+            for (String key:List.of("title","description","category","venue","district","address","official_url","image_url","image_alt","image_credit")) result.put(key,row.get(key));
             result.put("date", row.get("event_date").toString());
-            result.put("time", row.get("event_time").toString());
+            result.put("time", row.get("event_time")==null?null:row.get("event_time").toString());
+            result.put("price_from",row.get("price_from")!=null && ((Number)row.get("price_from")).intValue()==1);
+            result.put("consulted_at",row.get("consulted_at")==null?null:row.get("consulted_at").toString());
             result.put("official_price", row.get("official_price"));
             result.put("demo", ((Number)row.get("demo")).intValue()==1);
             result.put("conditions", effectiveConditions(((Number)row.get("id")).longValue()));

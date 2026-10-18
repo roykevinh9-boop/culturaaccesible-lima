@@ -11,7 +11,7 @@ CREATE TABLE IF NOT EXISTS eventos (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 CREATE TABLE IF NOT EXISTS funciones (
  id BIGINT PRIMARY KEY AUTO_INCREMENT, evento_id BIGINT NOT NULL, recinto_id BIGINT NOT NULL,
- fecha DATE NOT NULL, hora TIME NOT NULL, precio_oficial DECIMAL(10,2) NULL,
+ fecha DATE NOT NULL, hora TIME NULL, precio_oficial DECIMAL(10,2) NULL,
  url_oficial VARCHAR(600) NULL,
  CONSTRAINT fk_funcion_evento FOREIGN KEY(evento_id) REFERENCES eventos(id),
  CONSTRAINT fk_funcion_recinto FOREIGN KEY(recinto_id) REFERENCES recintos(id),

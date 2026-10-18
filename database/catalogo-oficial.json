@@ -1,0 +1,3682 @@
+{
+  "source": "https://culturaaccesible-lima-mvp1.dag126.chatgpt.site/",
+  "consulted_at": "2026-10-17",
+  "note": "Instantánea recuperada de la cartelera del equipo. Enlaces y fotografías de los organizadores; revisar la fuente oficial para cambios. Los horarios solo se incluyen cuando se comprobaron en su fuente.",
+  "items": [
+    {
+      "external_id": "mali-activity-48539",
+      "title": "El camino de Nora. Demostración-espectáculo de Roberta Carreri",
+      "description": "Actividad publicada en la agenda oficial del MALI. Consulta horarios y detalles vigentes en su página.",
+      "category": "Museo",
+      "district": "Cercado de Lima",
+      "venue": "Museo de Arte de Lima",
+      "date": "2026-10-17",
+      "time": "20:00:00",
+      "official_price": null,
+      "price_from": false,
+      "official_url": "https://mali.pe/es/activity/el-camino-de-nora-demostracion-espectaculo-de-roberta-carreri/",
+      "image_url": "https://mali.pe/es/wp-content/uploads/2026/10/WhatsApp-Image-2026-09-28-at-5.11.10-PM-4-e1791582365478.jpeg",
+      "image_alt": "Imagen oficial de El camino de Nora. Demostración-espectáculo de Roberta Carreri",
+      "image_credit": "MALI",
+      "consulted_at": "2026-10-17",
+      "conditions": [
+        {
+          "code": "silla_ruedas",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://mali.pe/es/activity/el-camino-de-nora-demostracion-espectaculo-de-roberta-carreri/",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "sin_escalones",
+          "state": "DISPONIBLE",
+          "scope": "RECINTO",
+          "note": "El MALI publica rampas y ascensores en el recinto; confirma la ruta y operación para esta actividad.",
+          "source_url": "https://mali.pe/es/visitas/",
+          "reviewed_at": "2026-09-23"
+        },
+        {
+          "code": "bano_adaptado",
+          "state": "DISPONIBLE",
+          "scope": "RECINTO",
+          "note": "El MALI publica baños acondicionados en el recinto; confirma ubicación y disponibilidad durante la actividad.",
+          "source_url": "https://mali.pe/es/visitas/",
+          "reviewed_at": "2026-09-23"
+        },
+        {
+          "code": "lsp",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://mali.pe/es/activity/el-camino-de-nora-demostracion-espectaculo-de-roberta-carreri/",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "subtitulos",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://mali.pe/es/activity/el-camino-de-nora-demostracion-espectaculo-de-roberta-carreri/",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "audiodescripcion",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://mali.pe/es/activity/el-camino-de-nora-demostracion-espectaculo-de-roberta-carreri/",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "tactil",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://mali.pe/es/activity/el-camino-de-nora-demostracion-espectaculo-de-roberta-carreri/",
+          "reviewed_at": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "external_id": "mali-activity-47815",
+      "title": "Miércoles de Filmoteca. Ciclo “Íconos fílmicos del horror: Cuatro clásicos fundacionales”",
+      "description": "Actividad iniciada el 07/10/2026 y anunciada hasta el 29/10/2026. Consulta horarios y detalles en la página oficial del MALI.",
+      "category": "Museo",
+      "district": "Cercado de Lima",
+      "venue": "Museo de Arte de Lima",
+      "date": "2026-10-17",
+      "time": null,
+      "official_price": null,
+      "price_from": false,
+      "official_url": "https://mali.pe/es/activity/miercoles-de-filmoteca-ciclo-iconos-filmicos-del-horror-cuatro-clasicos-fundacionales/",
+      "image_url": "https://mali.pe/es/wp-content/uploads/2026/09/FRANKENSTEIN-1931.Imagen-fija006-e1790612276599-1024x581.jpg",
+      "image_alt": "Imagen oficial de Miércoles de Filmoteca. Ciclo “Íconos fílmicos del horror: Cuatro clásicos fundacionales”",
+      "image_credit": "MALI",
+      "consulted_at": "2026-10-17",
+      "conditions": [
+        {
+          "code": "silla_ruedas",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://mali.pe/es/activity/miercoles-de-filmoteca-ciclo-iconos-filmicos-del-horror-cuatro-clasicos-fundacionales/",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "sin_escalones",
+          "state": "DISPONIBLE",
+          "scope": "RECINTO",
+          "note": "El MALI publica rampas y ascensores en el recinto; confirma la ruta y operación para esta actividad.",
+          "source_url": "https://mali.pe/es/visitas/",
+          "reviewed_at": "2026-09-23"
+        },
+        {
+          "code": "bano_adaptado",
+          "state": "DISPONIBLE",
+          "scope": "RECINTO",
+          "note": "El MALI publica baños acondicionados en el recinto; confirma ubicación y disponibilidad durante la actividad.",
+          "source_url": "https://mali.pe/es/visitas/",
+          "reviewed_at": "2026-09-23"
+        },
+        {
+          "code": "lsp",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://mali.pe/es/activity/miercoles-de-filmoteca-ciclo-iconos-filmicos-del-horror-cuatro-clasicos-fundacionales/",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "subtitulos",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://mali.pe/es/activity/miercoles-de-filmoteca-ciclo-iconos-filmicos-del-horror-cuatro-clasicos-fundacionales/",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "audiodescripcion",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://mali.pe/es/activity/miercoles-de-filmoteca-ciclo-iconos-filmicos-del-horror-cuatro-clasicos-fundacionales/",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "tactil",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://mali.pe/es/activity/miercoles-de-filmoteca-ciclo-iconos-filmicos-del-horror-cuatro-clasicos-fundacionales/",
+          "reviewed_at": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "external_id": "gtn-yuyachkani-antes-de-irnos-para-siempre-2026-10-17",
+      "title": "Yuyachkani: Antes de irnos para siempre",
+      "description": "Actividad incluida en la programación oficial del Gran Teatro Nacional.",
+      "category": "Teatro",
+      "district": "San Borja",
+      "venue": "Gran Teatro Nacional",
+      "date": "2026-10-17",
+      "time": "20:00:00",
+      "official_price": 15.0,
+      "price_from": true,
+      "official_url": "https://granteatronacional.pe/evento/yuyachkani-antes-de-irnos-para-siempre",
+      "image_url": "https://granteatronacional.pe/sites/default/files/styles/370x305/public/ImagenesEvento/yuyas-antes-de-irnos.jpg?itok=3CiBGrDW",
+      "image_alt": "Afiche oficial de Yuyachkani: Antes de irnos para siempre",
+      "image_credit": "Gran Teatro Nacional",
+      "consulted_at": "2026-10-17",
+      "conditions": [
+        {
+          "code": "silla_ruedas",
+          "state": "DISPONIBLE",
+          "scope": "FUNCION",
+          "note": "La publicación oficial anuncia localidades para personas usuarias de silla de ruedas. Confirma cupos para esta función.",
+          "source_url": "https://granteatronacional.pe/evento/yuyachkani-antes-de-irnos-para-siempre",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "sin_escalones",
+          "state": "DISPONIBLE",
+          "scope": "RECINTO",
+          "note": "El teatro publica rampas y ascensores en el recinto; confirma la ruta y operación para esta función.",
+          "source_url": "https://granteatronacional.pe/preguntas-frecuentes",
+          "reviewed_at": "2026-09-23"
+        },
+        {
+          "code": "bano_adaptado",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/yuyachkani-antes-de-irnos-para-siempre",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "lsp",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/yuyachkani-antes-de-irnos-para-siempre",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "subtitulos",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/yuyachkani-antes-de-irnos-para-siempre",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "audiodescripcion",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/yuyachkani-antes-de-irnos-para-siempre",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "tactil",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/yuyachkani-antes-de-irnos-para-siempre",
+          "reviewed_at": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "external_id": "gtn-yuyachkani-antes-de-irnos-para-siempre-2026-10-18",
+      "title": "Yuyachkani: Antes de irnos para siempre",
+      "description": "Actividad incluida en la programación oficial del Gran Teatro Nacional.",
+      "category": "Teatro",
+      "district": "San Borja",
+      "venue": "Gran Teatro Nacional",
+      "date": "2026-10-18",
+      "time": "17:30:00",
+      "official_price": 15.0,
+      "price_from": true,
+      "official_url": "https://granteatronacional.pe/evento/yuyachkani-antes-de-irnos-para-siempre",
+      "image_url": "https://granteatronacional.pe/sites/default/files/styles/370x305/public/ImagenesEvento/yuyas-antes-de-irnos.jpg?itok=3CiBGrDW",
+      "image_alt": "Afiche oficial de Yuyachkani: Antes de irnos para siempre",
+      "image_credit": "Gran Teatro Nacional",
+      "consulted_at": "2026-10-17",
+      "conditions": [
+        {
+          "code": "silla_ruedas",
+          "state": "DISPONIBLE",
+          "scope": "FUNCION",
+          "note": "La publicación oficial anuncia localidades para personas usuarias de silla de ruedas. Confirma cupos para esta función.",
+          "source_url": "https://granteatronacional.pe/evento/yuyachkani-antes-de-irnos-para-siempre",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "sin_escalones",
+          "state": "DISPONIBLE",
+          "scope": "RECINTO",
+          "note": "El teatro publica rampas y ascensores en el recinto; confirma la ruta y operación para esta función.",
+          "source_url": "https://granteatronacional.pe/preguntas-frecuentes",
+          "reviewed_at": "2026-09-23"
+        },
+        {
+          "code": "bano_adaptado",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/yuyachkani-antes-de-irnos-para-siempre",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "lsp",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/yuyachkani-antes-de-irnos-para-siempre",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "subtitulos",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/yuyachkani-antes-de-irnos-para-siempre",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "audiodescripcion",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/yuyachkani-antes-de-irnos-para-siempre",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "tactil",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/yuyachkani-antes-de-irnos-para-siempre",
+          "reviewed_at": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "external_id": "mali-activity-48031",
+      "title": "Conversatorio “Redes artísticas, intelectuales y afectivas en torno a la obra de Julia Codesido”",
+      "description": "Actividad publicada en la agenda oficial del MALI. Consulta horarios y detalles vigentes en su página.",
+      "category": "Charla",
+      "district": "Cercado de Lima",
+      "venue": "Museo de Arte de Lima",
+      "date": "2026-10-21",
+      "time": null,
+      "official_price": null,
+      "price_from": false,
+      "official_url": "https://mali.pe/es/activity/conversatorio-redes-artisticas-intelectuales-y-afectivas-en-torno-a-la-obra-de-julia-codesido/",
+      "image_url": "https://mali.pe/es/wp-content/uploads/2026/10/IMG_5703-1-768x1024.jpg",
+      "image_alt": "Imagen oficial de Conversatorio “Redes artísticas, intelectuales y afectivas en torno a la obra de Julia Codesido”",
+      "image_credit": "MALI",
+      "consulted_at": "2026-10-17",
+      "conditions": [
+        {
+          "code": "silla_ruedas",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://mali.pe/es/activity/conversatorio-redes-artisticas-intelectuales-y-afectivas-en-torno-a-la-obra-de-julia-codesido/",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "sin_escalones",
+          "state": "DISPONIBLE",
+          "scope": "RECINTO",
+          "note": "El MALI publica rampas y ascensores en el recinto; confirma la ruta y operación para esta actividad.",
+          "source_url": "https://mali.pe/es/visitas/",
+          "reviewed_at": "2026-09-23"
+        },
+        {
+          "code": "bano_adaptado",
+          "state": "DISPONIBLE",
+          "scope": "RECINTO",
+          "note": "El MALI publica baños acondicionados en el recinto; confirma ubicación y disponibilidad durante la actividad.",
+          "source_url": "https://mali.pe/es/visitas/",
+          "reviewed_at": "2026-09-23"
+        },
+        {
+          "code": "lsp",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://mali.pe/es/activity/conversatorio-redes-artisticas-intelectuales-y-afectivas-en-torno-a-la-obra-de-julia-codesido/",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "subtitulos",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://mali.pe/es/activity/conversatorio-redes-artisticas-intelectuales-y-afectivas-en-torno-a-la-obra-de-julia-codesido/",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "audiodescripcion",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://mali.pe/es/activity/conversatorio-redes-artisticas-intelectuales-y-afectivas-en-torno-a-la-obra-de-julia-codesido/",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "tactil",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://mali.pe/es/activity/conversatorio-redes-artisticas-intelectuales-y-afectivas-en-torno-a-la-obra-de-julia-codesido/",
+          "reviewed_at": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "external_id": "mali-47824",
+      "title": "Miércoles 21. Película: Frankenstein",
+      "description": "Actividad publicada en la agenda oficial del Museo de Arte de Lima. Consulta los detalles y horarios vigentes en su página.",
+      "category": "Museo",
+      "district": "Cercado de Lima",
+      "venue": "Museo de Arte de Lima",
+      "date": "2026-10-21",
+      "time": null,
+      "official_price": 7.5,
+      "price_from": true,
+      "official_url": "https://mali.pe/es/etn/miercoles-de-filmoteca-4/miercoles-de-filmoteca-2/",
+      "image_url": "https://mali.pe/es/wp-content/uploads/2021/10/logo-mali-2021-4.png",
+      "image_alt": "Imagen oficial de Miércoles 21. Película: Frankenstein",
+      "image_credit": "MALI",
+      "consulted_at": "2026-10-17",
+      "conditions": [
+        {
+          "code": "silla_ruedas",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://mali.pe/es/etn/miercoles-de-filmoteca-4/miercoles-de-filmoteca-2/",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "sin_escalones",
+          "state": "DISPONIBLE",
+          "scope": "RECINTO",
+          "note": "El MALI publica rampas y ascensores en el recinto; confirma la ruta y operación para esta actividad.",
+          "source_url": "https://mali.pe/es/visitas/",
+          "reviewed_at": "2026-09-23"
+        },
+        {
+          "code": "bano_adaptado",
+          "state": "DISPONIBLE",
+          "scope": "RECINTO",
+          "note": "El MALI publica baños acondicionados en el recinto; confirma ubicación y disponibilidad durante la actividad.",
+          "source_url": "https://mali.pe/es/visitas/",
+          "reviewed_at": "2026-09-23"
+        },
+        {
+          "code": "lsp",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://mali.pe/es/etn/miercoles-de-filmoteca-4/miercoles-de-filmoteca-2/",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "subtitulos",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://mali.pe/es/etn/miercoles-de-filmoteca-4/miercoles-de-filmoteca-2/",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "audiodescripcion",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://mali.pe/es/etn/miercoles-de-filmoteca-4/miercoles-de-filmoteca-2/",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "tactil",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://mali.pe/es/etn/miercoles-de-filmoteca-4/miercoles-de-filmoteca-2/",
+          "reviewed_at": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "external_id": "gtn-raices-de-jauja-noche-de-gala-andina-2026-10-22",
+      "title": "Raíces de Jauja: Noche de Gala Andina",
+      "description": "Actividad incluida en la programación oficial del Gran Teatro Nacional.",
+      "category": "Música",
+      "district": "San Borja",
+      "venue": "Gran Teatro Nacional",
+      "date": "2026-10-22",
+      "time": null,
+      "official_price": 49.0,
+      "price_from": true,
+      "official_url": "https://granteatronacional.pe/evento/raices-de-jauja-noche-de-gala-andina",
+      "image_url": "https://granteatronacional.pe/sites/default/files/styles/370x305/public/ImagenesEvento/raices2.jpg?itok=QweiMJcd",
+      "image_alt": "Afiche oficial de Raíces de Jauja: Noche de Gala Andina",
+      "image_credit": "Gran Teatro Nacional",
+      "consulted_at": "2026-10-17",
+      "conditions": [
+        {
+          "code": "silla_ruedas",
+          "state": "DISPONIBLE",
+          "scope": "FUNCION",
+          "note": "La publicación oficial anuncia localidades para personas usuarias de silla de ruedas. Confirma cupos para esta función.",
+          "source_url": "https://granteatronacional.pe/evento/raices-de-jauja-noche-de-gala-andina",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "sin_escalones",
+          "state": "DISPONIBLE",
+          "scope": "RECINTO",
+          "note": "El teatro publica rampas y ascensores en el recinto; confirma la ruta y operación para esta función.",
+          "source_url": "https://granteatronacional.pe/preguntas-frecuentes",
+          "reviewed_at": "2026-09-23"
+        },
+        {
+          "code": "bano_adaptado",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/raices-de-jauja-noche-de-gala-andina",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "lsp",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/raices-de-jauja-noche-de-gala-andina",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "subtitulos",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/raices-de-jauja-noche-de-gala-andina",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "audiodescripcion",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/raices-de-jauja-noche-de-gala-andina",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "tactil",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/raices-de-jauja-noche-de-gala-andina",
+          "reviewed_at": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "external_id": "gtn-orquesta-sinfonica-nacional-de-jazz-foxtrot-y-gershwin-2026-10-23",
+      "title": "Orquesta Sinfónica Nacional: De jazz, foxtrot y Gershwin",
+      "description": "Actividad incluida en la programación oficial del Gran Teatro Nacional.",
+      "category": "Música",
+      "district": "San Borja",
+      "venue": "Gran Teatro Nacional",
+      "date": "2026-10-23",
+      "time": null,
+      "official_price": 15.0,
+      "price_from": true,
+      "official_url": "https://granteatronacional.pe/evento/orquesta-sinfonica-nacional-de-jazz-foxtrot-y-gershwin",
+      "image_url": "https://granteatronacional.pe/sites/default/files/styles/370x305/public/ImagenesEvento/jazz-foxtrot-gershwin.jpg?itok=YpJ9FM9V",
+      "image_alt": "Afiche oficial de Orquesta Sinfónica Nacional: De jazz, foxtrot y Gershwin",
+      "image_credit": "Gran Teatro Nacional",
+      "consulted_at": "2026-10-17",
+      "conditions": [
+        {
+          "code": "silla_ruedas",
+          "state": "DISPONIBLE",
+          "scope": "RECINTO",
+          "note": "El teatro publica espacios para silla de ruedas en el recinto; cupos para esta función por confirmar.",
+          "source_url": "https://granteatronacional.pe/preguntas-frecuentes",
+          "reviewed_at": "2026-09-23"
+        },
+        {
+          "code": "sin_escalones",
+          "state": "DISPONIBLE",
+          "scope": "RECINTO",
+          "note": "El teatro publica rampas y ascensores en el recinto; confirma la ruta y operación para esta función.",
+          "source_url": "https://granteatronacional.pe/preguntas-frecuentes",
+          "reviewed_at": "2026-09-23"
+        },
+        {
+          "code": "bano_adaptado",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/orquesta-sinfonica-nacional-de-jazz-foxtrot-y-gershwin",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "lsp",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/orquesta-sinfonica-nacional-de-jazz-foxtrot-y-gershwin",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "subtitulos",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/orquesta-sinfonica-nacional-de-jazz-foxtrot-y-gershwin",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "audiodescripcion",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/orquesta-sinfonica-nacional-de-jazz-foxtrot-y-gershwin",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "tactil",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/orquesta-sinfonica-nacional-de-jazz-foxtrot-y-gershwin",
+          "reviewed_at": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "external_id": "gtn-visita-gtn-accesible-2-2026-10-23",
+      "title": "Visita GTN accesible",
+      "description": "Visita guiada al Gran Teatro Nacional",
+      "category": "Visita",
+      "district": "San Borja",
+      "venue": "Gran Teatro Nacional",
+      "date": "2026-10-23",
+      "time": null,
+      "official_price": null,
+      "price_from": false,
+      "official_url": "https://granteatronacional.pe/evento/visita-gtn-accesible-2",
+      "image_url": "https://granteatronacional.pe/sites/default/files/styles/370x305/public/ImagenesEvento/visitaGTN26marzo_1_2.jpg?itok=2lVNy_jV",
+      "image_alt": "Afiche oficial de Visita GTN accesible",
+      "image_credit": "Gran Teatro Nacional",
+      "consulted_at": "2026-10-17",
+      "conditions": [
+        {
+          "code": "silla_ruedas",
+          "state": "DISPONIBLE",
+          "scope": "RECINTO",
+          "note": "El teatro publica espacios para silla de ruedas en el recinto; cupos para esta función por confirmar.",
+          "source_url": "https://granteatronacional.pe/preguntas-frecuentes",
+          "reviewed_at": "2026-09-23"
+        },
+        {
+          "code": "sin_escalones",
+          "state": "DISPONIBLE",
+          "scope": "RECINTO",
+          "note": "El teatro publica rampas y ascensores en el recinto; confirma la ruta y operación para esta función.",
+          "source_url": "https://granteatronacional.pe/preguntas-frecuentes",
+          "reviewed_at": "2026-09-23"
+        },
+        {
+          "code": "bano_adaptado",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/visita-gtn-accesible-2",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "lsp",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/visita-gtn-accesible-2",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "subtitulos",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/visita-gtn-accesible-2",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "audiodescripcion",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/visita-gtn-accesible-2",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "tactil",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/visita-gtn-accesible-2",
+          "reviewed_at": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "external_id": "gtn-tania-libertad-2026-10-24",
+      "title": "Tania Libertad",
+      "description": "Actividad incluida en la programación oficial del Gran Teatro Nacional.",
+      "category": "Música",
+      "district": "San Borja",
+      "venue": "Gran Teatro Nacional",
+      "date": "2026-10-24",
+      "time": null,
+      "official_price": 49.0,
+      "price_from": true,
+      "official_url": "https://granteatronacional.pe/evento/tania-libertad",
+      "image_url": "https://granteatronacional.pe/sites/default/files/styles/370x305/public/ImagenesEvento/Tania-Libertad.jpg?itok=euRNlzYM",
+      "image_alt": "Afiche oficial de Tania Libertad",
+      "image_credit": "Gran Teatro Nacional",
+      "consulted_at": "2026-10-17",
+      "conditions": [
+        {
+          "code": "silla_ruedas",
+          "state": "DISPONIBLE",
+          "scope": "FUNCION",
+          "note": "La publicación oficial anuncia localidades para personas usuarias de silla de ruedas. Confirma cupos para esta función.",
+          "source_url": "https://granteatronacional.pe/evento/tania-libertad",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "sin_escalones",
+          "state": "DISPONIBLE",
+          "scope": "RECINTO",
+          "note": "El teatro publica rampas y ascensores en el recinto; confirma la ruta y operación para esta función.",
+          "source_url": "https://granteatronacional.pe/preguntas-frecuentes",
+          "reviewed_at": "2026-09-23"
+        },
+        {
+          "code": "bano_adaptado",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/tania-libertad",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "lsp",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/tania-libertad",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "subtitulos",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/tania-libertad",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "audiodescripcion",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/tania-libertad",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "tactil",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/tania-libertad",
+          "reviewed_at": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "external_id": "gtn-el-peru-en-un-solo-canto-2026-10-25",
+      "title": "El Perú en un solo canto",
+      "description": "Actividad incluida en la programación oficial del Gran Teatro Nacional.",
+      "category": "Danza",
+      "district": "San Borja",
+      "venue": "Gran Teatro Nacional",
+      "date": "2026-10-25",
+      "time": null,
+      "official_price": null,
+      "price_from": false,
+      "official_url": "https://granteatronacional.pe/evento/el-peru-en-un-solo-canto",
+      "image_url": "https://granteatronacional.pe/sites/default/files/styles/370x305/public/ImagenesEvento/un-solo-canto2.jpg?itok=-2PfbJSO",
+      "image_alt": "Afiche oficial de El Perú en un solo canto",
+      "image_credit": "Gran Teatro Nacional",
+      "consulted_at": "2026-10-17",
+      "conditions": [
+        {
+          "code": "silla_ruedas",
+          "state": "DISPONIBLE",
+          "scope": "FUNCION",
+          "note": "La publicación oficial anuncia localidades para personas usuarias de silla de ruedas. Confirma cupos para esta función.",
+          "source_url": "https://granteatronacional.pe/evento/el-peru-en-un-solo-canto",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "sin_escalones",
+          "state": "DISPONIBLE",
+          "scope": "RECINTO",
+          "note": "El teatro publica rampas y ascensores en el recinto; confirma la ruta y operación para esta función.",
+          "source_url": "https://granteatronacional.pe/preguntas-frecuentes",
+          "reviewed_at": "2026-09-23"
+        },
+        {
+          "code": "bano_adaptado",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/el-peru-en-un-solo-canto",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "lsp",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/el-peru-en-un-solo-canto",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "subtitulos",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/el-peru-en-un-solo-canto",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "audiodescripcion",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/el-peru-en-un-solo-canto",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "tactil",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/el-peru-en-un-solo-canto",
+          "reviewed_at": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "external_id": "mali-47825",
+      "title": "Miércoles 28. Película: El gabinete del Doctor Caligari",
+      "description": "Actividad publicada en la agenda oficial del Museo de Arte de Lima. Consulta los detalles y horarios vigentes en su página.",
+      "category": "Museo",
+      "district": "Cercado de Lima",
+      "venue": "Museo de Arte de Lima",
+      "date": "2026-10-28",
+      "time": null,
+      "official_price": 7.5,
+      "price_from": true,
+      "official_url": "https://mali.pe/es/etn/miercoles-de-filmoteca-4/miercoles-de-filmoteca/",
+      "image_url": "https://mali.pe/es/wp-content/uploads/2021/10/logo-mali-2021-4.png",
+      "image_alt": "Imagen oficial de Miércoles 28. Película: El gabinete del Doctor Caligari",
+      "image_credit": "MALI",
+      "consulted_at": "2026-10-17",
+      "conditions": [
+        {
+          "code": "silla_ruedas",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://mali.pe/es/etn/miercoles-de-filmoteca-4/miercoles-de-filmoteca/",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "sin_escalones",
+          "state": "DISPONIBLE",
+          "scope": "RECINTO",
+          "note": "El MALI publica rampas y ascensores en el recinto; confirma la ruta y operación para esta actividad.",
+          "source_url": "https://mali.pe/es/visitas/",
+          "reviewed_at": "2026-09-23"
+        },
+        {
+          "code": "bano_adaptado",
+          "state": "DISPONIBLE",
+          "scope": "RECINTO",
+          "note": "El MALI publica baños acondicionados en el recinto; confirma ubicación y disponibilidad durante la actividad.",
+          "source_url": "https://mali.pe/es/visitas/",
+          "reviewed_at": "2026-09-23"
+        },
+        {
+          "code": "lsp",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://mali.pe/es/etn/miercoles-de-filmoteca-4/miercoles-de-filmoteca/",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "subtitulos",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://mali.pe/es/etn/miercoles-de-filmoteca-4/miercoles-de-filmoteca/",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "audiodescripcion",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://mali.pe/es/etn/miercoles-de-filmoteca-4/miercoles-de-filmoteca/",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "tactil",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://mali.pe/es/etn/miercoles-de-filmoteca-4/miercoles-de-filmoteca/",
+          "reviewed_at": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "external_id": "gtn-ballet-folclorico-nacional-retablo-criollo-herencia-de-la-costa-2026-10-30",
+      "title": "Ballet Folclórico Nacional - Retablo Criollo: Herencia de la Costa",
+      "description": "Actividad incluida en la programación oficial del Gran Teatro Nacional.",
+      "category": "Danza",
+      "district": "San Borja",
+      "venue": "Gran Teatro Nacional",
+      "date": "2026-10-30",
+      "time": null,
+      "official_price": 15.0,
+      "price_from": true,
+      "official_url": "https://granteatronacional.pe/evento/ballet-folclorico-nacional-retablo-criollo-herencia-de-la-costa",
+      "image_url": "https://granteatronacional.pe/sites/default/files/styles/370x305/public/ImagenesEvento/retablo-criollo_0.jpg?itok=aMr0aufd",
+      "image_alt": "Afiche oficial de Ballet Folclórico Nacional - Retablo Criollo: Herencia de la Costa",
+      "image_credit": "Gran Teatro Nacional",
+      "consulted_at": "2026-10-17",
+      "conditions": [
+        {
+          "code": "silla_ruedas",
+          "state": "DISPONIBLE",
+          "scope": "FUNCION",
+          "note": "La publicación oficial anuncia localidades para personas usuarias de silla de ruedas. Confirma cupos para esta función.",
+          "source_url": "https://granteatronacional.pe/evento/ballet-folclorico-nacional-retablo-criollo-herencia-de-la-costa",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "sin_escalones",
+          "state": "DISPONIBLE",
+          "scope": "RECINTO",
+          "note": "El teatro publica rampas y ascensores en el recinto; confirma la ruta y operación para esta función.",
+          "source_url": "https://granteatronacional.pe/preguntas-frecuentes",
+          "reviewed_at": "2026-09-23"
+        },
+        {
+          "code": "bano_adaptado",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/ballet-folclorico-nacional-retablo-criollo-herencia-de-la-costa",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "lsp",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/ballet-folclorico-nacional-retablo-criollo-herencia-de-la-costa",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "subtitulos",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/ballet-folclorico-nacional-retablo-criollo-herencia-de-la-costa",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "audiodescripcion",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/ballet-folclorico-nacional-retablo-criollo-herencia-de-la-costa",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "tactil",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/ballet-folclorico-nacional-retablo-criollo-herencia-de-la-costa",
+          "reviewed_at": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "external_id": "mali-41310",
+      "title": "Noche MALI",
+      "description": "Actividad publicada en la agenda oficial del Museo de Arte de Lima. Consulta los detalles y horarios vigentes en su página.",
+      "category": "Museo",
+      "district": "Cercado de Lima",
+      "venue": "Museo de Arte de Lima",
+      "date": "2026-10-30",
+      "time": null,
+      "official_price": 12.9,
+      "price_from": true,
+      "official_url": "https://mali.pe/es/etn/noche-mali/noche-mali-7/",
+      "image_url": "https://mali.pe/es/wp-content/uploads/2026/03/gKDpXyvS3k0Uxti.webp",
+      "image_alt": "Imagen oficial de Noche MALI",
+      "image_credit": "MALI",
+      "consulted_at": "2026-10-17",
+      "conditions": [
+        {
+          "code": "silla_ruedas",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://mali.pe/es/etn/noche-mali/noche-mali-7/",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "sin_escalones",
+          "state": "DISPONIBLE",
+          "scope": "RECINTO",
+          "note": "El MALI publica rampas y ascensores en el recinto; confirma la ruta y operación para esta actividad.",
+          "source_url": "https://mali.pe/es/visitas/",
+          "reviewed_at": "2026-09-23"
+        },
+        {
+          "code": "bano_adaptado",
+          "state": "DISPONIBLE",
+          "scope": "RECINTO",
+          "note": "El MALI publica baños acondicionados en el recinto; confirma ubicación y disponibilidad durante la actividad.",
+          "source_url": "https://mali.pe/es/visitas/",
+          "reviewed_at": "2026-09-23"
+        },
+        {
+          "code": "lsp",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://mali.pe/es/etn/noche-mali/noche-mali-7/",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "subtitulos",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://mali.pe/es/etn/noche-mali/noche-mali-7/",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "audiodescripcion",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://mali.pe/es/etn/noche-mali/noche-mali-7/",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "tactil",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://mali.pe/es/etn/noche-mali/noche-mali-7/",
+          "reviewed_at": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "external_id": "gtn-ballet-folclorico-nacional-retablo-criollo-herencia-de-la-costa-2026-10-31",
+      "title": "Ballet Folclórico Nacional - Retablo Criollo: Herencia de la Costa",
+      "description": "Actividad incluida en la programación oficial del Gran Teatro Nacional.",
+      "category": "Danza",
+      "district": "San Borja",
+      "venue": "Gran Teatro Nacional",
+      "date": "2026-10-31",
+      "time": null,
+      "official_price": 15.0,
+      "price_from": true,
+      "official_url": "https://granteatronacional.pe/evento/ballet-folclorico-nacional-retablo-criollo-herencia-de-la-costa",
+      "image_url": "https://granteatronacional.pe/sites/default/files/styles/370x305/public/ImagenesEvento/retablo-criollo_0.jpg?itok=aMr0aufd",
+      "image_alt": "Afiche oficial de Ballet Folclórico Nacional - Retablo Criollo: Herencia de la Costa",
+      "image_credit": "Gran Teatro Nacional",
+      "consulted_at": "2026-10-17",
+      "conditions": [
+        {
+          "code": "silla_ruedas",
+          "state": "DISPONIBLE",
+          "scope": "FUNCION",
+          "note": "La publicación oficial anuncia localidades para personas usuarias de silla de ruedas. Confirma cupos para esta función.",
+          "source_url": "https://granteatronacional.pe/evento/ballet-folclorico-nacional-retablo-criollo-herencia-de-la-costa",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "sin_escalones",
+          "state": "DISPONIBLE",
+          "scope": "RECINTO",
+          "note": "El teatro publica rampas y ascensores en el recinto; confirma la ruta y operación para esta función.",
+          "source_url": "https://granteatronacional.pe/preguntas-frecuentes",
+          "reviewed_at": "2026-09-23"
+        },
+        {
+          "code": "bano_adaptado",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/ballet-folclorico-nacional-retablo-criollo-herencia-de-la-costa",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "lsp",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/ballet-folclorico-nacional-retablo-criollo-herencia-de-la-costa",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "subtitulos",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/ballet-folclorico-nacional-retablo-criollo-herencia-de-la-costa",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "audiodescripcion",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/ballet-folclorico-nacional-retablo-criollo-herencia-de-la-costa",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "tactil",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/ballet-folclorico-nacional-retablo-criollo-herencia-de-la-costa",
+          "reviewed_at": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "external_id": "gtn-ballet-folclorico-nacional-retablo-criollo-herencia-de-la-costa-2026-11-01",
+      "title": "Ballet Folclórico Nacional - Retablo Criollo: Herencia de la Costa",
+      "description": "Actividad incluida en la programación oficial del Gran Teatro Nacional.",
+      "category": "Danza",
+      "district": "San Borja",
+      "venue": "Gran Teatro Nacional",
+      "date": "2026-11-01",
+      "time": null,
+      "official_price": 15.0,
+      "price_from": true,
+      "official_url": "https://granteatronacional.pe/evento/ballet-folclorico-nacional-retablo-criollo-herencia-de-la-costa",
+      "image_url": "https://granteatronacional.pe/sites/default/files/styles/370x305/public/ImagenesEvento/retablo-criollo_0.jpg?itok=aMr0aufd",
+      "image_alt": "Afiche oficial de Ballet Folclórico Nacional - Retablo Criollo: Herencia de la Costa",
+      "image_credit": "Gran Teatro Nacional",
+      "consulted_at": "2026-10-17",
+      "conditions": [
+        {
+          "code": "silla_ruedas",
+          "state": "DISPONIBLE",
+          "scope": "FUNCION",
+          "note": "La publicación oficial anuncia localidades para personas usuarias de silla de ruedas. Confirma cupos para esta función.",
+          "source_url": "https://granteatronacional.pe/evento/ballet-folclorico-nacional-retablo-criollo-herencia-de-la-costa",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "sin_escalones",
+          "state": "DISPONIBLE",
+          "scope": "RECINTO",
+          "note": "El teatro publica rampas y ascensores en el recinto; confirma la ruta y operación para esta función.",
+          "source_url": "https://granteatronacional.pe/preguntas-frecuentes",
+          "reviewed_at": "2026-09-23"
+        },
+        {
+          "code": "bano_adaptado",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/ballet-folclorico-nacional-retablo-criollo-herencia-de-la-costa",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "lsp",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/ballet-folclorico-nacional-retablo-criollo-herencia-de-la-costa",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "subtitulos",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/ballet-folclorico-nacional-retablo-criollo-herencia-de-la-costa",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "audiodescripcion",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/ballet-folclorico-nacional-retablo-criollo-herencia-de-la-costa",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "tactil",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/ballet-folclorico-nacional-retablo-criollo-herencia-de-la-costa",
+          "reviewed_at": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "external_id": "gtn-ballet-folclorico-nacional-retablo-criollo-herencia-de-la-costa-2026-11-02",
+      "title": "Ballet Folclórico Nacional - Retablo Criollo: Herencia de la Costa",
+      "description": "Actividad incluida en la programación oficial del Gran Teatro Nacional.",
+      "category": "Danza",
+      "district": "San Borja",
+      "venue": "Gran Teatro Nacional",
+      "date": "2026-11-02",
+      "time": null,
+      "official_price": 15.0,
+      "price_from": true,
+      "official_url": "https://granteatronacional.pe/evento/ballet-folclorico-nacional-retablo-criollo-herencia-de-la-costa",
+      "image_url": "https://granteatronacional.pe/sites/default/files/styles/370x305/public/ImagenesEvento/retablo-criollo_0.jpg?itok=aMr0aufd",
+      "image_alt": "Afiche oficial de Ballet Folclórico Nacional - Retablo Criollo: Herencia de la Costa",
+      "image_credit": "Gran Teatro Nacional",
+      "consulted_at": "2026-10-17",
+      "conditions": [
+        {
+          "code": "silla_ruedas",
+          "state": "DISPONIBLE",
+          "scope": "FUNCION",
+          "note": "La publicación oficial anuncia localidades para personas usuarias de silla de ruedas. Confirma cupos para esta función.",
+          "source_url": "https://granteatronacional.pe/evento/ballet-folclorico-nacional-retablo-criollo-herencia-de-la-costa",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "sin_escalones",
+          "state": "DISPONIBLE",
+          "scope": "RECINTO",
+          "note": "El teatro publica rampas y ascensores en el recinto; confirma la ruta y operación para esta función.",
+          "source_url": "https://granteatronacional.pe/preguntas-frecuentes",
+          "reviewed_at": "2026-09-23"
+        },
+        {
+          "code": "bano_adaptado",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/ballet-folclorico-nacional-retablo-criollo-herencia-de-la-costa",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "lsp",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/ballet-folclorico-nacional-retablo-criollo-herencia-de-la-costa",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "subtitulos",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/ballet-folclorico-nacional-retablo-criollo-herencia-de-la-costa",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "audiodescripcion",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/ballet-folclorico-nacional-retablo-criollo-herencia-de-la-costa",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "tactil",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/ballet-folclorico-nacional-retablo-criollo-herencia-de-la-costa",
+          "reviewed_at": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "external_id": "gtn-ballet-folclorico-nacional-retablo-criollo-herencia-de-la-costa-2026-11-03",
+      "title": "Ballet Folclórico Nacional - Retablo Criollo: Herencia de la Costa",
+      "description": "Actividad incluida en la programación oficial del Gran Teatro Nacional.",
+      "category": "Danza",
+      "district": "San Borja",
+      "venue": "Gran Teatro Nacional",
+      "date": "2026-11-03",
+      "time": null,
+      "official_price": 15.0,
+      "price_from": true,
+      "official_url": "https://granteatronacional.pe/evento/ballet-folclorico-nacional-retablo-criollo-herencia-de-la-costa",
+      "image_url": "https://granteatronacional.pe/sites/default/files/styles/370x305/public/ImagenesEvento/retablo-criollo_0.jpg?itok=aMr0aufd",
+      "image_alt": "Afiche oficial de Ballet Folclórico Nacional - Retablo Criollo: Herencia de la Costa",
+      "image_credit": "Gran Teatro Nacional",
+      "consulted_at": "2026-10-17",
+      "conditions": [
+        {
+          "code": "silla_ruedas",
+          "state": "DISPONIBLE",
+          "scope": "FUNCION",
+          "note": "La publicación oficial anuncia localidades para personas usuarias de silla de ruedas. Confirma cupos para esta función.",
+          "source_url": "https://granteatronacional.pe/evento/ballet-folclorico-nacional-retablo-criollo-herencia-de-la-costa",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "sin_escalones",
+          "state": "DISPONIBLE",
+          "scope": "RECINTO",
+          "note": "El teatro publica rampas y ascensores en el recinto; confirma la ruta y operación para esta función.",
+          "source_url": "https://granteatronacional.pe/preguntas-frecuentes",
+          "reviewed_at": "2026-09-23"
+        },
+        {
+          "code": "bano_adaptado",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/ballet-folclorico-nacional-retablo-criollo-herencia-de-la-costa",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "lsp",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/ballet-folclorico-nacional-retablo-criollo-herencia-de-la-costa",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "subtitulos",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/ballet-folclorico-nacional-retablo-criollo-herencia-de-la-costa",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "audiodescripcion",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/ballet-folclorico-nacional-retablo-criollo-herencia-de-la-costa",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "tactil",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/ballet-folclorico-nacional-retablo-criollo-herencia-de-la-costa",
+          "reviewed_at": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "external_id": "gtn-ballet-folclorico-nacional-retablo-criollo-herencia-de-la-costa-2026-11-04",
+      "title": "Ballet Folclórico Nacional - Retablo Criollo: Herencia de la Costa",
+      "description": "Actividad incluida en la programación oficial del Gran Teatro Nacional.",
+      "category": "Danza",
+      "district": "San Borja",
+      "venue": "Gran Teatro Nacional",
+      "date": "2026-11-04",
+      "time": null,
+      "official_price": 15.0,
+      "price_from": true,
+      "official_url": "https://granteatronacional.pe/evento/ballet-folclorico-nacional-retablo-criollo-herencia-de-la-costa",
+      "image_url": "https://granteatronacional.pe/sites/default/files/styles/370x305/public/ImagenesEvento/retablo-criollo_0.jpg?itok=aMr0aufd",
+      "image_alt": "Afiche oficial de Ballet Folclórico Nacional - Retablo Criollo: Herencia de la Costa",
+      "image_credit": "Gran Teatro Nacional",
+      "consulted_at": "2026-10-17",
+      "conditions": [
+        {
+          "code": "silla_ruedas",
+          "state": "DISPONIBLE",
+          "scope": "FUNCION",
+          "note": "La publicación oficial anuncia localidades para personas usuarias de silla de ruedas. Confirma cupos para esta función.",
+          "source_url": "https://granteatronacional.pe/evento/ballet-folclorico-nacional-retablo-criollo-herencia-de-la-costa",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "sin_escalones",
+          "state": "DISPONIBLE",
+          "scope": "RECINTO",
+          "note": "El teatro publica rampas y ascensores en el recinto; confirma la ruta y operación para esta función.",
+          "source_url": "https://granteatronacional.pe/preguntas-frecuentes",
+          "reviewed_at": "2026-09-23"
+        },
+        {
+          "code": "bano_adaptado",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/ballet-folclorico-nacional-retablo-criollo-herencia-de-la-costa",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "lsp",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/ballet-folclorico-nacional-retablo-criollo-herencia-de-la-costa",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "subtitulos",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/ballet-folclorico-nacional-retablo-criollo-herencia-de-la-costa",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "audiodescripcion",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/ballet-folclorico-nacional-retablo-criollo-herencia-de-la-costa",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "tactil",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/ballet-folclorico-nacional-retablo-criollo-herencia-de-la-costa",
+          "reviewed_at": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "external_id": "gtn-coro-nacional-de-ninos-del-peru-estampas-criollas-0-2026-11-05",
+      "title": "Coro Nacional de Niños del Perú: Estampas Criollas",
+      "description": "Actividad incluida en la programación oficial del Gran Teatro Nacional.",
+      "category": "Música",
+      "district": "San Borja",
+      "venue": "Gran Teatro Nacional",
+      "date": "2026-11-05",
+      "time": null,
+      "official_price": 15.0,
+      "price_from": true,
+      "official_url": "https://granteatronacional.pe/evento/coro-nacional-de-ninos-del-peru-estampas-criollas-0",
+      "image_url": "https://granteatronacional.pe/sites/default/files/styles/370x305/public/ImagenesEvento/estampa-criolla.jpg?itok=VGoLek1l",
+      "image_alt": "Afiche oficial de Coro Nacional de Niños del Perú: Estampas Criollas",
+      "image_credit": "Gran Teatro Nacional",
+      "consulted_at": "2026-10-17",
+      "conditions": [
+        {
+          "code": "silla_ruedas",
+          "state": "DISPONIBLE",
+          "scope": "FUNCION",
+          "note": "La publicación oficial anuncia localidades para personas usuarias de silla de ruedas. Confirma cupos para esta función.",
+          "source_url": "https://granteatronacional.pe/evento/coro-nacional-de-ninos-del-peru-estampas-criollas-0",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "sin_escalones",
+          "state": "DISPONIBLE",
+          "scope": "RECINTO",
+          "note": "El teatro publica rampas y ascensores en el recinto; confirma la ruta y operación para esta función.",
+          "source_url": "https://granteatronacional.pe/preguntas-frecuentes",
+          "reviewed_at": "2026-09-23"
+        },
+        {
+          "code": "bano_adaptado",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/coro-nacional-de-ninos-del-peru-estampas-criollas-0",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "lsp",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/coro-nacional-de-ninos-del-peru-estampas-criollas-0",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "subtitulos",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/coro-nacional-de-ninos-del-peru-estampas-criollas-0",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "audiodescripcion",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/coro-nacional-de-ninos-del-peru-estampas-criollas-0",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "tactil",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/coro-nacional-de-ninos-del-peru-estampas-criollas-0",
+          "reviewed_at": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "external_id": "gtn-orquesta-sinfonica-nacional-concierto-0-2026-11-06",
+      "title": "Orquesta Sinfónica Nacional: Concierto",
+      "description": "Actividad incluida en la programación oficial del Gran Teatro Nacional.",
+      "category": "Música",
+      "district": "San Borja",
+      "venue": "Gran Teatro Nacional",
+      "date": "2026-11-06",
+      "time": null,
+      "official_price": null,
+      "price_from": false,
+      "official_url": "https://granteatronacional.pe/evento/orquesta-sinfonica-nacional-concierto-0",
+      "image_url": "https://granteatronacional.pe/sites/default/files/styles/370x305/public/ImagenesEvento/osn_21.jpg?itok=OFVlXleh",
+      "image_alt": "Afiche oficial de Orquesta Sinfónica Nacional: Concierto",
+      "image_credit": "Gran Teatro Nacional",
+      "consulted_at": "2026-10-17",
+      "conditions": [
+        {
+          "code": "silla_ruedas",
+          "state": "DISPONIBLE",
+          "scope": "RECINTO",
+          "note": "El teatro publica espacios para silla de ruedas en el recinto; cupos para esta función por confirmar.",
+          "source_url": "https://granteatronacional.pe/preguntas-frecuentes",
+          "reviewed_at": "2026-09-23"
+        },
+        {
+          "code": "sin_escalones",
+          "state": "DISPONIBLE",
+          "scope": "RECINTO",
+          "note": "El teatro publica rampas y ascensores en el recinto; confirma la ruta y operación para esta función.",
+          "source_url": "https://granteatronacional.pe/preguntas-frecuentes",
+          "reviewed_at": "2026-09-23"
+        },
+        {
+          "code": "bano_adaptado",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/orquesta-sinfonica-nacional-concierto-0",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "lsp",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/orquesta-sinfonica-nacional-concierto-0",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "subtitulos",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/orquesta-sinfonica-nacional-concierto-0",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "audiodescripcion",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/orquesta-sinfonica-nacional-concierto-0",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "tactil",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/orquesta-sinfonica-nacional-concierto-0",
+          "reviewed_at": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "external_id": "gtn-amy-gutierrez-mi-primer-gran-teatro-2026-11-07",
+      "title": "Amy Gutierrez: Mi primer Gran Teatro",
+      "description": "Actividad incluida en la programación oficial del Gran Teatro Nacional.",
+      "category": "Música",
+      "district": "San Borja",
+      "venue": "Gran Teatro Nacional",
+      "date": "2026-11-07",
+      "time": null,
+      "official_price": 40.0,
+      "price_from": true,
+      "official_url": "https://granteatronacional.pe/evento/amy-gutierrez-mi-primer-gran-teatro",
+      "image_url": "https://granteatronacional.pe/sites/default/files/styles/370x305/public/ImagenesEvento/amy.jpg?itok=Xtrs74Ij",
+      "image_alt": "Afiche oficial de Amy Gutierrez: Mi primer Gran Teatro",
+      "image_credit": "Gran Teatro Nacional",
+      "consulted_at": "2026-10-17",
+      "conditions": [
+        {
+          "code": "silla_ruedas",
+          "state": "DISPONIBLE",
+          "scope": "FUNCION",
+          "note": "La publicación oficial anuncia localidades para personas usuarias de silla de ruedas. Confirma cupos para esta función.",
+          "source_url": "https://granteatronacional.pe/evento/amy-gutierrez-mi-primer-gran-teatro",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "sin_escalones",
+          "state": "DISPONIBLE",
+          "scope": "RECINTO",
+          "note": "El teatro publica rampas y ascensores en el recinto; confirma la ruta y operación para esta función.",
+          "source_url": "https://granteatronacional.pe/preguntas-frecuentes",
+          "reviewed_at": "2026-09-23"
+        },
+        {
+          "code": "bano_adaptado",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/amy-gutierrez-mi-primer-gran-teatro",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "lsp",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/amy-gutierrez-mi-primer-gran-teatro",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "subtitulos",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/amy-gutierrez-mi-primer-gran-teatro",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "audiodescripcion",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/amy-gutierrez-mi-primer-gran-teatro",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "tactil",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/amy-gutierrez-mi-primer-gran-teatro",
+          "reviewed_at": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "external_id": "gtn-cecilia-bracamonte-gracias-por-tanto-2026-11-08",
+      "title": "Cecilia Bracamonte: \"Gracias por tanto\"",
+      "description": "Actividad incluida en la programación oficial del Gran Teatro Nacional.",
+      "category": "Música",
+      "district": "San Borja",
+      "venue": "Gran Teatro Nacional",
+      "date": "2026-11-08",
+      "time": null,
+      "official_price": 43.0,
+      "price_from": true,
+      "official_url": "https://granteatronacional.pe/evento/cecilia-bracamonte-gracias-por-tanto",
+      "image_url": "https://granteatronacional.pe/sites/default/files/styles/370x305/public/ImagenesEvento/cecilia-bracamonte_0.jpg?itok=46nIsuze",
+      "image_alt": "Afiche oficial de Cecilia Bracamonte: \"Gracias por tanto\"",
+      "image_credit": "Gran Teatro Nacional",
+      "consulted_at": "2026-10-17",
+      "conditions": [
+        {
+          "code": "silla_ruedas",
+          "state": "DISPONIBLE",
+          "scope": "FUNCION",
+          "note": "La publicación oficial anuncia localidades para personas usuarias de silla de ruedas. Confirma cupos para esta función.",
+          "source_url": "https://granteatronacional.pe/evento/cecilia-bracamonte-gracias-por-tanto",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "sin_escalones",
+          "state": "DISPONIBLE",
+          "scope": "RECINTO",
+          "note": "El teatro publica rampas y ascensores en el recinto; confirma la ruta y operación para esta función.",
+          "source_url": "https://granteatronacional.pe/preguntas-frecuentes",
+          "reviewed_at": "2026-09-23"
+        },
+        {
+          "code": "bano_adaptado",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/cecilia-bracamonte-gracias-por-tanto",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "lsp",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/cecilia-bracamonte-gracias-por-tanto",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "subtitulos",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/cecilia-bracamonte-gracias-por-tanto",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "audiodescripcion",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/cecilia-bracamonte-gracias-por-tanto",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "tactil",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/cecilia-bracamonte-gracias-por-tanto",
+          "reviewed_at": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "external_id": "gtn-gran-gala-lirica-solistas-de-la-opera-del-teatro-colon-2026-11-10",
+      "title": "Gran Gala Lírica Solistas de la Ópera del Teatro Colón",
+      "description": "Actividad incluida en la programación oficial del Gran Teatro Nacional.",
+      "category": "Música",
+      "district": "San Borja",
+      "venue": "Gran Teatro Nacional",
+      "date": "2026-11-10",
+      "time": null,
+      "official_price": 45.0,
+      "price_from": true,
+      "official_url": "https://granteatronacional.pe/evento/gran-gala-lirica-solistas-de-la-opera-del-teatro-colon",
+      "image_url": "https://granteatronacional.pe/sites/default/files/styles/370x305/public/ImagenesEvento/solistas.jpg?itok=RL8zAdYV",
+      "image_alt": "Afiche oficial de Gran Gala Lírica Solistas de la Ópera del Teatro Colón",
+      "image_credit": "Gran Teatro Nacional",
+      "consulted_at": "2026-10-17",
+      "conditions": [
+        {
+          "code": "silla_ruedas",
+          "state": "DISPONIBLE",
+          "scope": "FUNCION",
+          "note": "La publicación oficial anuncia localidades para personas usuarias de silla de ruedas. Confirma cupos para esta función.",
+          "source_url": "https://granteatronacional.pe/evento/gran-gala-lirica-solistas-de-la-opera-del-teatro-colon",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "sin_escalones",
+          "state": "DISPONIBLE",
+          "scope": "RECINTO",
+          "note": "El teatro publica rampas y ascensores en el recinto; confirma la ruta y operación para esta función.",
+          "source_url": "https://granteatronacional.pe/preguntas-frecuentes",
+          "reviewed_at": "2026-09-23"
+        },
+        {
+          "code": "bano_adaptado",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/gran-gala-lirica-solistas-de-la-opera-del-teatro-colon",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "lsp",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/gran-gala-lirica-solistas-de-la-opera-del-teatro-colon",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "subtitulos",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/gran-gala-lirica-solistas-de-la-opera-del-teatro-colon",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "audiodescripcion",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/gran-gala-lirica-solistas-de-la-opera-del-teatro-colon",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "tactil",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/gran-gala-lirica-solistas-de-la-opera-del-teatro-colon",
+          "reviewed_at": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "external_id": "gtn-amanda-portales-arte-puro-ii-2026-11-12",
+      "title": "Amanda Portales: Arte Puro II",
+      "description": "Actividad incluida en la programación oficial del Gran Teatro Nacional.",
+      "category": "Música",
+      "district": "San Borja",
+      "venue": "Gran Teatro Nacional",
+      "date": "2026-11-12",
+      "time": null,
+      "official_price": 50.0,
+      "price_from": true,
+      "official_url": "https://granteatronacional.pe/evento/amanda-portales-arte-puro-ii",
+      "image_url": "https://granteatronacional.pe/sites/default/files/styles/370x305/public/ImagenesEvento/amanda2.jpg?itok=njr9VEwb",
+      "image_alt": "Afiche oficial de Amanda Portales: Arte Puro II",
+      "image_credit": "Gran Teatro Nacional",
+      "consulted_at": "2026-10-17",
+      "conditions": [
+        {
+          "code": "silla_ruedas",
+          "state": "DISPONIBLE",
+          "scope": "FUNCION",
+          "note": "La publicación oficial anuncia localidades para personas usuarias de silla de ruedas. Confirma cupos para esta función.",
+          "source_url": "https://granteatronacional.pe/evento/amanda-portales-arte-puro-ii",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "sin_escalones",
+          "state": "DISPONIBLE",
+          "scope": "RECINTO",
+          "note": "El teatro publica rampas y ascensores en el recinto; confirma la ruta y operación para esta función.",
+          "source_url": "https://granteatronacional.pe/preguntas-frecuentes",
+          "reviewed_at": "2026-09-23"
+        },
+        {
+          "code": "bano_adaptado",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/amanda-portales-arte-puro-ii",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "lsp",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/amanda-portales-arte-puro-ii",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "subtitulos",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/amanda-portales-arte-puro-ii",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "audiodescripcion",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/amanda-portales-arte-puro-ii",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "tactil",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/amanda-portales-arte-puro-ii",
+          "reviewed_at": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "external_id": "gtn-amanda-portales-arte-puro-ii-2026-11-13",
+      "title": "Amanda Portales: Arte Puro II",
+      "description": "Actividad incluida en la programación oficial del Gran Teatro Nacional.",
+      "category": "Música",
+      "district": "San Borja",
+      "venue": "Gran Teatro Nacional",
+      "date": "2026-11-13",
+      "time": null,
+      "official_price": 50.0,
+      "price_from": true,
+      "official_url": "https://granteatronacional.pe/evento/amanda-portales-arte-puro-ii",
+      "image_url": "https://granteatronacional.pe/sites/default/files/styles/370x305/public/ImagenesEvento/amanda2.jpg?itok=njr9VEwb",
+      "image_alt": "Afiche oficial de Amanda Portales: Arte Puro II",
+      "image_credit": "Gran Teatro Nacional",
+      "consulted_at": "2026-10-17",
+      "conditions": [
+        {
+          "code": "silla_ruedas",
+          "state": "DISPONIBLE",
+          "scope": "FUNCION",
+          "note": "La publicación oficial anuncia localidades para personas usuarias de silla de ruedas. Confirma cupos para esta función.",
+          "source_url": "https://granteatronacional.pe/evento/amanda-portales-arte-puro-ii",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "sin_escalones",
+          "state": "DISPONIBLE",
+          "scope": "RECINTO",
+          "note": "El teatro publica rampas y ascensores en el recinto; confirma la ruta y operación para esta función.",
+          "source_url": "https://granteatronacional.pe/preguntas-frecuentes",
+          "reviewed_at": "2026-09-23"
+        },
+        {
+          "code": "bano_adaptado",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/amanda-portales-arte-puro-ii",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "lsp",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/amanda-portales-arte-puro-ii",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "subtitulos",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/amanda-portales-arte-puro-ii",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "audiodescripcion",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/amanda-portales-arte-puro-ii",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "tactil",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/amanda-portales-arte-puro-ii",
+          "reviewed_at": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "external_id": "mali-activity-48793",
+      "title": "Laboratorio “Genealogías hechas a mano: de Guadalajara a Lima”, a cargo de Luis F. Muñoz (México)",
+      "description": "Actividad publicada en la agenda oficial del MALI. Consulta horarios y detalles vigentes en su página.",
+      "category": "Museo",
+      "district": "Cercado de Lima",
+      "venue": "Museo de Arte de Lima",
+      "date": "2026-11-14",
+      "time": null,
+      "official_price": null,
+      "price_from": false,
+      "official_url": "https://mali.pe/es/activity/laboratorio-genealogias-hechas-a-mano-de-guadalajara-a-lima-a-cargo-de-luis-f-munoz-mexico/",
+      "image_url": "https://mali.pe/es/wp-content/uploads/2026/10/Amistades-Particulares-Gaga-2024-Photo-Agustin-Arce-1024x819.jpg",
+      "image_alt": "Imagen oficial de Laboratorio “Genealogías hechas a mano: de Guadalajara a Lima”, a cargo de Luis F. Muñoz (México)",
+      "image_credit": "MALI",
+      "consulted_at": "2026-10-17",
+      "conditions": [
+        {
+          "code": "silla_ruedas",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://mali.pe/es/activity/laboratorio-genealogias-hechas-a-mano-de-guadalajara-a-lima-a-cargo-de-luis-f-munoz-mexico/",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "sin_escalones",
+          "state": "DISPONIBLE",
+          "scope": "RECINTO",
+          "note": "El MALI publica rampas y ascensores en el recinto; confirma la ruta y operación para esta actividad.",
+          "source_url": "https://mali.pe/es/visitas/",
+          "reviewed_at": "2026-09-23"
+        },
+        {
+          "code": "bano_adaptado",
+          "state": "DISPONIBLE",
+          "scope": "RECINTO",
+          "note": "El MALI publica baños acondicionados en el recinto; confirma ubicación y disponibilidad durante la actividad.",
+          "source_url": "https://mali.pe/es/visitas/",
+          "reviewed_at": "2026-09-23"
+        },
+        {
+          "code": "lsp",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://mali.pe/es/activity/laboratorio-genealogias-hechas-a-mano-de-guadalajara-a-lima-a-cargo-de-luis-f-munoz-mexico/",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "subtitulos",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://mali.pe/es/activity/laboratorio-genealogias-hechas-a-mano-de-guadalajara-a-lima-a-cargo-de-luis-f-munoz-mexico/",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "audiodescripcion",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://mali.pe/es/activity/laboratorio-genealogias-hechas-a-mano-de-guadalajara-a-lima-a-cargo-de-luis-f-munoz-mexico/",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "tactil",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://mali.pe/es/activity/laboratorio-genealogias-hechas-a-mano-de-guadalajara-a-lima-a-cargo-de-luis-f-munoz-mexico/",
+          "reviewed_at": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "external_id": "gtn-sesiones-gtn-1-2026-11-14",
+      "title": "Sesiones GTN",
+      "description": "Actividad incluida en la programación oficial del Gran Teatro Nacional.",
+      "category": "Música",
+      "district": "San Borja",
+      "venue": "Gran Teatro Nacional",
+      "date": "2026-11-14",
+      "time": null,
+      "official_price": 0.0,
+      "price_from": false,
+      "official_url": "https://granteatronacional.pe/evento/sesiones-gtn-1",
+      "image_url": "https://granteatronacional.pe/sites/default/files/styles/370x305/public/ImagenesEvento/sesiones%20GTN%20banner_4.jpg?itok=COr9FrLT",
+      "image_alt": "Afiche oficial de Sesiones GTN",
+      "image_credit": "Gran Teatro Nacional",
+      "consulted_at": "2026-10-17",
+      "conditions": [
+        {
+          "code": "silla_ruedas",
+          "state": "DISPONIBLE",
+          "scope": "RECINTO",
+          "note": "El teatro publica espacios para silla de ruedas en el recinto; cupos para esta función por confirmar.",
+          "source_url": "https://granteatronacional.pe/preguntas-frecuentes",
+          "reviewed_at": "2026-09-23"
+        },
+        {
+          "code": "sin_escalones",
+          "state": "DISPONIBLE",
+          "scope": "RECINTO",
+          "note": "El teatro publica rampas y ascensores en el recinto; confirma la ruta y operación para esta función.",
+          "source_url": "https://granteatronacional.pe/preguntas-frecuentes",
+          "reviewed_at": "2026-09-23"
+        },
+        {
+          "code": "bano_adaptado",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/sesiones-gtn-1",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "lsp",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/sesiones-gtn-1",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "subtitulos",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/sesiones-gtn-1",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "audiodescripcion",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/sesiones-gtn-1",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "tactil",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/sesiones-gtn-1",
+          "reviewed_at": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "external_id": "gtn-soniem-2026-11-17",
+      "title": "SONIEM",
+      "description": "Actividad incluida en la programación oficial del Gran Teatro Nacional.",
+      "category": "Música",
+      "district": "San Borja",
+      "venue": "Gran Teatro Nacional",
+      "date": "2026-11-17",
+      "time": null,
+      "official_price": null,
+      "price_from": false,
+      "official_url": "https://granteatronacional.pe/evento/soniem",
+      "image_url": "https://granteatronacional.pe/sites/default/files/styles/370x305/public/ImagenesEvento/privados_47.jpg?itok=ol8lz98P",
+      "image_alt": "Afiche oficial de SONIEM",
+      "image_credit": "Gran Teatro Nacional",
+      "consulted_at": "2026-10-17",
+      "conditions": [
+        {
+          "code": "silla_ruedas",
+          "state": "DISPONIBLE",
+          "scope": "RECINTO",
+          "note": "El teatro publica espacios para silla de ruedas en el recinto; cupos para esta función por confirmar.",
+          "source_url": "https://granteatronacional.pe/preguntas-frecuentes",
+          "reviewed_at": "2026-09-23"
+        },
+        {
+          "code": "sin_escalones",
+          "state": "DISPONIBLE",
+          "scope": "RECINTO",
+          "note": "El teatro publica rampas y ascensores en el recinto; confirma la ruta y operación para esta función.",
+          "source_url": "https://granteatronacional.pe/preguntas-frecuentes",
+          "reviewed_at": "2026-09-23"
+        },
+        {
+          "code": "bano_adaptado",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/soniem",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "lsp",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/soniem",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "subtitulos",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/soniem",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "audiodescripcion",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/soniem",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "tactil",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/soniem",
+          "reviewed_at": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "external_id": "gtn-sinfonia-por-el-peru-0-2026-11-18",
+      "title": "Sinfonía por el Perú",
+      "description": "Actividad incluida en la programación oficial del Gran Teatro Nacional.",
+      "category": "Música",
+      "district": "San Borja",
+      "venue": "Gran Teatro Nacional",
+      "date": "2026-11-18",
+      "time": null,
+      "official_price": 25.0,
+      "price_from": true,
+      "official_url": "https://granteatronacional.pe/evento/sinfonia-por-el-peru-0",
+      "image_url": "https://granteatronacional.pe/sites/default/files/styles/370x305/public/ImagenesEvento/sinfonia-por-el-peru-2_0.jpg?itok=8iUYrViU",
+      "image_alt": "Afiche oficial de Sinfonía por el Perú",
+      "image_credit": "Gran Teatro Nacional",
+      "consulted_at": "2026-10-17",
+      "conditions": [
+        {
+          "code": "silla_ruedas",
+          "state": "DISPONIBLE",
+          "scope": "FUNCION",
+          "note": "La publicación oficial anuncia localidades para personas usuarias de silla de ruedas. Confirma cupos para esta función.",
+          "source_url": "https://granteatronacional.pe/evento/sinfonia-por-el-peru-0",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "sin_escalones",
+          "state": "DISPONIBLE",
+          "scope": "RECINTO",
+          "note": "El teatro publica rampas y ascensores en el recinto; confirma la ruta y operación para esta función.",
+          "source_url": "https://granteatronacional.pe/preguntas-frecuentes",
+          "reviewed_at": "2026-09-23"
+        },
+        {
+          "code": "bano_adaptado",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/sinfonia-por-el-peru-0",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "lsp",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/sinfonia-por-el-peru-0",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "subtitulos",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/sinfonia-por-el-peru-0",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "audiodescripcion",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/sinfonia-por-el-peru-0",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "tactil",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/sinfonia-por-el-peru-0",
+          "reviewed_at": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "external_id": "gtn-orquesta-sinfonica-nacional-concierto-1-2026-11-20",
+      "title": "Orquesta Sinfónica Nacional: Concierto",
+      "description": "Actividad incluida en la programación oficial del Gran Teatro Nacional.",
+      "category": "Música",
+      "district": "San Borja",
+      "venue": "Gran Teatro Nacional",
+      "date": "2026-11-20",
+      "time": null,
+      "official_price": null,
+      "price_from": false,
+      "official_url": "https://granteatronacional.pe/evento/orquesta-sinfonica-nacional-concierto-1",
+      "image_url": "https://granteatronacional.pe/sites/default/files/styles/370x305/public/ImagenesEvento/osn_22.jpg?itok=ildYSxqb",
+      "image_alt": "Afiche oficial de Orquesta Sinfónica Nacional: Concierto",
+      "image_credit": "Gran Teatro Nacional",
+      "consulted_at": "2026-10-17",
+      "conditions": [
+        {
+          "code": "silla_ruedas",
+          "state": "DISPONIBLE",
+          "scope": "RECINTO",
+          "note": "El teatro publica espacios para silla de ruedas en el recinto; cupos para esta función por confirmar.",
+          "source_url": "https://granteatronacional.pe/preguntas-frecuentes",
+          "reviewed_at": "2026-09-23"
+        },
+        {
+          "code": "sin_escalones",
+          "state": "DISPONIBLE",
+          "scope": "RECINTO",
+          "note": "El teatro publica rampas y ascensores en el recinto; confirma la ruta y operación para esta función.",
+          "source_url": "https://granteatronacional.pe/preguntas-frecuentes",
+          "reviewed_at": "2026-09-23"
+        },
+        {
+          "code": "bano_adaptado",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/orquesta-sinfonica-nacional-concierto-1",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "lsp",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/orquesta-sinfonica-nacional-concierto-1",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "subtitulos",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/orquesta-sinfonica-nacional-concierto-1",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "audiodescripcion",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/orquesta-sinfonica-nacional-concierto-1",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "tactil",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/orquesta-sinfonica-nacional-concierto-1",
+          "reviewed_at": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "external_id": "gtn-visita-gtn-accesible-3-2026-11-20",
+      "title": "Visita GTN accesible",
+      "description": "Visita guiada al Gran Teatro Nacional",
+      "category": "Visita",
+      "district": "San Borja",
+      "venue": "Gran Teatro Nacional",
+      "date": "2026-11-20",
+      "time": null,
+      "official_price": null,
+      "price_from": false,
+      "official_url": "https://granteatronacional.pe/evento/visita-gtn-accesible-3",
+      "image_url": "https://granteatronacional.pe/sites/default/files/styles/370x305/public/ImagenesEvento/visitaGTN26marzo_1_3.jpg?itok=9qxWw5BE",
+      "image_alt": "Afiche oficial de Visita GTN accesible",
+      "image_credit": "Gran Teatro Nacional",
+      "consulted_at": "2026-10-17",
+      "conditions": [
+        {
+          "code": "silla_ruedas",
+          "state": "DISPONIBLE",
+          "scope": "RECINTO",
+          "note": "El teatro publica espacios para silla de ruedas en el recinto; cupos para esta función por confirmar.",
+          "source_url": "https://granteatronacional.pe/preguntas-frecuentes",
+          "reviewed_at": "2026-09-23"
+        },
+        {
+          "code": "sin_escalones",
+          "state": "DISPONIBLE",
+          "scope": "RECINTO",
+          "note": "El teatro publica rampas y ascensores en el recinto; confirma la ruta y operación para esta función.",
+          "source_url": "https://granteatronacional.pe/preguntas-frecuentes",
+          "reviewed_at": "2026-09-23"
+        },
+        {
+          "code": "bano_adaptado",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/visita-gtn-accesible-3",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "lsp",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/visita-gtn-accesible-3",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "subtitulos",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/visita-gtn-accesible-3",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "audiodescripcion",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/visita-gtn-accesible-3",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "tactil",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/visita-gtn-accesible-3",
+          "reviewed_at": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "external_id": "gtn-mi-primer-sinfonico-como-en-los-90s-2026-11-21",
+      "title": "Mi Primer Sinfónico: Como en los 90’s",
+      "description": "Actividad incluida en la programación oficial del Gran Teatro Nacional.",
+      "category": "Música",
+      "district": "San Borja",
+      "venue": "Gran Teatro Nacional",
+      "date": "2026-11-21",
+      "time": null,
+      "official_price": 40.0,
+      "price_from": true,
+      "official_url": "https://granteatronacional.pe/evento/mi-primer-sinfonico-como-en-los-90s",
+      "image_url": "https://granteatronacional.pe/sites/default/files/styles/370x305/public/ImagenesEvento/como-en-los-90_0.jpg?itok=RXKsEu2i",
+      "image_alt": "Afiche oficial de Mi Primer Sinfónico: Como en los 90’s",
+      "image_credit": "Gran Teatro Nacional",
+      "consulted_at": "2026-10-17",
+      "conditions": [
+        {
+          "code": "silla_ruedas",
+          "state": "DISPONIBLE",
+          "scope": "FUNCION",
+          "note": "La publicación oficial anuncia localidades para personas usuarias de silla de ruedas. Confirma cupos para esta función.",
+          "source_url": "https://granteatronacional.pe/evento/mi-primer-sinfonico-como-en-los-90s",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "sin_escalones",
+          "state": "DISPONIBLE",
+          "scope": "RECINTO",
+          "note": "El teatro publica rampas y ascensores en el recinto; confirma la ruta y operación para esta función.",
+          "source_url": "https://granteatronacional.pe/preguntas-frecuentes",
+          "reviewed_at": "2026-09-23"
+        },
+        {
+          "code": "bano_adaptado",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/mi-primer-sinfonico-como-en-los-90s",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "lsp",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/mi-primer-sinfonico-como-en-los-90s",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "subtitulos",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/mi-primer-sinfonico-como-en-los-90s",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "audiodescripcion",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/mi-primer-sinfonico-como-en-los-90s",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "tactil",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/mi-primer-sinfonico-como-en-los-90s",
+          "reviewed_at": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "external_id": "gtn-mi-primer-sinfonico-como-en-los-90s-2026-11-22",
+      "title": "Mi Primer Sinfónico: Como en los 90’s",
+      "description": "Actividad incluida en la programación oficial del Gran Teatro Nacional.",
+      "category": "Música",
+      "district": "San Borja",
+      "venue": "Gran Teatro Nacional",
+      "date": "2026-11-22",
+      "time": null,
+      "official_price": 40.0,
+      "price_from": true,
+      "official_url": "https://granteatronacional.pe/evento/mi-primer-sinfonico-como-en-los-90s",
+      "image_url": "https://granteatronacional.pe/sites/default/files/styles/370x305/public/ImagenesEvento/como-en-los-90_0.jpg?itok=RXKsEu2i",
+      "image_alt": "Afiche oficial de Mi Primer Sinfónico: Como en los 90’s",
+      "image_credit": "Gran Teatro Nacional",
+      "consulted_at": "2026-10-17",
+      "conditions": [
+        {
+          "code": "silla_ruedas",
+          "state": "DISPONIBLE",
+          "scope": "FUNCION",
+          "note": "La publicación oficial anuncia localidades para personas usuarias de silla de ruedas. Confirma cupos para esta función.",
+          "source_url": "https://granteatronacional.pe/evento/mi-primer-sinfonico-como-en-los-90s",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "sin_escalones",
+          "state": "DISPONIBLE",
+          "scope": "RECINTO",
+          "note": "El teatro publica rampas y ascensores en el recinto; confirma la ruta y operación para esta función.",
+          "source_url": "https://granteatronacional.pe/preguntas-frecuentes",
+          "reviewed_at": "2026-09-23"
+        },
+        {
+          "code": "bano_adaptado",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/mi-primer-sinfonico-como-en-los-90s",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "lsp",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/mi-primer-sinfonico-como-en-los-90s",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "subtitulos",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/mi-primer-sinfonico-como-en-los-90s",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "audiodescripcion",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/mi-primer-sinfonico-como-en-los-90s",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "tactil",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/mi-primer-sinfonico-como-en-los-90s",
+          "reviewed_at": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "external_id": "gtn-sesiones-gtn-2-2026-11-25",
+      "title": "Sesiones GTN",
+      "description": "Actividad incluida en la programación oficial del Gran Teatro Nacional.",
+      "category": "Música",
+      "district": "San Borja",
+      "venue": "Gran Teatro Nacional",
+      "date": "2026-11-25",
+      "time": null,
+      "official_price": 0.0,
+      "price_from": false,
+      "official_url": "https://granteatronacional.pe/evento/sesiones-gtn-2",
+      "image_url": "https://granteatronacional.pe/sites/default/files/styles/370x305/public/ImagenesEvento/sesiones%20GTN%20banner_5.jpg?itok=1A2Qmbwt",
+      "image_alt": "Afiche oficial de Sesiones GTN",
+      "image_credit": "Gran Teatro Nacional",
+      "consulted_at": "2026-10-17",
+      "conditions": [
+        {
+          "code": "silla_ruedas",
+          "state": "DISPONIBLE",
+          "scope": "RECINTO",
+          "note": "El teatro publica espacios para silla de ruedas en el recinto; cupos para esta función por confirmar.",
+          "source_url": "https://granteatronacional.pe/preguntas-frecuentes",
+          "reviewed_at": "2026-09-23"
+        },
+        {
+          "code": "sin_escalones",
+          "state": "DISPONIBLE",
+          "scope": "RECINTO",
+          "note": "El teatro publica rampas y ascensores en el recinto; confirma la ruta y operación para esta función.",
+          "source_url": "https://granteatronacional.pe/preguntas-frecuentes",
+          "reviewed_at": "2026-09-23"
+        },
+        {
+          "code": "bano_adaptado",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/sesiones-gtn-2",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "lsp",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/sesiones-gtn-2",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "subtitulos",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/sesiones-gtn-2",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "audiodescripcion",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/sesiones-gtn-2",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "tactil",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/sesiones-gtn-2",
+          "reviewed_at": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "external_id": "mali-41311",
+      "title": "Noche MALI",
+      "description": "Actividad publicada en la agenda oficial del Museo de Arte de Lima. Consulta los detalles y horarios vigentes en su página.",
+      "category": "Museo",
+      "district": "Cercado de Lima",
+      "venue": "Museo de Arte de Lima",
+      "date": "2026-11-27",
+      "time": null,
+      "official_price": 12.9,
+      "price_from": true,
+      "official_url": "https://mali.pe/es/etn/noche-mali/noche-mali-8/",
+      "image_url": "https://mali.pe/es/wp-content/uploads/2026/03/gKDpXyvS3k0Uxti.webp",
+      "image_alt": "Imagen oficial de Noche MALI",
+      "image_credit": "MALI",
+      "consulted_at": "2026-10-17",
+      "conditions": [
+        {
+          "code": "silla_ruedas",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://mali.pe/es/etn/noche-mali/noche-mali-8/",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "sin_escalones",
+          "state": "DISPONIBLE",
+          "scope": "RECINTO",
+          "note": "El MALI publica rampas y ascensores en el recinto; confirma la ruta y operación para esta actividad.",
+          "source_url": "https://mali.pe/es/visitas/",
+          "reviewed_at": "2026-09-23"
+        },
+        {
+          "code": "bano_adaptado",
+          "state": "DISPONIBLE",
+          "scope": "RECINTO",
+          "note": "El MALI publica baños acondicionados en el recinto; confirma ubicación y disponibilidad durante la actividad.",
+          "source_url": "https://mali.pe/es/visitas/",
+          "reviewed_at": "2026-09-23"
+        },
+        {
+          "code": "lsp",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://mali.pe/es/etn/noche-mali/noche-mali-8/",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "subtitulos",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://mali.pe/es/etn/noche-mali/noche-mali-8/",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "audiodescripcion",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://mali.pe/es/etn/noche-mali/noche-mali-8/",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "tactil",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://mali.pe/es/etn/noche-mali/noche-mali-8/",
+          "reviewed_at": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "external_id": "gtn-ballet-nacional-2-2026-11-28",
+      "title": "Ballet Nacional",
+      "description": "Actividad incluida en la programación oficial del Gran Teatro Nacional.",
+      "category": "Danza",
+      "district": "San Borja",
+      "venue": "Gran Teatro Nacional",
+      "date": "2026-11-28",
+      "time": null,
+      "official_price": null,
+      "price_from": false,
+      "official_url": "https://granteatronacional.pe/evento/ballet-nacional-2",
+      "image_url": "https://granteatronacional.pe/sites/default/files/styles/370x305/public/ImagenesEvento/ballet_3.jpg?itok=qIRzecho",
+      "image_alt": "Afiche oficial de Ballet Nacional",
+      "image_credit": "Gran Teatro Nacional",
+      "consulted_at": "2026-10-17",
+      "conditions": [
+        {
+          "code": "silla_ruedas",
+          "state": "DISPONIBLE",
+          "scope": "RECINTO",
+          "note": "El teatro publica espacios para silla de ruedas en el recinto; cupos para esta función por confirmar.",
+          "source_url": "https://granteatronacional.pe/preguntas-frecuentes",
+          "reviewed_at": "2026-09-23"
+        },
+        {
+          "code": "sin_escalones",
+          "state": "DISPONIBLE",
+          "scope": "RECINTO",
+          "note": "El teatro publica rampas y ascensores en el recinto; confirma la ruta y operación para esta función.",
+          "source_url": "https://granteatronacional.pe/preguntas-frecuentes",
+          "reviewed_at": "2026-09-23"
+        },
+        {
+          "code": "bano_adaptado",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/ballet-nacional-2",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "lsp",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/ballet-nacional-2",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "subtitulos",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/ballet-nacional-2",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "audiodescripcion",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/ballet-nacional-2",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "tactil",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/ballet-nacional-2",
+          "reviewed_at": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "external_id": "gtn-ballet-nacional-2-2026-11-29",
+      "title": "Ballet Nacional",
+      "description": "Actividad incluida en la programación oficial del Gran Teatro Nacional.",
+      "category": "Danza",
+      "district": "San Borja",
+      "venue": "Gran Teatro Nacional",
+      "date": "2026-11-29",
+      "time": null,
+      "official_price": null,
+      "price_from": false,
+      "official_url": "https://granteatronacional.pe/evento/ballet-nacional-2",
+      "image_url": "https://granteatronacional.pe/sites/default/files/styles/370x305/public/ImagenesEvento/ballet_3.jpg?itok=qIRzecho",
+      "image_alt": "Afiche oficial de Ballet Nacional",
+      "image_credit": "Gran Teatro Nacional",
+      "consulted_at": "2026-10-17",
+      "conditions": [
+        {
+          "code": "silla_ruedas",
+          "state": "DISPONIBLE",
+          "scope": "RECINTO",
+          "note": "El teatro publica espacios para silla de ruedas en el recinto; cupos para esta función por confirmar.",
+          "source_url": "https://granteatronacional.pe/preguntas-frecuentes",
+          "reviewed_at": "2026-09-23"
+        },
+        {
+          "code": "sin_escalones",
+          "state": "DISPONIBLE",
+          "scope": "RECINTO",
+          "note": "El teatro publica rampas y ascensores en el recinto; confirma la ruta y operación para esta función.",
+          "source_url": "https://granteatronacional.pe/preguntas-frecuentes",
+          "reviewed_at": "2026-09-23"
+        },
+        {
+          "code": "bano_adaptado",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/ballet-nacional-2",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "lsp",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/ballet-nacional-2",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "subtitulos",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/ballet-nacional-2",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "audiodescripcion",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/ballet-nacional-2",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "tactil",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/ballet-nacional-2",
+          "reviewed_at": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "external_id": "gtn-ballet-nacional-2-2026-11-30",
+      "title": "Ballet Nacional",
+      "description": "Actividad incluida en la programación oficial del Gran Teatro Nacional.",
+      "category": "Danza",
+      "district": "San Borja",
+      "venue": "Gran Teatro Nacional",
+      "date": "2026-11-30",
+      "time": null,
+      "official_price": null,
+      "price_from": false,
+      "official_url": "https://granteatronacional.pe/evento/ballet-nacional-2",
+      "image_url": "https://granteatronacional.pe/sites/default/files/styles/370x305/public/ImagenesEvento/ballet_3.jpg?itok=qIRzecho",
+      "image_alt": "Afiche oficial de Ballet Nacional",
+      "image_credit": "Gran Teatro Nacional",
+      "consulted_at": "2026-10-17",
+      "conditions": [
+        {
+          "code": "silla_ruedas",
+          "state": "DISPONIBLE",
+          "scope": "RECINTO",
+          "note": "El teatro publica espacios para silla de ruedas en el recinto; cupos para esta función por confirmar.",
+          "source_url": "https://granteatronacional.pe/preguntas-frecuentes",
+          "reviewed_at": "2026-09-23"
+        },
+        {
+          "code": "sin_escalones",
+          "state": "DISPONIBLE",
+          "scope": "RECINTO",
+          "note": "El teatro publica rampas y ascensores en el recinto; confirma la ruta y operación para esta función.",
+          "source_url": "https://granteatronacional.pe/preguntas-frecuentes",
+          "reviewed_at": "2026-09-23"
+        },
+        {
+          "code": "bano_adaptado",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/ballet-nacional-2",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "lsp",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/ballet-nacional-2",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "subtitulos",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/ballet-nacional-2",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "audiodescripcion",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/ballet-nacional-2",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "tactil",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/ballet-nacional-2",
+          "reviewed_at": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "external_id": "gtn-ballet-nacional-2-2026-12-01",
+      "title": "Ballet Nacional",
+      "description": "Actividad incluida en la programación oficial del Gran Teatro Nacional.",
+      "category": "Danza",
+      "district": "San Borja",
+      "venue": "Gran Teatro Nacional",
+      "date": "2026-12-01",
+      "time": null,
+      "official_price": null,
+      "price_from": false,
+      "official_url": "https://granteatronacional.pe/evento/ballet-nacional-2",
+      "image_url": "https://granteatronacional.pe/sites/default/files/styles/370x305/public/ImagenesEvento/ballet_3.jpg?itok=qIRzecho",
+      "image_alt": "Afiche oficial de Ballet Nacional",
+      "image_credit": "Gran Teatro Nacional",
+      "consulted_at": "2026-10-17",
+      "conditions": [
+        {
+          "code": "silla_ruedas",
+          "state": "DISPONIBLE",
+          "scope": "RECINTO",
+          "note": "El teatro publica espacios para silla de ruedas en el recinto; cupos para esta función por confirmar.",
+          "source_url": "https://granteatronacional.pe/preguntas-frecuentes",
+          "reviewed_at": "2026-09-23"
+        },
+        {
+          "code": "sin_escalones",
+          "state": "DISPONIBLE",
+          "scope": "RECINTO",
+          "note": "El teatro publica rampas y ascensores en el recinto; confirma la ruta y operación para esta función.",
+          "source_url": "https://granteatronacional.pe/preguntas-frecuentes",
+          "reviewed_at": "2026-09-23"
+        },
+        {
+          "code": "bano_adaptado",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/ballet-nacional-2",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "lsp",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/ballet-nacional-2",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "subtitulos",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/ballet-nacional-2",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "audiodescripcion",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/ballet-nacional-2",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "tactil",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/ballet-nacional-2",
+          "reviewed_at": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "external_id": "gtn-ballet-nacional-2-2026-12-02",
+      "title": "Ballet Nacional",
+      "description": "Actividad incluida en la programación oficial del Gran Teatro Nacional.",
+      "category": "Danza",
+      "district": "San Borja",
+      "venue": "Gran Teatro Nacional",
+      "date": "2026-12-02",
+      "time": null,
+      "official_price": null,
+      "price_from": false,
+      "official_url": "https://granteatronacional.pe/evento/ballet-nacional-2",
+      "image_url": "https://granteatronacional.pe/sites/default/files/styles/370x305/public/ImagenesEvento/ballet_3.jpg?itok=qIRzecho",
+      "image_alt": "Afiche oficial de Ballet Nacional",
+      "image_credit": "Gran Teatro Nacional",
+      "consulted_at": "2026-10-17",
+      "conditions": [
+        {
+          "code": "silla_ruedas",
+          "state": "DISPONIBLE",
+          "scope": "RECINTO",
+          "note": "El teatro publica espacios para silla de ruedas en el recinto; cupos para esta función por confirmar.",
+          "source_url": "https://granteatronacional.pe/preguntas-frecuentes",
+          "reviewed_at": "2026-09-23"
+        },
+        {
+          "code": "sin_escalones",
+          "state": "DISPONIBLE",
+          "scope": "RECINTO",
+          "note": "El teatro publica rampas y ascensores en el recinto; confirma la ruta y operación para esta función.",
+          "source_url": "https://granteatronacional.pe/preguntas-frecuentes",
+          "reviewed_at": "2026-09-23"
+        },
+        {
+          "code": "bano_adaptado",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/ballet-nacional-2",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "lsp",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/ballet-nacional-2",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "subtitulos",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/ballet-nacional-2",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "audiodescripcion",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/ballet-nacional-2",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "tactil",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/ballet-nacional-2",
+          "reviewed_at": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "external_id": "gtn-ballet-nacional-2-2026-12-03",
+      "title": "Ballet Nacional",
+      "description": "Actividad incluida en la programación oficial del Gran Teatro Nacional.",
+      "category": "Danza",
+      "district": "San Borja",
+      "venue": "Gran Teatro Nacional",
+      "date": "2026-12-03",
+      "time": null,
+      "official_price": null,
+      "price_from": false,
+      "official_url": "https://granteatronacional.pe/evento/ballet-nacional-2",
+      "image_url": "https://granteatronacional.pe/sites/default/files/styles/370x305/public/ImagenesEvento/ballet_3.jpg?itok=qIRzecho",
+      "image_alt": "Afiche oficial de Ballet Nacional",
+      "image_credit": "Gran Teatro Nacional",
+      "consulted_at": "2026-10-17",
+      "conditions": [
+        {
+          "code": "silla_ruedas",
+          "state": "DISPONIBLE",
+          "scope": "RECINTO",
+          "note": "El teatro publica espacios para silla de ruedas en el recinto; cupos para esta función por confirmar.",
+          "source_url": "https://granteatronacional.pe/preguntas-frecuentes",
+          "reviewed_at": "2026-09-23"
+        },
+        {
+          "code": "sin_escalones",
+          "state": "DISPONIBLE",
+          "scope": "RECINTO",
+          "note": "El teatro publica rampas y ascensores en el recinto; confirma la ruta y operación para esta función.",
+          "source_url": "https://granteatronacional.pe/preguntas-frecuentes",
+          "reviewed_at": "2026-09-23"
+        },
+        {
+          "code": "bano_adaptado",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/ballet-nacional-2",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "lsp",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/ballet-nacional-2",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "subtitulos",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/ballet-nacional-2",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "audiodescripcion",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/ballet-nacional-2",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "tactil",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/ballet-nacional-2",
+          "reviewed_at": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "external_id": "gtn-ballet-nacional-2-2026-12-04",
+      "title": "Ballet Nacional",
+      "description": "Actividad incluida en la programación oficial del Gran Teatro Nacional.",
+      "category": "Danza",
+      "district": "San Borja",
+      "venue": "Gran Teatro Nacional",
+      "date": "2026-12-04",
+      "time": null,
+      "official_price": null,
+      "price_from": false,
+      "official_url": "https://granteatronacional.pe/evento/ballet-nacional-2",
+      "image_url": "https://granteatronacional.pe/sites/default/files/styles/370x305/public/ImagenesEvento/ballet_3.jpg?itok=qIRzecho",
+      "image_alt": "Afiche oficial de Ballet Nacional",
+      "image_credit": "Gran Teatro Nacional",
+      "consulted_at": "2026-10-17",
+      "conditions": [
+        {
+          "code": "silla_ruedas",
+          "state": "DISPONIBLE",
+          "scope": "RECINTO",
+          "note": "El teatro publica espacios para silla de ruedas en el recinto; cupos para esta función por confirmar.",
+          "source_url": "https://granteatronacional.pe/preguntas-frecuentes",
+          "reviewed_at": "2026-09-23"
+        },
+        {
+          "code": "sin_escalones",
+          "state": "DISPONIBLE",
+          "scope": "RECINTO",
+          "note": "El teatro publica rampas y ascensores en el recinto; confirma la ruta y operación para esta función.",
+          "source_url": "https://granteatronacional.pe/preguntas-frecuentes",
+          "reviewed_at": "2026-09-23"
+        },
+        {
+          "code": "bano_adaptado",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/ballet-nacional-2",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "lsp",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/ballet-nacional-2",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "subtitulos",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/ballet-nacional-2",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "audiodescripcion",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/ballet-nacional-2",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "tactil",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/ballet-nacional-2",
+          "reviewed_at": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "external_id": "gtn-ballet-nacional-2-2026-12-05",
+      "title": "Ballet Nacional",
+      "description": "Actividad incluida en la programación oficial del Gran Teatro Nacional.",
+      "category": "Danza",
+      "district": "San Borja",
+      "venue": "Gran Teatro Nacional",
+      "date": "2026-12-05",
+      "time": null,
+      "official_price": null,
+      "price_from": false,
+      "official_url": "https://granteatronacional.pe/evento/ballet-nacional-2",
+      "image_url": "https://granteatronacional.pe/sites/default/files/styles/370x305/public/ImagenesEvento/ballet_3.jpg?itok=qIRzecho",
+      "image_alt": "Afiche oficial de Ballet Nacional",
+      "image_credit": "Gran Teatro Nacional",
+      "consulted_at": "2026-10-17",
+      "conditions": [
+        {
+          "code": "silla_ruedas",
+          "state": "DISPONIBLE",
+          "scope": "RECINTO",
+          "note": "El teatro publica espacios para silla de ruedas en el recinto; cupos para esta función por confirmar.",
+          "source_url": "https://granteatronacional.pe/preguntas-frecuentes",
+          "reviewed_at": "2026-09-23"
+        },
+        {
+          "code": "sin_escalones",
+          "state": "DISPONIBLE",
+          "scope": "RECINTO",
+          "note": "El teatro publica rampas y ascensores en el recinto; confirma la ruta y operación para esta función.",
+          "source_url": "https://granteatronacional.pe/preguntas-frecuentes",
+          "reviewed_at": "2026-09-23"
+        },
+        {
+          "code": "bano_adaptado",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/ballet-nacional-2",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "lsp",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/ballet-nacional-2",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "subtitulos",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/ballet-nacional-2",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "audiodescripcion",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/ballet-nacional-2",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "tactil",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/ballet-nacional-2",
+          "reviewed_at": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "external_id": "gtn-ballet-nacional-2-2026-12-06",
+      "title": "Ballet Nacional",
+      "description": "Actividad incluida en la programación oficial del Gran Teatro Nacional.",
+      "category": "Danza",
+      "district": "San Borja",
+      "venue": "Gran Teatro Nacional",
+      "date": "2026-12-06",
+      "time": null,
+      "official_price": null,
+      "price_from": false,
+      "official_url": "https://granteatronacional.pe/evento/ballet-nacional-2",
+      "image_url": "https://granteatronacional.pe/sites/default/files/styles/370x305/public/ImagenesEvento/ballet_3.jpg?itok=qIRzecho",
+      "image_alt": "Afiche oficial de Ballet Nacional",
+      "image_credit": "Gran Teatro Nacional",
+      "consulted_at": "2026-10-17",
+      "conditions": [
+        {
+          "code": "silla_ruedas",
+          "state": "DISPONIBLE",
+          "scope": "RECINTO",
+          "note": "El teatro publica espacios para silla de ruedas en el recinto; cupos para esta función por confirmar.",
+          "source_url": "https://granteatronacional.pe/preguntas-frecuentes",
+          "reviewed_at": "2026-09-23"
+        },
+        {
+          "code": "sin_escalones",
+          "state": "DISPONIBLE",
+          "scope": "RECINTO",
+          "note": "El teatro publica rampas y ascensores en el recinto; confirma la ruta y operación para esta función.",
+          "source_url": "https://granteatronacional.pe/preguntas-frecuentes",
+          "reviewed_at": "2026-09-23"
+        },
+        {
+          "code": "bano_adaptado",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/ballet-nacional-2",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "lsp",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/ballet-nacional-2",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "subtitulos",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/ballet-nacional-2",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "audiodescripcion",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/ballet-nacional-2",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "tactil",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/ballet-nacional-2",
+          "reviewed_at": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "external_id": "gtn-visita-gtn-accesible-4-2026-12-10",
+      "title": "Visita GTN accesible",
+      "description": "Visita guiada al Gran Teatro Nacional",
+      "category": "Visita",
+      "district": "San Borja",
+      "venue": "Gran Teatro Nacional",
+      "date": "2026-12-10",
+      "time": null,
+      "official_price": null,
+      "price_from": false,
+      "official_url": "https://granteatronacional.pe/evento/visita-gtn-accesible-4",
+      "image_url": "https://granteatronacional.pe/sites/default/files/styles/370x305/public/ImagenesEvento/visitaGTN26marzo_1_4.jpg?itok=LW7xhjwW",
+      "image_alt": "Afiche oficial de Visita GTN accesible",
+      "image_credit": "Gran Teatro Nacional",
+      "consulted_at": "2026-10-17",
+      "conditions": [
+        {
+          "code": "silla_ruedas",
+          "state": "DISPONIBLE",
+          "scope": "RECINTO",
+          "note": "El teatro publica espacios para silla de ruedas en el recinto; cupos para esta función por confirmar.",
+          "source_url": "https://granteatronacional.pe/preguntas-frecuentes",
+          "reviewed_at": "2026-09-23"
+        },
+        {
+          "code": "sin_escalones",
+          "state": "DISPONIBLE",
+          "scope": "RECINTO",
+          "note": "El teatro publica rampas y ascensores en el recinto; confirma la ruta y operación para esta función.",
+          "source_url": "https://granteatronacional.pe/preguntas-frecuentes",
+          "reviewed_at": "2026-09-23"
+        },
+        {
+          "code": "bano_adaptado",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/visita-gtn-accesible-4",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "lsp",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/visita-gtn-accesible-4",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "subtitulos",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/visita-gtn-accesible-4",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "audiodescripcion",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/visita-gtn-accesible-4",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "tactil",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/visita-gtn-accesible-4",
+          "reviewed_at": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "external_id": "gtn-orquesta-sinfonica-nacional-concierto-2-2026-12-11",
+      "title": "Orquesta Sinfónica Nacional: Concierto",
+      "description": "Actividad incluida en la programación oficial del Gran Teatro Nacional.",
+      "category": "Música",
+      "district": "San Borja",
+      "venue": "Gran Teatro Nacional",
+      "date": "2026-12-11",
+      "time": null,
+      "official_price": null,
+      "price_from": false,
+      "official_url": "https://granteatronacional.pe/evento/orquesta-sinfonica-nacional-concierto-2",
+      "image_url": "https://granteatronacional.pe/sites/default/files/styles/370x305/public/ImagenesEvento/osn_20_1.jpg?itok=3dNlzw-U",
+      "image_alt": "Afiche oficial de Orquesta Sinfónica Nacional: Concierto",
+      "image_credit": "Gran Teatro Nacional",
+      "consulted_at": "2026-10-17",
+      "conditions": [
+        {
+          "code": "silla_ruedas",
+          "state": "DISPONIBLE",
+          "scope": "RECINTO",
+          "note": "El teatro publica espacios para silla de ruedas en el recinto; cupos para esta función por confirmar.",
+          "source_url": "https://granteatronacional.pe/preguntas-frecuentes",
+          "reviewed_at": "2026-09-23"
+        },
+        {
+          "code": "sin_escalones",
+          "state": "DISPONIBLE",
+          "scope": "RECINTO",
+          "note": "El teatro publica rampas y ascensores en el recinto; confirma la ruta y operación para esta función.",
+          "source_url": "https://granteatronacional.pe/preguntas-frecuentes",
+          "reviewed_at": "2026-09-23"
+        },
+        {
+          "code": "bano_adaptado",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/orquesta-sinfonica-nacional-concierto-2",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "lsp",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/orquesta-sinfonica-nacional-concierto-2",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "subtitulos",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/orquesta-sinfonica-nacional-concierto-2",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "audiodescripcion",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/orquesta-sinfonica-nacional-concierto-2",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "tactil",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/orquesta-sinfonica-nacional-concierto-2",
+          "reviewed_at": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "external_id": "gtn-hohoho-sinfonico-2026-12-17",
+      "title": "Hohoho Sinfónico",
+      "description": "Actividad incluida en la programación oficial del Gran Teatro Nacional.",
+      "category": "Música",
+      "district": "San Borja",
+      "venue": "Gran Teatro Nacional",
+      "date": "2026-12-17",
+      "time": null,
+      "official_price": null,
+      "price_from": false,
+      "official_url": "https://granteatronacional.pe/evento/hohoho-sinfonico",
+      "image_url": "https://granteatronacional.pe/sites/default/files/styles/370x305/public/ImagenesEvento/hohoho.jpg?itok=ck0a65UZ",
+      "image_alt": "Afiche oficial de Hohoho Sinfónico",
+      "image_credit": "Gran Teatro Nacional",
+      "consulted_at": "2026-10-17",
+      "conditions": [
+        {
+          "code": "silla_ruedas",
+          "state": "DISPONIBLE",
+          "scope": "RECINTO",
+          "note": "El teatro publica espacios para silla de ruedas en el recinto; cupos para esta función por confirmar.",
+          "source_url": "https://granteatronacional.pe/preguntas-frecuentes",
+          "reviewed_at": "2026-09-23"
+        },
+        {
+          "code": "sin_escalones",
+          "state": "DISPONIBLE",
+          "scope": "RECINTO",
+          "note": "El teatro publica rampas y ascensores en el recinto; confirma la ruta y operación para esta función.",
+          "source_url": "https://granteatronacional.pe/preguntas-frecuentes",
+          "reviewed_at": "2026-09-23"
+        },
+        {
+          "code": "bano_adaptado",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/hohoho-sinfonico",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "lsp",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/hohoho-sinfonico",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "subtitulos",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/hohoho-sinfonico",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "audiodescripcion",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/hohoho-sinfonico",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "tactil",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://granteatronacional.pe/evento/hohoho-sinfonico",
+          "reviewed_at": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "external_id": "mali-41312",
+      "title": "Noche MALI",
+      "description": "Actividad publicada en la agenda oficial del Museo de Arte de Lima. Consulta los detalles y horarios vigentes en su página.",
+      "category": "Museo",
+      "district": "Cercado de Lima",
+      "venue": "Museo de Arte de Lima",
+      "date": "2026-12-18",
+      "time": null,
+      "official_price": 12.9,
+      "price_from": true,
+      "official_url": "https://mali.pe/es/etn/noche-mali/noche-mali-9/",
+      "image_url": "https://mali.pe/es/wp-content/uploads/2026/03/gKDpXyvS3k0Uxti.webp",
+      "image_alt": "Imagen oficial de Noche MALI",
+      "image_credit": "MALI",
+      "consulted_at": "2026-10-17",
+      "conditions": [
+        {
+          "code": "silla_ruedas",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://mali.pe/es/etn/noche-mali/noche-mali-9/",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "sin_escalones",
+          "state": "DISPONIBLE",
+          "scope": "RECINTO",
+          "note": "El MALI publica rampas y ascensores en el recinto; confirma la ruta y operación para esta actividad.",
+          "source_url": "https://mali.pe/es/visitas/",
+          "reviewed_at": "2026-09-23"
+        },
+        {
+          "code": "bano_adaptado",
+          "state": "DISPONIBLE",
+          "scope": "RECINTO",
+          "note": "El MALI publica baños acondicionados en el recinto; confirma ubicación y disponibilidad durante la actividad.",
+          "source_url": "https://mali.pe/es/visitas/",
+          "reviewed_at": "2026-09-23"
+        },
+        {
+          "code": "lsp",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://mali.pe/es/etn/noche-mali/noche-mali-9/",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "subtitulos",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://mali.pe/es/etn/noche-mali/noche-mali-9/",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "audiodescripcion",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://mali.pe/es/etn/noche-mali/noche-mali-9/",
+          "reviewed_at": "2026-10-17"
+        },
+        {
+          "code": "tactil",
+          "state": "NO_CONFIRMADO",
+          "scope": "FUNCION",
+          "note": "La publicación de esta función no confirma este apoyo. Consulta con el organizador antes de asistir.",
+          "source_url": "https://mali.pe/es/etn/noche-mali/noche-mali-9/",
+          "reviewed_at": "2026-10-17"
+        }
+      ]
+    }
+  ]
+}

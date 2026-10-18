@@ -16,10 +16,10 @@ public class ApiController {
     private final PricingService pricing;
     public ApiController(CatalogService catalog,CatalogRepository repository,PricingService pricing) {this.catalog=catalog;this.repository=repository;this.pricing=pricing;}
     @GetMapping("/health") public Map<String,Object> health() {return Map.of("status",repository.healthy()?"ok":"error","database","mysql","application","CulturaAccesible Lima");}
-    @GetMapping("/metadata") public Map<String,Object> metadata() {return catalog.metadata();}
-    @GetMapping("/functions") public Map<String,Object> functions(@RequestParam(defaultValue="") String q,@RequestParam(defaultValue="") String district,@RequestParam(defaultValue="") String category,@RequestParam(defaultValue="all") String date,@RequestParam(defaultValue="all") String price,@RequestParam(required=false) List<String> needs) {
-        var items=catalog.search(q,district,category,date,price,needs);
-        return Map.of("items",items,"total",items.size(),"demo",true);
+    @GetMapping("/metadata") public Map<String,Object> metadata(@RequestParam(defaultValue="official") String source) {return catalog.metadata(source);}
+    @GetMapping("/functions") public Map<String,Object> functions(@RequestParam(defaultValue="") String q,@RequestParam(defaultValue="") String district,@RequestParam(defaultValue="") String category,@RequestParam(defaultValue="all") String date,@RequestParam(defaultValue="all") String price,@RequestParam(required=false) List<String> needs,@RequestParam(defaultValue="official") String source) {
+        var items=catalog.filterCatalog(catalog.search(q,district,category,date,price,needs),source);
+        return Map.of("items",items,"total",items.size(),"demo","demo".equals(source),"source",source,"consulted_at","2026-10-17");
     }
     @GetMapping("/functions/{id}") public Map<String,Object> detail(@PathVariable long id) {return catalog.detail(id);}
     public record ReportInput(@NotNull @Positive Long function_id,Long condition_id,@NotBlank @Size(min=10,max=1000) String comment) {}

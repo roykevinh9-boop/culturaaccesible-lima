@@ -7,7 +7,7 @@ export class CatalogModel {
     if(!response.ok) throw new Error(data.message || 'No pudimos completar la operación.');
     return data;
   }
-  metadata(){ return this.request('/metadata'); }
+  metadata(source='official'){ return this.request(`/metadata?source=${encodeURIComponent(source)}`); }
   search(filters,signal){
     const params=new URLSearchParams();
     for(const [key,value] of Object.entries(filters)) {
