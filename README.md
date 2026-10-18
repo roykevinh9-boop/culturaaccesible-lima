@@ -2,6 +2,8 @@
 
 PMV1 académico con **Java + Python + MySQL**, interfaz web organizada en **MVP (Modelo-Vista-Presentador)** y pruebas reales de integración.
 
+Lee primero **LEEME_PRIMERO.md**: contiene una explicación simple del proyecto, MySQL y AccesI.
+
 ## Inicio rápido en Windows
 
 1. Extrae el ZIP completo a una carpeta de trabajo.
@@ -28,7 +30,7 @@ La cartelera principal incorpora **49 funciones recuperadas de la web del equipo
 - Registrar reportes de prueba en MySQL con estado **PENDIENTE**.
 - Consultar Python desde Java para obtener precio orientativo y clase hasta/mayor de S/ 40.
 - Explicar el uso de datos sintéticos y avisar si los modelos discrepan.
-- Usar una ayuda de búsqueda **por reglas locales**, sin proveedor de IA generativa.
+- Conversar con **AccesI**, IA local de intenciones con TF-IDF y regresión logística, más reglas de fechas y precios. Responde a saludos, conserva filtros y consulta eventos obtenidos de MySQL; sin proveedor generativo externo.
 - Mostrar fotos con texto alternativo y crédito; abrir la fuente oficial de cada función.
 - Cambiar tamaño de texto, contraste, subrayado y movimiento; ajustes guardados en este navegador.
 - Operar diálogos nativos y cerrar con Escape; diseño adaptado a pantalla pequeña.
@@ -72,9 +74,9 @@ Para Python, el archivo `requirements-lock.txt` conserva las versiones verificad
 Con la demo iniciada ejecuta `scripts/Probar.ps1`. Las reglas Java se comprueban al compilar y también pueden ejecutarse desde IntelliJ. Las evidencias de esta sesión están en `docs/evidencias`.
 
 - 20 pruebas de reglas en Java.
-- 16 pruebas del servicio Python.
-- 30 pruebas de integración HTTP/Java/Python/MySQL.
-- 3 pruebas de fallos controlados: ausencia de Python y MySQL, conservando la demo principal.
+- 43 pruebas del servicio Python.
+- 39 pruebas de integración HTTP/Java/Python/MySQL.
+- 4 pruebas de fallos controlados: ausencia de Python y MySQL, conservando la demo principal.
 - Revisión manual del navegador: filtros, fichas, reportes, estimación, navegación de diálogos y tamaño móvil.
 
 El conjunto de pruebas de integración registra un reporte con texto explícito de prueba. No borra ni modifica información de bases externas. Las cantidades y resultados finales deben contrastarse con los archivos XML/JSON incluidos.
@@ -91,6 +93,7 @@ Las pruebas de fallos abren instancias auxiliares en 18080 y 18081, y se cierran
 | Ficha por función | `GET /api/functions/{id}` |
 | Registrar reporte | `POST /api/reports` con `function_id`, `comment` y `condition_id` opcional |
 | Estimación a través de Java | `POST /api/estimates` con `category`, `district` y `month` |
+| Conversación con AccesI | `POST /api/chat` con `message`, `context` opcional y `source` official/demo |
 | Servicio Python | `GET http://127.0.0.1:8001/health` y `/docs` |
 
 El modelo Python utiliza **40 registros sintéticos nuevos**, semilla 42, cinco categorías, dos distritos y meses 1, 4, 7 y 10 como datos de entrenamiento disponibles. Acepta consultas en meses 1 a 12 como interpolación/extrapolación de demostración, sin acreditar estacionalidad. Usa regresión lineal y árbol de clasificación independientes. No reproduce las métricas del PDF previo; sus métricas se recalculan y se presentan como resultados de esta implementación.
@@ -124,3 +127,13 @@ La instalación se verificó también desde una copia limpia extraída del ZIP e
 `scripts/catalog_import.py` aplica las nuevas columnas y carga la instantánea sin duplicar funciones. El inicio lo ejecuta cuando cambia el archivo; no descarga una nueva cartelera. `--force` vuelve a aplicar la instantánea. El hash local evita sobrescribir cambios manuales en cada arranque. La base mantiene los reportes existentes.
 
 La conexión MySQL verificada está en **127.0.0.1:3307**, base **culturaaccesible**, usuario **cal_app**. Es una instancia real con el MySQL instalado en esta PC. Workbench es un cliente opcional: su ventana necesita permiso de control para configurar visualmente la conexión. Las claves están únicamente en `.local/runtime.json`, excluidas de la entrega.
+
+## AccesI: versión 1.2
+
+Se comprobó en el primer enlace del equipo que AccesI contesta a «hola» y consulta por mes y tarifa. En esa prueba «los más caros el 18 de octubre» devolvió fechas de otros días de octubre. La versión local aplica el día exacto, también interpreta hoy, mañana, fin de semana, este mes, próximo mes y días de la semana. «Baratos» y «caros» ordenan tarifas publicadas; un precio no informado se excluye de la comparación.
+
+La IA local está en `python-service/assistant.py`: clasificador TF-IDF de caracteres + regresión logística entrenado sobre ejemplos académicos de seis intenciones. No se declara una precisión medida en conversaciones reales ni equivalencia con un modelo generativo. Las respuestas se construyen con reglas sobre los datos que Java obtiene desde MySQL, sin inventar apoyos, horarios o tarifas.
+
+El cliente conserva solamente los filtros de conversación en memoria de la pestaña. Nueva conversación, cambio de catálogo o recarga los limpia. No hay almacenamiento del texto conversado ni servicio externo de IA. Una caída de Python produce un aviso; el catálogo sigue disponible. El modelo de predicción de precios sintéticos es independiente y no se usa para clasificar las tarifas oficiales.
+
+Pruebas de la versión: **20 Java + 43 Python + 39 integración + 4 fallos = 106 aprobadas**. La prueba de base nueva incluida corresponde a la migración de datos de la versión 1.1; el nuevo chat se verificó contra los servicios reales en esta PC.

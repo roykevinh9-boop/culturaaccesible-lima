@@ -80,6 +80,25 @@ class IntegrationTests(unittest.TestCase):
             with db.cursor() as cursor:cursor.execute('SELECT COUNT(*) FROM funciones');before=cursor.fetchone()[0]
             import_catalog(db,force=True)
             with db.cursor() as cursor:cursor.execute('SELECT COUNT(*) FROM funciones');self.assertEqual(cursor.fetchone()[0],before)
+    def test_31_chat_greeting(self):
+        status,data=request('/api/chat',{'message':'hola','context':{},'source':'official'});self.assertEqual(status,200);self.assertIn('¡Hola!',data['reply']);self.assertEqual(data['engine'],'AccesI-local-tfidf-logistic-v1');self.assertFalse(data['items'])
+    def test_32_chat_remembers_month_and_sorts_price(self):
+        _,first=request('/api/chat',{'message':'eventos en noviembre'})
+        status,data=request('/api/chat',{'message':'y los más baratos','context':first['context']})
+        self.assertEqual(status,200);self.assertTrue(data['items']);self.assertTrue(all(f['date'].startswith('2026-11') for f in data['items']));prices=[f['official_price'] for f in data['items']];self.assertEqual(prices,sorted(prices));self.assertIn('sin precio publicado',data['reply'])
+    def test_33_chat_exact_day(self):
+        _,data=request('/api/chat',{'message':'los más caros el 18 de octubre'});self.assertTrue(data['items']);self.assertTrue(all(f['date']=='2026-10-18' for f in data['items']))
+    def test_34_chat_budget_does_not_use_predictions(self):
+        _,data=request('/api/chat',{'message':'hasta 20 soles en octubre'});self.assertTrue(data['items']);self.assertTrue(all(f['official_price'] is not None and f['official_price']<=20 for f in data['items']));self.assertIn('tarifa de partida',data['reply'])
+    def test_35_chat_invalid_context(self):self.assertEqual(request('/api/chat',{'message':'hola','context':{'month':13}})[0],400)
+    def test_36_chat_keeps_demo_separate(self):
+        _,data=request('/api/chat',{'message':'todos los eventos','source':'demo'});self.assertTrue(data['items']);self.assertTrue(all(f['demo'] for f in data['items']));self.assertEqual(data['total'],8)
+    def test_37_chat_results_are_mysql_records(self):
+        _,data=request('/api/chat',{'message':'eventos en noviembre'});_,catalog=request('/api/functions',source='official');lookup={f['id']:f for f in catalog['items']}
+        for item in data['items']:
+            self.assertIn(item['id'],lookup);self.assertEqual(item['title'],lookup[item['id']]['title']);self.assertEqual(item['conditions'],lookup[item['id']]['conditions'])
+    def test_38_chat_rejects_long_message(self):self.assertEqual(request('/api/chat',{'message':'x'*601})[0],400)
+    def test_39_chat_invalid_source(self):self.assertEqual(request('/api/chat',{'message':'hola','source':'all'})[0],400)
     def test_24_negative_price_mysql_constraint(self):
         import pymysql
         config=json.loads((ROOT/'.local/runtime.json').read_text())

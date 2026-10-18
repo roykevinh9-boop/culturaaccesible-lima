@@ -1,1 +1,23 @@
-{"java.configuration.updateBuildConfiguration":"automatic","files.encoding":"utf8","files.exclude":{"**/__pycache__":true,".local":true},"search.exclude":{".local":true,"backend/target":true}}
+{
+  "java.configuration.updateBuildConfiguration": "automatic",
+  "files.encoding": "utf8",
+  "files.exclude": {
+    "**/__pycache__": true,
+    ".local": true
+  },
+  "search.exclude": {
+    ".local": true,
+    "backend/target": true
+  },
+  "java.compile.nullAnalysis.mode": "automatic",
+  "terminal.integrated.defaultProfile.windows": "CMD del proyecto",
+  "terminal.integrated.profiles.windows": {
+    "CMD del proyecto": {
+      "path": "${env:windir}\\System32\\cmd.exe"
+    }
+  },
+  "python.analysis.extraPaths": [
+    "./python-service",
+    "./.local/python"
+  ]
+}

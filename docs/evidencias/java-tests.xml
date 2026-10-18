@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="pe.culturaaccesible.catalog.CatalogServiceTest" time="0.047" tests="20" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="pe.culturaaccesible.catalog.CatalogServiceTest" time="0.048" tests="20" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="25"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -66,24 +66,24 @@
     <property name="maven.repo.local" value="C:/Users/ROGER/Documents/Codex/2026-10-17/q-x20/work/maven-repository"/>
     <property name="java.class.version" value="69.0"/>
   </properties>
-  <testcase name="evidenceValidTodayIsAccepted" classname="pe.culturaaccesible.catalog.CatalogServiceTest" time="0.011"/>
-  <testcase name="venueLspDoesNotImplySessionSupport" classname="pe.culturaaccesible.catalog.CatalogServiceTest" time="0.0"/>
+  <testcase name="evidenceValidTodayIsAccepted" classname="pe.culturaaccesible.catalog.CatalogServiceTest" time="0.012"/>
+  <testcase name="venueLspDoesNotImplySessionSupport" classname="pe.culturaaccesible.catalog.CatalogServiceTest" time="0.001"/>
   <testcase name="invalidSupportIsRejected" classname="pe.culturaaccesible.catalog.CatalogServiceTest" time="0.001"/>
   <testcase name="functionOverrideHasPriority" classname="pe.culturaaccesible.catalog.CatalogServiceTest" time="0.0"/>
-  <testcase name="missingEvidenceCannotConfirm" classname="pe.culturaaccesible.catalog.CatalogServiceTest" time="0.0"/>
+  <testcase name="missingEvidenceCannotConfirm" classname="pe.culturaaccesible.catalog.CatalogServiceTest" time="0.001"/>
   <testcase name="unknownPriceIsNotFree" classname="pe.culturaaccesible.catalog.CatalogServiceTest" time="0.004"/>
   <testcase name="invalidReportNeverWrites" classname="pe.culturaaccesible.catalog.CatalogServiceTest" time="0.002"/>
-  <testcase name="saturdayWeekendIncludesSunday" classname="pe.culturaaccesible.catalog.CatalogServiceTest" time="0.0"/>
+  <testcase name="saturdayWeekendIncludesSunday" classname="pe.culturaaccesible.catalog.CatalogServiceTest" time="0.001"/>
   <testcase name="explicitUnavailableIsPreserved" classname="pe.culturaaccesible.catalog.CatalogServiceTest" time="0.0"/>
   <testcase name="validReportHasPendingState" classname="pe.culturaaccesible.catalog.CatalogServiceTest" time="0.0"/>
-  <testcase name="expiredEvidenceCannotConfirm" classname="pe.culturaaccesible.catalog.CatalogServiceTest" time="0.001"/>
-  <testcase name="zeroPriceIsFree" classname="pe.culturaaccesible.catalog.CatalogServiceTest" time="0.001"/>
-  <testcase name="noMatchesReturnsEmpty" classname="pe.culturaaccesible.catalog.CatalogServiceTest" time="0.001"/>
-  <testcase name="filtersCombine" classname="pe.culturaaccesible.catalog.CatalogServiceTest" time="0.001"/>
-  <testcase name="missingConditionIsUnconfirmed" classname="pe.culturaaccesible.catalog.CatalogServiceTest" time="0.0"/>
+  <testcase name="expiredEvidenceCannotConfirm" classname="pe.culturaaccesible.catalog.CatalogServiceTest" time="0.0"/>
+  <testcase name="zeroPriceIsFree" classname="pe.culturaaccesible.catalog.CatalogServiceTest" time="0.0"/>
+  <testcase name="noMatchesReturnsEmpty" classname="pe.culturaaccesible.catalog.CatalogServiceTest" time="0.0"/>
+  <testcase name="filtersCombine" classname="pe.culturaaccesible.catalog.CatalogServiceTest" time="0.0"/>
+  <testcase name="missingConditionIsUnconfirmed" classname="pe.culturaaccesible.catalog.CatalogServiceTest" time="0.001"/>
   <testcase name="accentsDoNotBlockSearch" classname="pe.culturaaccesible.catalog.CatalogServiceTest" time="0.001"/>
   <testcase name="invalidPriceFilterIsRejected" classname="pe.culturaaccesible.catalog.CatalogServiceTest" time="0.001"/>
   <testcase name="supportsRequireAvailable" classname="pe.culturaaccesible.catalog.CatalogServiceTest" time="0.001"/>
-  <testcase name="invalidDateIsRejected" classname="pe.culturaaccesible.catalog.CatalogServiceTest" time="0.001"/>
-  <testcase name="unknownFunctionIsNotFound" classname="pe.culturaaccesible.catalog.CatalogServiceTest" time="0.005"/>
+  <testcase name="invalidDateIsRejected" classname="pe.culturaaccesible.catalog.CatalogServiceTest" time="0.0"/>
+  <testcase name="unknownFunctionIsNotFound" classname="pe.culturaaccesible.catalog.CatalogServiceTest" time="0.004"/>
 </testsuite>

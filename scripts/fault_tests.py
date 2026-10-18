@@ -50,6 +50,8 @@ class FaultTests(unittest.TestCase):
         self.assertEqual(status,503);self.assertNotIn('id',data);self.assertIn('no está confirmada',data['message'])
     def test_primary_demo_remains_available(self):
         status,data=call(8080,'/api/health');self.assertEqual(status,200);self.assertEqual(data['status'],'ok')
+    def test_chat_unavailable_never_fakes_a_reply(self):
+        status,data=call(18080,'/api/chat',{'message':'hola'});self.assertEqual(status,503);self.assertNotIn('reply',data);self.assertIn('AccesI',data['message'])
 
 if __name__=='__main__':
     try:

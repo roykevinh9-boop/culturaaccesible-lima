@@ -284,14 +284,14 @@ Evidencia/pendiente: Navegador: Teatro en Miraflores con LSP. Implementación po
 
 El catálogo Java consulta MySQL; el frontend consume JSON mediante el modelo cliente y el presentador actualiza la vista. Las respuestas obsoletas se descartan y las búsquedas anteriores se cancelan. La ficha tiene enlace por ID. Los reportes se insertan con estado PENDIENTE y no alteran automáticamente las condiciones. La estimación Python se solicita a través de Java; errores de entrada, ausencia de cobertura y caída del servicio tienen respuesta comprensible.
 
-La ayuda de lenguaje natural usa reglas locales para reconocer una lista de categorías, distritos y apoyos. No es un chatbot generativo ni comprende cualquier instrucción.
+AccesI utiliza TF-IDF y regresión logística para reconocer intenciones, más reglas para aplicar fechas, precios y apoyos sobre el catálogo leído desde MySQL. Conserva filtros durante la conversación, responde a saludos y no usa un proveedor generativo externo. No se afirma comprensión ilimitada ni precisión medida en conversaciones reales.
 
 ## Resultados técnicos
 
 - Java: 20 pruebas aprobadas.
-- Python: 16 pruebas aprobadas.
-- Fallos controlados de servicios: 3 pruebas aprobadas.
-- Integración real: 30 pruebas; fallos 0; errores 0.
+- Python: 43 pruebas aprobadas.
+- Fallos controlados de servicios: 4 pruebas aprobadas.
+- Integración real: 39 pruebas; fallos 0; errores 0.
 
 Nueva PoC sintética: MAE S/ 3.427; accuracy 0.9; F1 clase hasta S/ 40: 0.909. Se utilizan 30 registros de entrenamiento y 10 de prueba, con semilla 42. No se ha realizado selección comparativa de modelos en esta implementación; se mantienen dos modelos académicos predefinidos. Estas métricas no equivalen a validación sobre eventos reales.
 
@@ -299,7 +299,7 @@ Nueva PoC sintética: MAE S/ 3.427; accuracy 0.9; F1 clase hasta S/ 40: 0.909. S
 
 | Planificar | Hacer | Verificar | Actuar |
 |---|---|---|---|
-| Evitar estados confiables sin respaldo vigente. | Degradar datos ausentes, vencidos o de alcance incorrecto a No confirmado. | Pruebas Java y filtros LSP de los ejemplos. | Mantener casos de regresión. |
+| Evitar estados confiables sin respaldo vigente. | Degradar datos ausentes, vencidos o de alcance incorrecto a No confirmado. | Pruebas Java y filtros reales LSP. | Mantener casos de regresión. |
 | Evitar aceptar 6.5 como mes entero. | Rechazar coerción de decimales y escalares en Java; StrictInt en Python. | Integración 16-18 y casos Python. | Conservar validación en ambos límites de API. |
 | Explicar desacuerdo de regresión y clasificación. | Añadir bandera models_disagree y aviso visible. | Navegador: Danza/Miraflores/octubre produce S/ 49.98 y clase Hasta S/ 40 con advertencia. | Verificar precio oficial y mejorar datos antes de uso real. |
 | Cargar SQL con punto y coma dentro de textos. | Ejecutar sentencias múltiples mediante el controlador y hacer la semilla idempotente. | Inicialización y recarga sin duplicados. | Conservar script reproducible y pruebas de integridad. |
@@ -330,10 +330,8 @@ Pendientes: autenticación y permisos, solicitudes reales, panel organizador, re
 
 Los resultados técnicos corresponden a ejecución local de esta sesión. No se inventan entrevistas, confirmaciones de organizadores, publicaciones remotas ni aportes personales.
 
-## Cartelera y accesibilidad actualizadas
+## AccesI: conversación conectada
 
-49 funciones recuperadas de la web del equipo el 17/10/2026, con fotos remotas, créditos y fuentes oficiales. Ocho ejemplos ficticios separados. La instantánea no se actualiza automáticamente; no se declara verificación independiente de las 49 funciones. Los horarios faltantes permanecen pendientes y los precios Desde conservan ese calificativo.
+El chatbot utiliza IA local de intenciones (TF-IDF + regresión logística) y reglas sobre los eventos consultados en MySQL. Saluda, recuerda el mes entre mensajes, interpreta días exactos y compara tarifas publicadas. No es un modelo generativo y no utiliza un proveedor externo. Los criterios se mantienen en memoria; Nueva conversación los borra. LEEME_PRIMERO.md incluye la explicación y ejemplos.
 
-Panel de texto, contraste, subrayado y movimiento, con preferencias en el navegador. MySQL local en 127.0.0.1:3307, base culturaaccesible, usuario cal_app. Proyecto y tareas disponibles en CulturaAccesibleLima.code-workspace. Workbench sigue pendiente del permiso de control de su ventana.
-
-69 pruebas aprobadas y carga de las 57 funciones comprobada sobre una base MySQL nueva.
+Versión actual: 20 pruebas Java, 43 Python, 39 integración y 4 de fallos, 106 aprobadas. Revisión móvil a 390×844 con texto al 125%.

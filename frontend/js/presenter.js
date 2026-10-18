@@ -1,4 +1,5 @@
 import {$,element} from './view.js';
+import {ChatPresenter} from './chat.js';
 
 /** Presentador MVP: coordina acciones, modelo y vista; ignora respuestas obsoletas. */
 export class CatalogPresenter {
@@ -12,9 +13,8 @@ export class CatalogPresenter {
     $('clear-filters').addEventListener('click',clear);$('empty-clear').addEventListener('click',clear);
     $('close-detail').addEventListener('click',()=>$('detail-dialog').close());
     $('detail-dialog').addEventListener('close',()=>{this.detailNumber++;if(location.hash.startsWith('#funcion='))history.replaceState(null,'',location.pathname+location.search+'#catalogo');if(this.origin?.isConnected)this.origin.focus();});
-    for(const [open,dialog,close] of [['how-button','help-dialog','close-help'],['assistant-button','assistant-dialog','close-assistant'],['access-button','access-dialog','close-access']]){$(open).addEventListener('click',()=>$(dialog).showModal());$(close).addEventListener('click',()=>$(dialog).close());}
-    document.querySelectorAll('[data-prompt]').forEach(button=>button.addEventListener('click',()=>{$('assistant-input').value=button.dataset.prompt;$('assistant-input').focus();}));
-    $('assistant-form').addEventListener('submit',event=>{event.preventDefault();this.assist();});
+    for(const [open,dialog,close] of [['how-button','help-dialog','close-help'],['access-button','access-dialog','close-access']]){$(open).addEventListener('click',()=>$(dialog).showModal());$(close).addEventListener('click',()=>$(dialog).close());}
+    this.chat=new ChatPresenter(this.model,this.view);this.chat.start();
     this.accessibility();
     window.addEventListener('hashchange',()=>this.route());
     try{this.metadata=await this.model.metadata();this.view.metadata(this.metadata);await this.search();await this.route();}
@@ -40,19 +40,5 @@ export class CatalogPresenter {
     const url=new URL(location.pathname,location.origin);url.hash=`funcion=${id}`;
     try{await navigator.clipboard.writeText(url.href);this.view.toast('Enlace de la función copiado. Funciona mientras esta aplicación esté disponible.');}
     catch{const label=element('label','','Copia este enlace');const input=element('input','share-field');input.value=url.href;input.readOnly=true;input.setAttribute('aria-label','Enlace de la función para copiar');label.append(input);box.replaceChildren(label);input.focus();input.select();}
-  }
-  assist(){
-    const normalize=text=>text.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
-    const input=normalize($('assistant-input').value);
-    const filter={q:'',district:'',category:'',date:'all',price:'all',needs:[]};const applied=[];
-    if(!this.metadata){$('assistant-message').textContent='El catálogo todavía no está disponible.';return;}
-    for(const value of this.metadata.districts)if(input.includes(normalize(value))){filter.district=value;applied.push(value);break;}
-    for(const value of this.metadata.categories)if(input.includes(normalize(value))){filter.category=value;applied.push(value);break;}
-    const rules={lsp:['lsp','senas'],subtitulos:['subtitulo'],audiodescripcion:['audiodescripcion'],tactil:['tactil'],silla_ruedas:['silla de ruedas'],sin_escalones:['sin escalones'],bano_adaptado:['bano adaptado']};
-    for(const [code,words] of Object.entries(rules))if(words.some(word=>input.includes(word))){filter.needs.push(code);applied.push(this.metadata.supports.find(s=>s.code===code)?.label||code);}
-    if(/gratis|gratuito|gratuita/.test(input)){filter.price='free';applied.push('Ingreso gratuito');}
-    if(input.includes('hoy')){filter.date='today';applied.push('Hoy');}else if(input.includes('fin de semana')){filter.date='weekend';applied.push('Este fin de semana');}
-    if(!applied.length){$('assistant-message').textContent='No reconocí filtros concretos. Prueba «Teatro en Miraflores con LSP» o utiliza el buscador por nombre.';return;}
-    this.view.setFilters(filter);this.search();$('assistant-dialog').close();$('catalogo').scrollIntoView({behavior:'auto'});this.view.toast(`Filtros sugeridos: ${applied.join(', ')}. Puedes modificarlos.`);
   }
 }

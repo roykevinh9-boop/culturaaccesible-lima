@@ -19,4 +19,5 @@ export class CatalogModel {
   detail(id){ return this.request(`/functions/${encodeURIComponent(id)}`); }
   estimate(input){ return this.request('/estimates',{method:'POST',body:JSON.stringify(input)}); }
   report(input){ return this.request('/reports',{method:'POST',body:JSON.stringify(input)}); }
+  chat(input,signal){return this.request('/chat',{method:'POST',body:JSON.stringify(input),signal});}
 }
