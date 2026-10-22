@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {SupportPreferences} from '../frontend/js/models/support-preferences.js';
+import {SupportPreferences} from '../frontend/models/support-preferences.js';
 
 const codes=['lsp','subtitulos','silla_ruedas'];
 const storage=()=>{const values=new Map();return {getItem:key=>values.get(key),setItem:(key,value)=>values.set(key,value)};};
