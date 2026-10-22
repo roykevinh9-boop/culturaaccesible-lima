@@ -1,8 +1,10 @@
-import {$,element} from './view.js';
-import {ChatPresenter} from './chat.js';
+import {$,element} from '../views/catalog-view.js';
+import {ChatController} from './chat-controller.js';
+import {SupportBarView} from '../views/support-bar-view.js';
+import {SupportPreferences} from '../models/support-preferences.js';
 
-/** Presentador MVP: coordina acciones, modelo y vista; ignora respuestas obsoletas. */
-export class CatalogPresenter {
+/** Controlador MVC: coordina acciones, modelo y vista; ignora respuestas obsoletas. */
+export class CatalogController {
   constructor(model,view){this.model=model;this.view=view;this.requestNumber=0;this.detailNumber=0;this.origin=null;this.metadata=null;}
   async start(){
     this.view.onOpen=(id,button)=>{this.origin=button;location.hash=`funcion=${id}`;};
@@ -14,15 +16,25 @@ export class CatalogPresenter {
     $('close-detail').addEventListener('click',()=>$('detail-dialog').close());
     $('detail-dialog').addEventListener('close',()=>{this.detailNumber++;if(location.hash.startsWith('#funcion='))history.replaceState(null,'',location.pathname+location.search+'#catalogo');if(this.origin?.isConnected)this.origin.focus();});
     for(const [open,dialog,close] of [['how-button','help-dialog','close-help'],['access-button','access-dialog','close-access']]){$(open).addEventListener('click',()=>$(dialog).showModal());$(close).addEventListener('click',()=>$(dialog).close());}
-    this.chat=new ChatPresenter(this.model,this.view);this.chat.start();
+    this.chat=new ChatController(this.model,this.view);this.chat.start();
     this.accessibility();
     window.addEventListener('hashchange',()=>this.route());
-    try{this.metadata=await this.model.metadata();this.view.metadata(this.metadata);await this.search();await this.route();}
+    try{let storage;try{storage=window.sessionStorage;}catch{}this.supportPreferences=new SupportPreferences(storage);this.supportBar=new SupportBarView();this.metadata=await this.model.metadata();this.view.metadata(this.metadata);this.setupSupportBar();await this.search();await this.route();}
     catch(error){this.view.loading(false);this.view.error(error.message);}
   }
-  async loadSource(){const source=this.view.filters().source;this.sourceNumber=(this.sourceNumber||0)+1;const number=this.sourceNumber;this.abort?.abort();this.requestNumber++;this.view.loading(true);try{const meta=await this.model.metadata(source);if(number!==this.sourceNumber)return;this.metadata=meta;this.view.metadata(meta);this.view.setFilters({});await this.search();}catch(error){if(number===this.sourceNumber){this.view.loading(false);this.view.error(error.message);}}}
+  setupSupportBar(){
+    const codes=this.metadata.supports.map(s=>s.code);
+    this.view.setFilters({needs:this.supportPreferences.load(codes)});
+    this.supportBar.render(this.metadata.supports,code=>{
+      for(const input of $('support-filters').querySelectorAll('input')){if(!code)input.checked=false;else if(input.value===code)input.checked=!input.checked;}
+      clearTimeout(this.timer);this.search();
+    });
+    this.supportBar.selected(this.view.filters().needs);
+  }
+  async loadSource(){const source=this.view.filters().source;this.sourceNumber=(this.sourceNumber||0)+1;const number=this.sourceNumber;this.abort?.abort();this.requestNumber++;this.view.loading(true);try{const meta=await this.model.metadata(source);if(number!==this.sourceNumber)return;this.metadata=meta;this.view.metadata(meta);this.setupSupportBar();await this.search();}catch(error){if(number===this.sourceNumber){this.view.loading(false);this.view.error(error.message);}}}
   accessibility(){const ids=['text-size','high-contrast','underline-links','reduce-motion'];let saved={};try{saved=JSON.parse(localStorage.getItem('cal-access')||'{}');}catch{}for(const id of ids){const input=$(id);if(input.type==='checkbox')input.checked=saved[id]===true;else input.value=['100','112.5','125'].includes(saved[id])?saved[id]:'100';}const apply=()=>{document.documentElement.style.fontSize=$('text-size').value+'%';for(const id of ids.slice(1))document.documentElement.classList.toggle(id,$(id).checked);const value=Object.fromEntries(ids.map(id=>[id,$(id).type==='checkbox'?$(id).checked:$(id).value]));try{localStorage.setItem('cal-access',JSON.stringify(value));}catch{}};ids.forEach(id=>$(id).addEventListener('change',apply));$('reset-access').addEventListener('click',()=>{$('text-size').value='100';ids.slice(1).forEach(id=>$(id).checked=false);apply();});apply();}
   async search(){
+    const needs=this.view.filters().needs;this.supportPreferences?.save(needs);this.supportBar?.selected(needs);
     const number=++this.requestNumber;
     this.abort?.abort();this.abort=new AbortController();this.view.loading(true);
     try{const result=await this.model.search(this.view.filters(),this.abort.signal);if(number===this.requestNumber)this.view.results(result);}

@@ -1,0 +1,44 @@
+{
+  "date": "2026-10-22",
+  "pairs": [
+    {
+      "uso": "accion",
+      "texto": "#FFFFFF",
+      "fondo": "#12675E",
+      "contraste": 6.71
+    },
+    {
+      "uso": "texto",
+      "texto": "#17343B",
+      "fondo": "#F7FAF9",
+      "contraste": 12.57
+    },
+    {
+      "uso": "secundario",
+      "texto": "#4C6268",
+      "fondo": "#F7FAF9",
+      "contraste": 6.14
+    },
+    {
+      "uso": "disponible",
+      "texto": "#155E43",
+      "fondo": "#E8F5ED",
+      "contraste": 6.9
+    },
+    {
+      "uso": "no_confirmado",
+      "texto": "#744B00",
+      "fondo": "#FFF4D6",
+      "contraste": 6.97
+    },
+    {
+      "uso": "no_disponible",
+      "texto": "#8A2635",
+      "fondo": "#FCECEF",
+      "contraste": 7.63
+    }
+  ],
+  "js_imports_resolved": true,
+  "browser_visual_review": "blocked_by_browser_url_policy",
+  "scope": "Parejas semanticas de texto; no es auditoria completa de accesibilidad."
+}

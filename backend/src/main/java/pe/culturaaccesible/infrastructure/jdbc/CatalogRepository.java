@@ -1,4 +1,6 @@
-package pe.culturaaccesible.catalog;
+package pe.culturaaccesible.infrastructure.jdbc;
+
+import pe.culturaaccesible.catalog.port.CatalogStore;
 
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
@@ -6,7 +8,7 @@ import java.util.*;
 
 /** Persistencia JDBC. Las consultas son parametrizadas y no dependen de la vista. */
 @Repository
-public class CatalogRepository {
+public class CatalogRepository implements CatalogStore {
     private final JdbcTemplate db;
     public CatalogRepository(JdbcTemplate db) { this.db = db; }
 

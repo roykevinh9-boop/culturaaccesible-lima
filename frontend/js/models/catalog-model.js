@@ -1,4 +1,4 @@
-/** Modelo MVP: acceso a datos; no modifica el DOM. */
+/** Modelo MVC: acceso a datos; no modifica el DOM. */
 export class CatalogModel {
   async request(path, options={}) {
     const response=await fetch(`/api${path}`,{...options,headers:{'Content-Type':'application/json',...options.headers}});

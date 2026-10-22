@@ -1,4 +1,4 @@
-/** Vista MVP: presenta datos y notifica acciones; no conoce las consultas SQL. */
+/** Vista MVC: presenta datos y notifica acciones; no conoce las consultas SQL. */
 export const $=id=>document.getElementById(id);
 export const element=(tag,cls,text)=>{const e=document.createElement(tag);if(cls)e.className=cls;if(text!==undefined)e.textContent=text;return e;};
 const money=new Intl.NumberFormat('es-PE',{style:'currency',currency:'PEN'});

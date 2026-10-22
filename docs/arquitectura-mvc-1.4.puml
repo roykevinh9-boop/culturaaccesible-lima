@@ -1,0 +1,37 @@
+@startuml
+title CulturaAccesible Lima MVC y separación modular 22 octubre 2026
+left to right direction
+package Navegador {
+  [Vista HTML y catalog-view.js] as View
+  [CatalogController y ChatController] as Controller
+  [CatalogModel] as Model
+  Controller --> View : actualiza
+  View --> Controller : acciones
+  Controller --> Model
+}
+package Java {
+  [ApiController] as API
+  [CatalogService] as Service
+  interface CatalogStore as Port
+  [CatalogRepository JDBC] as JDBC
+  API --> Service
+  Service --> Port
+  JDBC ..|> Port
+}
+database MySQL
+Model --> API : JSON
+JDBC --> MySQL : SQL parametrizado
+package Python {
+  [api.routes y api.schemas] as Routes
+  [application.services] as UseCases
+  [assistant y model] as ML
+  Routes --> UseCases
+  UseCases --> ML
+}
+[ChatService y PricingService] --> Routes : HTTP
+note bottom of Service
+Inversión de dependencias aplicada al catálogo.
+Todavía depende de Spring y errores HTTP.
+No es una migración completa a Clean Architecture.
+end note
+@enduml

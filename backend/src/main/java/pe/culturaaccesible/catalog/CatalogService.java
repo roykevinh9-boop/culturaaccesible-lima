@@ -1,5 +1,7 @@
 package pe.culturaaccesible.catalog;
 
+import pe.culturaaccesible.catalog.port.CatalogStore;
+
 import org.springframework.stereotype.Service;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.server.ResponseStatusException;
@@ -11,11 +13,11 @@ import java.util.*;
 /** Reglas de catálogo y confianza. Falta de evidencia jamás significa Disponible. */
 @Service
 public class CatalogService {
-    private final CatalogRepository repository;
+    private final CatalogStore repository;
     private final Clock clock;
     @org.springframework.beans.factory.annotation.Autowired
-    public CatalogService(CatalogRepository repository) { this(repository, Clock.system(ZoneId.of("America/Lima"))); }
-    CatalogService(CatalogRepository repository, Clock clock) { this.repository=repository; this.clock=clock; }
+    public CatalogService(CatalogStore repository) { this(repository, Clock.system(ZoneId.of("America/Lima"))); }
+    CatalogService(CatalogStore repository, Clock clock) { this.repository=repository; this.clock=clock; }
     public static String normalized(String text) {
         return Normalizer.normalize(text == null ? "" : text, Normalizer.Form.NFD).replaceAll("\\p{M}", "").toLowerCase(Locale.ROOT).trim();
     }

@@ -1,0 +1,45 @@
+/* Paleta semántica: significado acompañado siempre de etiquetas textuales. */
+:root {
+  --action: #12675e;
+  --action-hover: #0c4e47;
+  --focus: #785100;
+  --available-text: #155e43;
+  --available-bg: #e8f5ed;
+  --pending-text: #744b00;
+  --pending-bg: #fff4d6;
+  --unavailable-text: #8a2635;
+  --unavailable-bg: #fcecef;
+}
+.primary-button,.search-submit { background:var(--action); color:#fff; border-color:var(--action); }
+.primary-button:hover,.search-submit:hover { background:var(--action-hover); }
+.filter-panel { border:1px solid #c6d7d2; box-shadow:0 8px 28px #17343b08; }
+.event-card { border:1px solid #d5e2de; }
+.state.available { color:var(--available-text); background:var(--available-bg); }
+.state.unknown { color:var(--pending-text); background:var(--pending-bg); }
+.state.unavailable { color:var(--unavailable-text); background:var(--unavailable-bg); }
+:focus-visible { outline:3px solid var(--focus); outline-offset:4px; }
+.high-contrast { --action:#004d42; --focus:#000; --available-text:#000; --available-bg:#fff; --pending-text:#000; --pending-bg:#fff; --unavailable-text:#000; --unavailable-bg:#fff; }
+.high-contrast .state { border:2px solid currentColor; }
+
+/* La barra ocupa su sitio en el documento y permanece visible al desplazarse. */
+.support-bar { position:sticky; top:0; z-index:9; background:#17343b; color:#fff; border-bottom:2px solid #d4ef85; }
+.support-bar-inner { display:flex; align-items:center; gap:18px; padding:10px 24px 4px; }
+.support-bar-title { font-size:.78rem; font-weight:750; white-space:nowrap; }
+.support-shortcuts { display:flex; gap:8px; overflow-x:auto; padding:4px 4px 10px; min-width:0; flex:1; scrollbar-width:thin; scrollbar-color:#d4ef85 #17343b; }
+.support-shortcut { flex-shrink:0; min-height:44px; padding:9px 14px; border:1px solid #91b2ae; border-radius:24px; background:transparent; color:#fff; font-size:.76rem; }
+.support-shortcut:hover { background:#284c52; }
+.support-shortcut[aria-pressed="true"] { background:#d4ef85; border-color:#d4ef85; color:#17343b; font-weight:750; }
+.support-bar :focus-visible { outline:3px solid #fff; outline-offset:2px; }
+.support-bar-link { white-space:nowrap; font-size:.76rem; text-underline-offset:4px; min-height:44px; display:flex; align-items:center; }
+.support-bar-note { display:flex; justify-content:space-between; flex-wrap:wrap; gap:4px 20px; padding:0 24px 10px; font-size:.68rem; color:#e3eee9; }
+#catalogo { scroll-margin-top:155px; }
+.high-contrast .support-bar { background:#000; color:#fff; }
+.high-contrast .support-shortcut[aria-pressed="true"] { background:#fff; color:#000; border-color:#fff; }
+@media(max-width:760px){
+  .support-bar-inner { gap:8px; padding:8px 12px 0; flex-wrap:wrap; }
+  .support-bar-title { flex:1; }
+  .support-shortcuts { order:3; flex-basis:100%; }
+  .support-bar-note { padding:0 12px 8px; font-size:.65rem; }
+  .support-bar-note>span:last-child { display:none; }
+  #catalogo { scroll-margin-top:180px; }
+}
