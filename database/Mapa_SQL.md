@@ -10,5 +10,7 @@
 | 06_verificar_integridad.sql | Revisar relaciones y recuentos sin modificar datos |
 | CulturaAccesibleLima.sql | Instalación completa alternativa con la instantánea oficial y los ejemplos |
 | catalogo-oficial.json | Instantánea recuperada el 17/10/2026 para el importador |
+| procedures/*.sql | Cinco procedimientos almacenados; contienen las consultas del catálogo y la inserción de reportes |
+| permissions/cal_app_execute.sql | Permisos EXECUTE de la cuenta existente sobre esas cinco rutinas |
 
-Usar la instalación completa o el flujo de esquema más importación, según el caso; no ejecutar todos los archivos por número como si fueran una única migración. El script 05 es para modelado. Los datos privados de reportes y contraseñas no forman parte de la exportación distribuida. Se mantienen los nombres porque el inicio y las pruebas los utilizan.
+Usar la instalación completa o el flujo de esquema más importación, según el caso; después instalar los procedimientos y sus permisos. El inicio automático realiza esos pasos. No ejecutar todos los archivos por número como si fueran una única migración. El script 05 es para modelado. Los datos privados de reportes y contraseñas no forman parte de la exportación distribuida. Se mantienen los nombres porque el inicio y las pruebas los utilizan.

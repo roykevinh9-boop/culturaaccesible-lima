@@ -22,7 +22,7 @@ La reorganización mantiene la lógica de interacción ya implementada. Los cont
 
 ## Principio de Arquitectura Limpia aplicado
 
-`CatalogService` depende del contrato `catalog/port/CatalogStore`. `CatalogRepository` implementa ese contrato y contiene las consultas JDBC. El servicio puede recibir otra implementación sin importar JDBC. Spring realiza la inyección de la implementación concreta al iniciar.
+`CatalogService` depende del contrato `catalog/port/CatalogStore`. `CatalogRepository` implementa ese contrato y llama mediante JDBC a los procedimientos de MySQL; las consultas están en `database/procedures/`. El servicio puede recibir otra implementación sin importar JDBC. Spring realiza la inyección de la implementación concreta al iniciar.
 
 Esto es una mejora de inversión de dependencias, no una migración completa a Clean Architecture: el servicio aún tiene anotaciones Spring y errores HTTP; los contratos utilizan mapas; los clientes de precios y chat todavía contienen transporte HTTP. Separar entidades tipadas, excepciones de dominio y puertos de esos servicios es trabajo posterior.
 

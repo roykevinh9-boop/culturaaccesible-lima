@@ -1,6 +1,6 @@
 package pe.culturaaccesible.catalog;
 
-import pe.culturaaccesible.infrastructure.jdbc.CatalogRepository;
+import pe.culturaaccesible.catalog.port.CatalogStore;
 import org.junit.jupiter.api.*;
 import static org.junit.jupiter.api.Assertions.*;
 import java.math.BigDecimal;
@@ -8,11 +8,11 @@ import java.time.*;
 import java.util.*;
 
 class CatalogServiceTest {
-    static class FakeRepository extends CatalogRepository {
+    static class FakeRepository implements CatalogStore {
         Map<String,Object> function;
         List<Map<String,Object>> rows=List.of();
         int writes=0;
-        FakeRepository(){super(null);}
+        @Override public boolean healthy(){return true;}
         @Override public List<Map<String,Object>> functions(){return List.of(function);}
         @Override public List<Map<String,Object>> conditions(long id){return rows;}
         @Override public List<Map<String,Object>> supportTypes(){return List.of(Map.of("code","lsp","label","Interpretación en LSP"));}
