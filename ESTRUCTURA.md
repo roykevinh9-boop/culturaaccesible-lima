@@ -20,7 +20,7 @@ CulturaAccesibleLima/
 ├── backend/src/main/java/pe/culturaaccesible/
 │   ├── api/                          Controlador REST y errores HTTP
 │   ├── catalog/                      Reglas y puerto CatalogStore
-│   ├── infrastructure/jdbc/          Adaptador MySQL
+│   ├── infrastructure/jdbc/          Llamadas a procedimientos MySQL
 │   ├── chat/                         Servicio de conversación
 │   └── pricing/                      Servicio de precios
 ├── python-service/
@@ -32,6 +32,8 @@ CulturaAccesibleLima/
 │   ├── data/                         Datos académicos sintéticos
 │   └── tests/                        Pruebas Python
 ├── database/                         Esquema SQL, consultas y migraciones
+│   ├── procedures/                   Consultas e inserción de reportes en MySQL
+│   └── permissions/                  Permisos de ejecución de las rutinas
 ├── scripts/                          Inicio, compilación y pruebas
 └── docs/                             Diagramas, informes y evidencias
 ```

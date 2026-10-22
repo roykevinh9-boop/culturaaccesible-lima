@@ -12,6 +12,8 @@ if($LASTEXITCODE -ne 0){throw 'Fallaron las pruebas de Python.'}
 if($LASTEXITCODE -ne 0){throw 'Fallaron las pruebas de integración. Verifica que la aplicación esté iniciada.'}
 & $pythonExe 'scripts/migration_tests.py'
 if($LASTEXITCODE -ne 0){throw 'Fallaron las pruebas de migración o instalación de la base.'}
+& $pythonExe 'scripts/procedure_tests.py'
+if($LASTEXITCODE -ne 0){throw 'Fallaron las pruebas de procedimientos almacenados.'}
 if(-not $SinFallos){
  & $pythonExe 'scripts/fault_tests.py'
  if($LASTEXITCODE -ne 0){throw 'Fallaron las pruebas de fallos controlados.'}

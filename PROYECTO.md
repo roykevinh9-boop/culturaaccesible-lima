@@ -23,6 +23,7 @@ Para compilar: `scripts/Compilar.ps1`. Con la demo iniciada, ejecutar `scripts/P
 - `docs/Arquitectura_actual.md`: MVC, módulos y límites de la separación de capas.
 - `docs/Diseno_visual.md`: colores semánticos y validación de contraste.
 - `database/Mapa_SQL.md`: orden y propósito de los scripts.
+- `docs/Procedimientos_MySQL.md`: consultas en MySQL y llamadas parametrizadas desde Java.
 - `docs/Informe_Semana10.pdf`: entrega histórica del 18/10/2026; describe la versión previa con MVP en la interfaz. El cambio a MVC del 22/10/2026 se documenta por separado para preparar APF3.
 
 Repositorio privado: https://github.com/roykevinh9-boop/culturaaccesible-lima

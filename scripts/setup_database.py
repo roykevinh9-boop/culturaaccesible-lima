@@ -82,6 +82,9 @@ def setup(mysql_bin,port):
         with connection.cursor() as cursor:
             cursor.execute("CREATE USER IF NOT EXISTS 'cal_app'@'127.0.0.1' IDENTIFIED BY %s",(config["db_password"],))
             cursor.execute("GRANT SELECT, INSERT, UPDATE, DELETE ON culturaaccesible.* TO 'cal_app'@'127.0.0.1'")
+        from install_procedures import install, grant_execute
+        install(connection)
+        grant_execute(connection)
     config_file.write_text(json.dumps(config),encoding="utf-8")
     print(f"Base aislada lista en 127.0.0.1:{port}. Cartelera y ejemplos académicos cargados por separado.")
 
