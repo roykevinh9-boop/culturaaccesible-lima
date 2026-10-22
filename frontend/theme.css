@@ -1,0 +1,22 @@
+/* Paleta semántica: significado acompañado siempre de etiquetas textuales. */
+:root {
+  --action: #12675e;
+  --action-hover: #0c4e47;
+  --focus: #785100;
+  --available-text: #155e43;
+  --available-bg: #e8f5ed;
+  --pending-text: #744b00;
+  --pending-bg: #fff4d6;
+  --unavailable-text: #8a2635;
+  --unavailable-bg: #fcecef;
+}
+.primary-button,.search-submit { background:var(--action); color:#fff; border-color:var(--action); }
+.primary-button:hover,.search-submit:hover { background:var(--action-hover); }
+.filter-panel { border:1px solid #c6d7d2; box-shadow:0 8px 28px #17343b08; }
+.event-card { border:1px solid #d5e2de; }
+.state.available { color:var(--available-text); background:var(--available-bg); }
+.state.unknown { color:var(--pending-text); background:var(--pending-bg); }
+.state.unavailable { color:var(--unavailable-text); background:var(--unavailable-bg); }
+:focus-visible { outline:3px solid var(--focus); outline-offset:4px; }
+.high-contrast { --action:#004d42; --focus:#000; --available-text:#000; --available-bg:#fff; --pending-text:#000; --pending-bg:#fff; --unavailable-text:#000; --unavailable-bg:#fff; }
+.high-contrast .state { border:2px solid currentColor; }

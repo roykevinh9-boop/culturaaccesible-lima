@@ -1,6 +1,6 @@
-import {CatalogModel} from './model.js';
-import {CatalogView} from './view.js';
-import {CatalogPresenter} from './presenter.js';
+import {CatalogModel} from './models/catalog-model.js';
+import {CatalogView} from './views/catalog-view.js';
+import {CatalogController} from './controllers/catalog-controller.js';
 
-const application=new CatalogPresenter(new CatalogModel(),new CatalogView());
+const application=new CatalogController(new CatalogModel(),new CatalogView());
 application.start();

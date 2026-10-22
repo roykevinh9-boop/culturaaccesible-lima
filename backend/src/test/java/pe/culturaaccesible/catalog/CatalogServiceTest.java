@@ -1,4 +1,6 @@
 package pe.culturaaccesible.catalog;
+
+import pe.culturaaccesible.infrastructure.jdbc.CatalogRepository;
 import org.junit.jupiter.api.*;
 import static org.junit.jupiter.api.Assertions.*;
 import java.math.BigDecimal;

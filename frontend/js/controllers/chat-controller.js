@@ -1,7 +1,7 @@
-import {$,element} from './view.js';
+import {$,element} from '../views/catalog-view.js';
 
-/** Presentador de conversación. Guarda filtros durante la sesión; nunca contraseñas ni historial persistente. */
-export class ChatPresenter {
+/** Controlador de conversación. Guarda filtros durante la sesión; nunca contraseñas ni historial persistente. */
+export class ChatController {
   constructor(model,view){this.model=model;this.view=view;this.context={};this.turn=0;}
   start(){
     for(const id of ['assistant-button','chat-launcher'])$(id).addEventListener('click',()=>{$('assistant-dialog').showModal();$('chat-input').focus();});

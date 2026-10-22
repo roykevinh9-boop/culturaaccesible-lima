@@ -1,8 +1,8 @@
-import {$,element} from './view.js';
-import {ChatPresenter} from './chat.js';
+import {$,element} from '../views/catalog-view.js';
+import {ChatController} from './chat-controller.js';
 
-/** Presentador MVP: coordina acciones, modelo y vista; ignora respuestas obsoletas. */
-export class CatalogPresenter {
+/** Controlador MVC: coordina acciones, modelo y vista; ignora respuestas obsoletas. */
+export class CatalogController {
   constructor(model,view){this.model=model;this.view=view;this.requestNumber=0;this.detailNumber=0;this.origin=null;this.metadata=null;}
   async start(){
     this.view.onOpen=(id,button)=>{this.origin=button;location.hash=`funcion=${id}`;};
@@ -14,7 +14,7 @@ export class CatalogPresenter {
     $('close-detail').addEventListener('click',()=>$('detail-dialog').close());
     $('detail-dialog').addEventListener('close',()=>{this.detailNumber++;if(location.hash.startsWith('#funcion='))history.replaceState(null,'',location.pathname+location.search+'#catalogo');if(this.origin?.isConnected)this.origin.focus();});
     for(const [open,dialog,close] of [['how-button','help-dialog','close-help'],['access-button','access-dialog','close-access']]){$(open).addEventListener('click',()=>$(dialog).showModal());$(close).addEventListener('click',()=>$(dialog).close());}
-    this.chat=new ChatPresenter(this.model,this.view);this.chat.start();
+    this.chat=new ChatController(this.model,this.view);this.chat.start();
     this.accessibility();
     window.addEventListener('hashchange',()=>this.route());
     try{this.metadata=await this.model.metadata();this.view.metadata(this.metadata);await this.search();await this.route();}

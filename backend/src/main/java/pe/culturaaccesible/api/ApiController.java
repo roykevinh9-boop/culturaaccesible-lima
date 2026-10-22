@@ -1,6 +1,7 @@
 package pe.culturaaccesible.api;
 
 import pe.culturaaccesible.catalog.*;
+import pe.culturaaccesible.catalog.port.CatalogStore;
 import pe.culturaaccesible.pricing.PricingService;
 import pe.culturaaccesible.chat.ChatService;
 import org.springframework.web.bind.annotation.*;
@@ -13,10 +14,10 @@ import java.util.*;
 @RequestMapping("/api")
 public class ApiController {
     private final CatalogService catalog;
-    private final CatalogRepository repository;
+    private final CatalogStore repository;
     private final PricingService pricing;
     private final ChatService chat;
-    public ApiController(CatalogService catalog,CatalogRepository repository,PricingService pricing,ChatService chat) {this.catalog=catalog;this.repository=repository;this.pricing=pricing;this.chat=chat;}
+    public ApiController(CatalogService catalog,CatalogStore repository,PricingService pricing,ChatService chat) {this.catalog=catalog;this.repository=repository;this.pricing=pricing;this.chat=chat;}
     public record ChatInput(@NotBlank @Size(max=600) String message,Map<String,Object> context,@Pattern(regexp="official|demo") String source) {}
     @PostMapping("/chat") public Map<String,Object> chat(@Valid @RequestBody ChatInput input){return chat.reply(input.message(),input.context(),input.source()==null?"official":input.source());}
     @GetMapping("/health") public Map<String,Object> health() {return Map.of("status",repository.healthy()?"ok":"error","database","mysql","application","CulturaAccesible Lima");}
