@@ -1,0 +1,9 @@
+{
+  "date": "2026-10-22",
+  "folders": ["frontend/models", "frontend/views", "frontend/controllers", "frontend/static"],
+  "entry_html": "frontend/views/index.html",
+  "published_entry": "/",
+  "automated_checks": {"java_tests": 20, "support_preference_tests": 6, "relative_imports_resolved": true, "build": "passed"},
+  "browser_checks": {"catalog_functions": 49, "styles": ["/static/css/styles.css", "/static/css/theme.css"], "support_bar_loaded": true, "chat_greeting_received": true},
+  "scope": "Reorganización de archivos y recursos; Java/Python/MySQL ya se validaron con la base de 131 pruebas antes de este cambio."
+}

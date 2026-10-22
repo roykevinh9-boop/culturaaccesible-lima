@@ -4,10 +4,10 @@ Actualización del 22/10/2026 para APF3. Se organiza el navegador con MVC y el s
 
 ## MVC del navegador
 
-- Modelo: `frontend/js/models/catalog-model.js`, acceso a la API y datos del cliente.
-- Vista: `frontend/js/views/catalog-view.js` y `frontend/index.html`, representación y controles accesibles.
-- Controladores: `frontend/js/controllers/catalog-controller.js` y `chat-controller.js`, recepción de acciones, navegación, consultas y coordinación de vistas.
-- Composición: `frontend/js/app.js` conecta las instancias.
+- Modelo: `frontend/models/catalog-model.js`, acceso a la API y datos del cliente.
+- Vista: `frontend/views/catalog-view.js` y `frontend/views/index.html`, representación y controles accesibles.
+- Controladores: `frontend/controllers/catalog-controller.js` y `chat-controller.js`, recepción de acciones, navegación, consultas y coordinación de vistas.
+- Composición: `frontend/static/js/app.js` conecta las instancias.
 
 La reorganización mantiene la lógica de interacción ya implementada. Los controladores todavía usan utilidades DOM de la vista para enlazar eventos; no se presenta como una interfaz totalmente desacoplada del navegador.
 

@@ -16,7 +16,14 @@
   <build>
     <resources>
       <resource><directory>src/main/resources</directory></resource>
-      <resource><directory>../frontend</directory><targetPath>static</targetPath></resource>
+      <resource>
+        <directory>../frontend</directory><targetPath>static</targetPath>
+        <excludes><exclude>views/*.html</exclude></excludes>
+      </resource>
+      <resource>
+        <directory>../frontend/views</directory><targetPath>static</targetPath>
+        <includes><include>*.html</include></includes>
+      </resource>
     </resources>
     <plugins><plugin><groupId>org.springframework.boot</groupId><artifactId>spring-boot-maven-plugin</artifactId></plugin></plugins>
   </build>

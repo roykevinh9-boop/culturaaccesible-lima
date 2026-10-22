@@ -13,4 +13,4 @@ Actualización del 22/10/2026. La intención visual es mantener una identidad cu
 
 Los tres estados conservan etiquetas textuales: el significado nunca depende solo de verde, ámbar o rojo. El foco tiene contorno visible, y el modo de alto contraste sustituye las combinaciones por texto negro sobre blanco. Se conservan tamaño de texto, reducción de movimiento y subrayado de enlaces.
 
-Los estilos semánticos se agrupan en `frontend/theme.css`; la maquetación existente permanece en `styles.css`. Los contrastes calculados se registran en `docs/evidencias/contraste-1.4.json`. El cálculo de estas parejas no equivale a una auditoría completa WCAG ni reemplaza las pruebas con usuarios y tecnologías de apoyo.
+Los estilos semánticos se agrupan en `frontend/static/css/theme.css`; la maquetación existente permanece en `styles.css`. Los contrastes calculados se registran en `docs/evidencias/contraste-1.4.json`. El cálculo de estas parejas no equivale a una auditoría completa WCAG ni reemplaza las pruebas con usuarios y tecnologías de apoyo.
