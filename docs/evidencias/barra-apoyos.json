@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-22",
+  "unit_tests": {"tests": 6, "failures": 0},
+  "browser_checks": {
+    "sticky_top_after_scroll": 0,
+    "multiple_selection": true,
+    "selection_restored_after_reload": true,
+    "form_checkboxes_synchronized": true,
+    "all_supports_preserves_category": true,
+    "clear_filters_survives_reload": true,
+    "desktop_visual_review": "passed"
+  },
+  "screenshot": "barra-apoyos-fija.jpg",
+  "limits": "Revisión de escritorio; no constituye auditoría WCAG ni prueba con lector de pantalla. Las 115 pruebas Java/Python/MySQL corresponden a la base modular validada antes de añadir esta barra."
+}

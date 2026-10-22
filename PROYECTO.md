@@ -19,6 +19,7 @@ Para compilar: `scripts/Compilar.ps1`. Con la demo iniciada, ejecutar `scripts/P
 
 ## Documentación vigente
 
+- `ESTRUCTURA.md`: árbol de carpetas MVC y funcionamiento de la barra de apoyos.
 - `docs/Arquitectura_actual.md`: MVC, módulos y límites de la separación de capas.
 - `docs/Diseno_visual.md`: colores semánticos y validación de contraste.
 - `database/Mapa_SQL.md`: orden y propósito de los scripts.
