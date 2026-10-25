@@ -15,7 +15,7 @@
       "problemMatcher": []
     },
     {
-      "label": "CulturaAccesible: compilar Java",
+      "label": "CulturaAccesible: compilar backend-java MVC",
       "type": "shell",
       "command": "powershell",
       "args": [

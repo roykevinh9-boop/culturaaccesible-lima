@@ -47,7 +47,7 @@ def main(args):
             wait_ready('http://127.0.0.1:8001/health',python)
         env.update(CAL_DB_URL=f"jdbc:mysql://127.0.0.1:{args.db_port}/culturaaccesible?useUnicode=true&characterEncoding=UTF-8&serverTimezone=America/Lima",CAL_DB_USER=config['db_user'],CAL_DB_PASSWORD=config['db_password'],CAL_PYTHON_URL='http://127.0.0.1:8001')
         jar=ROOT/'app/culturaaccesible.jar'
-        if not jar.exists():jar=ROOT/'backend/target/culturaaccesible-1.0.0.jar'
+        if not jar.exists():jar=ROOT/'backend-java/target/culturaaccesible-1.0.0.jar'
         if not jar.exists():raise RuntimeError('Falta el ejecutable Java. Compila el proyecto con scripts/Compilar.ps1.')
         log=(LOCAL/'java.log').open('ab')
         java=subprocess.Popen([args.java,'-jar',str(jar)],cwd=ROOT,env=env,stdout=log,stderr=subprocess.STDOUT,creationflags=flags)

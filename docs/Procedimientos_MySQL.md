@@ -2,6 +2,8 @@
 
 Actualización del 24/10/2026. Las consultas del catálogo y la inserción de reportes viven en archivos SQL versionados por módulo. Java identifica la rutina y envía parámetros tipados; no contiene consultas ni cadenas CALL.
 
+El código Java está en `backend-java`. Los paquetes `controlador`, `modelo` y `vista` organizan la API; `infraestructura/jdbc` concentra el adaptador que invoca los procedimientos. Renombrar estos paquetes conserva las cinco rutinas, sus firmas y los datos existentes.
+
 ```text
 Vista HTML y JavaScript
   → Controlador REST Java

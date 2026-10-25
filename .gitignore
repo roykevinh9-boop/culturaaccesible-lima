@@ -2,7 +2,7 @@
 .venv/
 **/__pycache__/
 **/.pytest_cache/
-backend/target/
+backend-java/target/
 app/*.jar
 .env
 *.log

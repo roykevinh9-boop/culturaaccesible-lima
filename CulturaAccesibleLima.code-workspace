@@ -7,7 +7,7 @@
   "settings": {
     "files.exclude": {
       ".local": true,
-      "backend/target": true
+      "backend-java/target": true
     }
   }
 }
