@@ -6,6 +6,8 @@ $pythonExe=Join-Path $env:USERPROFILE '.cache/codex-runtimes/codex-primary-runti
 if(-not(Test-Path -LiteralPath $pythonExe)){$pythonExe=(Get-Command python.exe -ErrorAction Stop).Source}
 $env:PYTHONPATH=(Join-Path $projectPath '.local/python')
 $env:PYTHONUTF8='1'
+& $pythonExe 'scripts/verify_structure.py'
+if($LASTEXITCODE -ne 0){throw 'La separación entre Java y SQL no cumple la estructura del proyecto.'}
 & $pythonExe -m pytest 'python-service' -q
 if($LASTEXITCODE -ne 0){throw 'Fallaron las pruebas de Python.'}
 & $pythonExe 'scripts/integration_tests.py'

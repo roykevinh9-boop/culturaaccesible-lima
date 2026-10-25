@@ -64,7 +64,7 @@ def normalize(connection, mysql_bin, config):
     before = snapshot(connection)
     saved = backup(connection, mysql_bin, config)
     from setup_database import execute_sql
-    execute_sql(connection, ROOT / 'database/04_normalizar_catalogos.sql')
+    execute_sql(connection, ROOT / 'database/migrations/04_normalizar_catalogos.sql')
     after = snapshot(connection)
     if digest(before) != digest(after):
         raise RuntimeError('La verificación detectó diferencias. Se conserva el respaldo local: ' + str(saved))

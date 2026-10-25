@@ -1,0 +1,33 @@
+[
+  {
+    "name": "cal_list_functions",
+    "file": "catalog/cal_list_functions.sql",
+    "inputs": []
+  },
+  {
+    "name": "cal_function_conditions",
+    "file": "catalog/cal_function_conditions.sql",
+    "inputs": [
+      "p_function_id"
+    ]
+  },
+  {
+    "name": "cal_support_types",
+    "file": "catalog/cal_support_types.sql",
+    "inputs": []
+  },
+  {
+    "name": "cal_health",
+    "file": "system/cal_health.sql",
+    "inputs": []
+  },
+  {
+    "name": "cal_create_report",
+    "file": "reports/cal_create_report.sql",
+    "inputs": [
+      "p_function_id",
+      "p_condition_id",
+      "p_comment"
+    ]
+  }
+]

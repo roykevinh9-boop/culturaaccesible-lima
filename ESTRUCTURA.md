@@ -20,7 +20,10 @@ CulturaAccesibleLima/
 ├── backend/src/main/java/pe/culturaaccesible/
 │   ├── api/                          Controlador REST y errores HTTP
 │   ├── catalog/                      Reglas y puerto CatalogStore
-│   ├── infrastructure/jdbc/          Llamadas a procedimientos MySQL
+│   ├── infrastructure/jdbc/
+│   │   ├── CatalogProcedure.java      Contratos de las rutinas
+│   │   ├── StoredProcedureExecutor.java Invocación mediante SimpleJdbcCall
+│   │   └── CatalogRepository.java     Adaptador de CatalogStore, sin SQL
 │   ├── chat/                         Servicio de conversación
 │   └── pricing/                      Servicio de precios
 ├── python-service/
@@ -31,9 +34,21 @@ CulturaAccesibleLima/
 │   ├── model.py                      Modelos de precios sintéticos
 │   ├── data/                         Datos académicos sintéticos
 │   └── tests/                        Pruebas Python
-├── database/                         Esquema SQL, consultas y migraciones
-│   ├── procedures/                   Consultas e inserción de reportes en MySQL
-│   └── permissions/                  Permisos de ejecución de las rutinas
+├── database/
+│   ├── schema/                       Tablas y restricciones
+│   ├── seeds/                        Ejemplos e instantánea del catálogo
+│   ├── migrations/                   Evolución del esquema existente
+│   ├── procedures/
+│   │   ├── manifest.json             Contratos y orden de instalación
+│   │   ├── catalog/                  Funciones, condiciones y tipos de apoyo
+│   │   ├── reports/                  Escritura de reportes
+│   │   └── system/                   Estado de la conexión
+│   ├── permissions/                  Permisos de ejecución
+│   ├── queries/                      Consultas manuales de revisión
+│   ├── validation/                   Comprobaciones de integridad
+│   ├── workbench/                    Modelado de la base de datos
+│   ├── exports/                      Instalación completa alternativa
+│   └── testing/                      SQL de versiones anteriores para pruebas
 ├── scripts/                          Inicio, compilación y pruebas
 └── docs/                             Diagramas, informes y evidencias
 ```
@@ -47,3 +62,7 @@ Maven publica `views/index.html` como página inicial del JAR y copia el resto d
 La barra permanece visible al desplazarse y admite varios apoyos a la vez. Cada botón mantiene `aria-pressed` y se sincroniza con las casillas del formulario. “Todos los apoyos” elimina solo el filtro de apoyos; el botón “Limpiar filtros” reinicia todos los filtros. La selección se conserva en `sessionStorage` de esta pestaña y se valida contra los apoyos del catálogo; no se envía a un servicio de perfiles.
 
 Para probar la persistencia: ejecutar `node --test scripts/test_support_preferences.mjs` con una versión actual de Node. Las otras pruebas se ejecutan con los scripts descritos en `PROYECTO.md`.
+
+## Separación Java y SQL
+
+`CatalogRepository` convierte entradas y resultados; `StoredProcedureExecutor` configura las invocaciones y `CatalogProcedure` identifica sus parámetros. La lectura y escritura de tablas vive en los procedimientos MySQL. `python scripts/verify_structure.py` comprueba que no se introduzcan consultas ni instrucciones CALL en Java y que el manifiesto incluya todas las rutinas.

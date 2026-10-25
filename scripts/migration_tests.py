@@ -23,8 +23,8 @@ class MigrationTests(unittest.TestCase):
             for name in cls.names:
                 cursor.execute(f'CREATE DATABASE {name} CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci')
             cursor.execute(f'USE {cls.names[0]}')
-        execute_sql(cls.db, ROOT / 'scripts/fixtures/legacy_schema.sql')
-        execute_sql(cls.db, ROOT / 'scripts/fixtures/legacy_demo.sql')
+        execute_sql(cls.db, ROOT / 'database/testing/legacy/legacy_schema.sql')
+        execute_sql(cls.db, ROOT / 'database/testing/legacy/legacy_demo.sql')
         with cls.db.cursor() as cursor:
             cursor.execute("INSERT INTO eventos(id,nombre,descripcion,categoria,es_demo) VALUES(90,'Prueba','Categoría adicional','Categoría nueva con ñ',1)")
             cursor.execute("INSERT INTO reportes(funcion_id,comentario) VALUES(1,'Reporte existente antes de migrar')")
@@ -34,7 +34,7 @@ class MigrationTests(unittest.TestCase):
 
     @classmethod
     def migrate(cls):
-        sql = (ROOT / 'database/04_normalizar_catalogos.sql').read_text(encoding='utf-8')
+        sql = (ROOT / 'database/migrations/04_normalizar_catalogos.sql').read_text(encoding='utf-8')
         sql = sql.replace('USE culturaaccesible;', f'USE {cls.names[0]};')
         with cls.db.cursor() as cursor:
             cursor.execute(sql)
@@ -97,15 +97,15 @@ class MigrationTests(unittest.TestCase):
     def test_07_fresh_schema_seed_and_official_import(self):
         from catalog_import import import_catalog
         self.db.select_db(self.names[1])
-        execute_sql(self.db, ROOT / 'database/01_schema.sql')
-        execute_sql(self.db, ROOT / 'database/02_demo.sql')
+        execute_sql(self.db, ROOT / 'database/schema/01_schema.sql')
+        execute_sql(self.db, ROOT / 'database/seeds/02_demo.sql')
         import_catalog(self.db, force=True)
         with self.db.cursor() as c:
             c.execute('SHOW TABLES')
             self.assertEqual(len(c.fetchall()), 9)
             c.execute('SELECT COUNT(*),SUM(e.es_demo=0),SUM(e.es_demo=1) FROM funciones f JOIN eventos e ON e.id=f.evento_id')
             self.assertEqual(tuple(int(v) for v in c.fetchone()), (57,49,8))
-        execute_sql(self.db, ROOT / 'database/02_demo.sql')
+        execute_sql(self.db, ROOT / 'database/seeds/02_demo.sql')
         with self.db.cursor() as c:
             c.execute('SELECT COUNT(*) FROM funciones')
             self.assertEqual(c.fetchone()[0],57)
@@ -122,7 +122,7 @@ class MigrationTests(unittest.TestCase):
             self.db.rollback()
 
     def test_09_standalone_sql_loads_the_complete_catalog(self):
-        sql = (ROOT / 'database/CulturaAccesibleLima.sql').read_text(encoding='utf-8')
+        sql = (ROOT / 'database/exports/CulturaAccesibleLima.sql').read_text(encoding='utf-8')
         sql = sql.replace('CREATE DATABASE IF NOT EXISTS culturaaccesible', 'CREATE DATABASE IF NOT EXISTS ' + self.names[2])
         sql = sql.replace('USE culturaaccesible;', 'USE ' + self.names[2] + ';')
         with self.db.cursor() as c:
