@@ -13,6 +13,7 @@ database/
 │   ├── manifest.json
 │   ├── catalog/
 │   │   ├── cal_list_functions.sql
+│   │   ├── cal_catalog_conditions.sql
 │   │   ├── cal_function_conditions.sql
 │   │   └── cal_support_types.sql
 │   ├── reports/cal_create_report.sql
@@ -37,14 +38,16 @@ database/
 | validation/06_verificar_integridad.sql | Revisar relaciones y recuentos sin modificar datos |
 | exports/CulturaAccesibleLima.sql | Instalación completa alternativa con la instantánea oficial y los ejemplos |
 | seeds/catalogo-oficial.json | Instantánea recuperada el 17/10/2026 para el importador |
-| procedures/manifest.json | Orden de instalación, ubicación y parámetros de las cinco rutinas |
+| procedures/manifest.json | Orden de instalación, ubicación y parámetros de las seis rutinas |
 | procedures/catalog/*.sql | Funciones, condiciones y tipos de apoyo |
 | procedures/reports/cal_create_report.sql | Validación y escritura de reportes; devuelve el identificador |
 | procedures/system/cal_health.sql | Comprobación de la conexión |
-| permissions/cal_app_execute.sql | Permisos EXECUTE de la cuenta existente sobre esas cinco rutinas |
+| permissions/cal_app_execute.sql | Permisos EXECUTE de la cuenta existente sobre esas seis rutinas |
 
 ## Orden de instalación
 
-`Abrir-demo.cmd` prepara esquema, migración, datos y procedimientos. El inicio y las pruebas usan las nuevas rutas. Para una instalación manual puede usarse `exports/CulturaAccesibleLima.sql` y luego las cinco rutinas en el orden de `procedures/manifest.json`, seguidas de sus permisos. Los archivos de modelado, consultas y validación son herramientas de revisión, no migraciones adicionales.
+`Abrir-demo.cmd` prepara esquema, migración, datos y procedimientos. El inicio y las pruebas usan las nuevas rutas. Para una instalación manual puede usarse `exports/CulturaAccesibleLima.sql` y luego las seis rutinas en el orden de `procedures/manifest.json`, seguidas de sus permisos. Los archivos de modelado, consultas y validación son herramientas de revisión, no migraciones adicionales.
+
+`cal_catalog_conditions` recupera condiciones agrupables por función en una sola llamada de lectura. Mantiene el orden de precedencia de la rutina individual y evita repetir las consultas de condiciones y tipos de apoyo por cada tarjeta.
 
 Para actualizar solo las rutinas con la demo detenida: `python scripts/install_procedures.py --backup`. El instalador valida todos los archivos antes de reemplazar la primera rutina y comprueba que las tablas conserven sus datos. Las contraseñas y los reportes privados permanecen en `.local`, fuera del repositorio.

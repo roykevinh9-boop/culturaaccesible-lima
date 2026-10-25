@@ -6,6 +6,7 @@ import org.springframework.jdbc.core.SqlParameter;
 /** Contratos de entrada de las rutinas; sus sentencias están en database/procedures. */
 enum CatalogProcedure {
     LIST_FUNCTIONS("cal_list_functions"),
+    CATALOG_CONDITIONS("cal_catalog_conditions"),
     FUNCTION_CONDITIONS("cal_function_conditions", new SqlParameter("p_function_id", Types.BIGINT)),
     SUPPORT_TYPES("cal_support_types"),
     HEALTH("cal_health"),

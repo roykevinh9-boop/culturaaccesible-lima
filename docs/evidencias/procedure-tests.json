@@ -1,6 +1,6 @@
 {
-  "executed_at": "2026-10-24T23:13:37.821203-05:00",
-  "tests": 10,
+  "executed_at": "2026-10-25T00:03:44.358535-05:00",
+  "tests": 11,
   "failures": 0,
   "errors": 0,
   "scope": "MySQL real, esquema efímero propio y lectura mediante cal_app."

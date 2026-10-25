@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-25T00:08:38.322689-05:00",
+  "samples_per_version": 7,
+  "baseline_commit": "5311c00",
+  "baseline_median_ms": 173.52,
+  "updated_median_ms": 27.41,
+  "catalog_responses_equal": true,
+  "baseline_store_calls": 116,
+  "baseline_call_count_method": "2 + 2*N con 57 funciones, derivado del código previo",
+  "updated_store_calls": 3,
+  "updated_call_count_method": "Pruebas del puerto con 1, 57 y 250 funciones",
+  "scope": "Comparación local con MySQL real; no representa latencia pública ni resultados de usuarios."
+}

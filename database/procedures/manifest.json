@@ -5,6 +5,11 @@
     "inputs": []
   },
   {
+    "name": "cal_catalog_conditions",
+    "file": "catalog/cal_catalog_conditions.sql",
+    "inputs": []
+  },
+  {
     "name": "cal_function_conditions",
     "file": "catalog/cal_function_conditions.sql",
     "inputs": [

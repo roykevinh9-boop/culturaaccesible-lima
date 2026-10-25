@@ -1,0 +1,60 @@
+{
+  "date": "2026-10-25T00:13:42.308507-05:00",
+  "base_commit": "5311c00",
+  "branch": "feature/ux-accesible-verificable",
+  "review_type": "Inspección técnica y escenarios simulados en navegador; sin participantes reclutados",
+  "rubric": {
+    "minimum": 0,
+    "maximum": 4,
+    "before": [
+      3,
+      2,
+      3,
+      4,
+      3,
+      3,
+      3,
+      3,
+      2,
+      4
+    ],
+    "after": [
+      3,
+      3,
+      4,
+      4,
+      3,
+      4,
+      4,
+      4,
+      2,
+      4
+    ],
+    "total": 35,
+    "possible": 40,
+    "percent": 87.5,
+    "rounded_percent": 88
+  },
+  "automated_checks": {
+    "java": 34,
+    "javascript": 16,
+    "python": 43,
+    "integration": 39,
+    "migration": 9,
+    "procedures": 11,
+    "faults": 4
+  },
+  "automated_total": 156,
+  "passed": true,
+  "frontend_matches_packaged_jar": true,
+  "mysql": "real_local",
+  "stored_procedures": 6,
+  "screen_reader_executed": false,
+  "recruited_participants": 0,
+  "limits": [
+    "Índice propio de la rúbrica; no nota oficial ni conformidad WCAG",
+    "Simulaciones técnicas y observación de interfaz, no estudio de satisfacción",
+    "La cartelera conserva la instantánea del 17/10/2026"
+  ],
+  "jar_sha256": "1d8af9d237cf6b296d5dc33387b4f1063ac3f2dfac5bbfdc263652ba2328193b"
+}

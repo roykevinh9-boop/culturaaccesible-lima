@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-25",
+  "type": "Escenarios técnicos simulados ejecutados por el agente en navegador; sin participantes reclutados",
+  "initialAdvancedCollapsed": true,
+  "twoSupportsReturnNine": true,
+  "clearUndoRestoresTwoSupports": true,
+  "removeChipRetainsFocus": true,
+  "detailHeadingFocused": true,
+  "escapeRestoresCardFocus": true,
+  "invalidCommentPreserved": true,
+  "invalidCommentAriaAssociated": true,
+  "chatGreetingReceived": true,
+  "chatFocusCycleSteps": 30,
+  "chatFocusCyclePassed": true,
+  "mobile390": {
+    "clientWidth": 375,
+    "scrollWidth": 375
+  },
+  "mobile320": {
+    "clientWidth": 305,
+    "scrollWidth": 305
+  },
+  "unlabelledVisibleControls": 0,
+  "text125NoHorizontalOverflow": true,
+  "screenReaderExecuted": false,
+  "connectionFailurePreservesQuery": true,
+  "retryAfterActualRestartPassed": true,
+  "finalJarStartupPassed": true
+}

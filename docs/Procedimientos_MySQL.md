@@ -1,8 +1,8 @@
 # Separación de Java y SQL mediante procedimientos almacenados
 
-Actualización del 24/10/2026. Las consultas del catálogo y la inserción de reportes viven en archivos SQL versionados por módulo. Java identifica la rutina y envía parámetros tipados; no contiene consultas ni cadenas CALL.
+Actualización del 25/10/2026. Las consultas del catálogo y la inserción de reportes viven en archivos SQL versionados por módulo. Java identifica la rutina y envía parámetros tipados; no contiene consultas ni cadenas CALL.
 
-El código Java está en `backend-java`. Los paquetes `controlador`, `modelo` y `vista` organizan la API; `infraestructura/jdbc` concentra el adaptador que invoca los procedimientos. Renombrar estos paquetes conserva las cinco rutinas, sus firmas y los datos existentes.
+El código Java está en `backend-java`. Los paquetes `controlador`, `modelo` y `vista` organizan la API; `infraestructura/jdbc` concentra el adaptador que invoca los procedimientos. Las cinco rutinas anteriores conservan sus firmas y datos; se añade una rutina de lectura en bloque.
 
 ```text
 Vista HTML y JavaScript
@@ -17,6 +17,7 @@ Vista HTML y JavaScript
 | Procedimiento | Responsabilidad |
 |---|---|
 | cal_list_functions | Recuperar eventos, funciones, categorías, recintos e imágenes mediante JOIN |
+| cal_catalog_conditions | Recuperar las condiciones del catálogo en bloque para evitar llamadas por tarjeta |
 | cal_function_conditions | Consultar evidencia de una función y su recinto en orden de precedencia |
 | cal_support_types | Listar los siete tipos de apoyo |
 | cal_health | Comprobar la conexión con el servidor |
@@ -28,11 +29,11 @@ Las reglas de confianza y los filtros del producto siguen en `CatalogService`; l
 
 ## Instalación y actualización
 
-`Abrir-demo.cmd` instala las rutinas después del esquema, los datos y las migraciones. El usuario de administración realiza esta instalación y concede a `cal_app` únicamente EXECUTE sobre las cinco rutinas, además de los permisos de tablas ya existentes. Se usa `SQL SECURITY INVOKER`: la llamada no hereda privilegios del administrador que creó la rutina. No se han reducido los permisos de tabla existentes porque siguen siendo necesarios para INVOKER y la configuración actual.
+`Abrir-demo.cmd` instala las rutinas después del esquema, los datos y las migraciones. El usuario de administración realiza esta instalación y concede a `cal_app` únicamente EXECUTE sobre las seis rutinas, además de los permisos de tablas ya existentes. Se usa `SQL SECURITY INVOKER`: la llamada no hereda privilegios del administrador que creó la rutina. No se han reducido los permisos de tabla existentes porque siguen siendo necesarios para INVOKER y la configuración actual.
 
 Para actualizar solo las rutinas, desde la raíz del proyecto y con las dependencias Python disponibles: `python scripts/install_procedures.py --backup`. Usa la configuración privada de `.local/runtime.json`. Comprueba el hash de los datos antes y después, guarda un respaldo local y no publica credenciales.
 
-En Workbench: seleccionar `culturaaccesible`, ejecutar los cinco archivos indicados en `database/procedures/manifest.json` y luego `database/permissions/cal_app_execute.sql` como administrador. Los archivos contienen DELIMITER para conservar cada bloque BEGIN/END. `database/exports/CulturaAccesibleLima.sql` permite la instalación alternativa de esquema y datos; después también se instalan las rutinas, o se usa el inicio automático.
+En Workbench: seleccionar `culturaaccesible`, ejecutar los seis archivos indicados en `database/procedures/manifest.json` y luego `database/permissions/cal_app_execute.sql` como administrador. Los archivos contienen DELIMITER para conservar cada bloque BEGIN/END. `database/exports/CulturaAccesibleLima.sql` permite la instalación alternativa de esquema y datos; después también se instalan las rutinas, o se usa el inicio automático.
 
 El instalador carga y valida el manifiesto completo antes de ejecutar DDL. Un nombre repetido, un archivo ausente o una ruta ajena a la carpeta de rutinas se rechaza antes de reemplazar el primer procedimiento.
 
@@ -40,7 +41,7 @@ Reinstalar reemplaza únicamente las rutinas del proyecto mediante DROP PROCEDUR
 
 ## Pruebas
 
-`scripts/procedure_tests.py` crea una base temporal propia, instala esquema, ejemplos y rutinas y comprueba diez casos. Verifica contratos de salida, rechazos sin escritura, ID y estado del reporte, reinstalación sin cambios de datos y ejecución con la cuenta real de la aplicación. El reporte válido de la prueba se revierte y el esquema temporal se elimina al terminar. La integración HTTP comprueba además Java → procedimiento → MySQL.
+`scripts/procedure_tests.py` crea una base temporal propia, instala esquema, ejemplos y rutinas y comprueba once casos. Verifica contratos de salida, rechazos sin escritura, ID y estado del reporte, reinstalación sin cambios de datos y ejecución con la cuenta real de la aplicación. El reporte válido de la prueba se revierte y el esquema temporal se elimina al terminar. La integración HTTP comprueba además Java → procedimiento → MySQL.
 
 Los errores SQLSTATE 45000 se traducen a entrada inválida en Java. Los fallos de conexión conservan la respuesta de servicio no disponible; no se informa un reporte guardado si la persistencia falla.
 

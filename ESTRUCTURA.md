@@ -12,10 +12,12 @@ CulturaAccesibleLima/
 │   │   └── support-bar-view.js       Barra de apoyos y selección
 │   ├── controllers/
 │   │   ├── catalog-controller.js     Acciones, rutas y búsqueda
-│   │   └── chat-controller.js        Conversación con AccesI
+│   │   ├── chat-controller.js        Conversación con AccesI
+│   │   └── dialog-controller.js      Recorrido de teclado dentro de los diálogos
 │   └── static/
 │       ├── css/styles.css            Maquetación adaptable
 │       ├── css/theme.css             Colores y barra persistente
+│       ├── css/interaction.css       Filtros progresivos, foco y errores por campo
 │       └── js/app.js                 Conecta modelo, vista y controlador
 ├── backend-java/                     Servidor Java 17 y Spring MVC
 │   ├── pom.xml                       Dependencias y compilación Maven
@@ -76,6 +78,12 @@ Maven publica `views/index.html` como página inicial del JAR y copia el resto d
 La barra permanece visible al desplazarse y admite varios apoyos a la vez. Cada botón mantiene `aria-pressed` y se sincroniza con las casillas del formulario. “Todos los apoyos” elimina solo el filtro de apoyos; el botón “Limpiar filtros” reinicia todos los filtros. La selección se conserva en `sessionStorage` de esta pestaña y se valida contra los apoyos del catálogo; no se envía a un servicio de perfiles.
 
 Para probar la persistencia: ejecutar `node --test scripts/test_support_preferences.mjs` con una versión actual de Node. Las otras pruebas se ejecutan con los scripts descritos en `PROYECTO.md`.
+
+## Filtros y recuperación de errores
+
+Fecha y precio están visibles; el panel adicional conserva distrito, disciplina, apoyos y selección de catálogo. Las etiquetas activas permiten quitar criterios individuales. Limpiar puede deshacerse y cerrar una ficha devuelve el foco a la tarjeta de origen. Las consultas tienen una espera máxima y reintento explícito. Los reportes conservan el comentario si hay un error y no se reenvían automáticamente.
+
+El catálogo carga funciones, tipos de apoyo y condiciones en bloque mediante tres llamadas de persistencia. La revisión y sus escenarios están en `docs/Revision_UX_2026-10-25.md`.
 
 ## Separación Java y SQL
 

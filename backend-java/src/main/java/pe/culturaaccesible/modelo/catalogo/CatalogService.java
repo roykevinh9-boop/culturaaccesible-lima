@@ -26,10 +26,11 @@ public class CatalogService {
         return metadata("official");
     }
     public Map<String,Object> metadata(String source) {
-        var functions=filterCatalog(all(),source);
+        var types=repository.supportTypes();
+        var functions=filterCatalog(all(types),source);
         return Map.of("districts", functions.stream().map(f->f.get("district")).distinct().sorted(Comparator.comparing(Object::toString)).toList(),
           "categories", functions.stream().map(f->f.get("category")).distinct().sorted(Comparator.comparing(Object::toString)).toList(),
-          "supports", repository.supportTypes(), "today", LocalDate.now(clock).toString(), "demo", "demo".equals(source),"consulted_at","2026-10-17");
+          "supports", types, "today", LocalDate.now(clock).toString(), "demo", "demo".equals(source),"consulted_at","2026-10-17");
     }
     public List<Map<String,Object>> filterCatalog(List<Map<String,Object>> items,String source) {
         if(!Set.of("official","demo","all").contains(source)) throw new IllegalArgumentException("Catálogo no reconocido.");
@@ -37,6 +38,15 @@ public class CatalogService {
     }
 
     private List<Map<String,Object>> all() {
+        return all(repository.supportTypes());
+    }
+
+    private List<Map<String,Object>> all(List<Map<String,Object>> types) {
+        Map<Long,List<Map<String,Object>>> grouped=new HashMap<>();
+        for (var condition:repository.catalogConditions()) {
+            long id=((Number)condition.get("function_id")).longValue();
+            grouped.computeIfAbsent(id,key->new ArrayList<>()).add(condition);
+        }
         return repository.functions().stream().map(row -> {
             Map<String,Object> result=new LinkedHashMap<>();
             result.put("id", ((Number)row.get("id")).longValue());
@@ -47,20 +57,24 @@ public class CatalogService {
             result.put("consulted_at",row.get("consulted_at")==null?null:row.get("consulted_at").toString());
             result.put("official_price", row.get("official_price"));
             result.put("demo", ((Number)row.get("demo")).intValue()==1);
-            result.put("conditions", effectiveConditions(((Number)row.get("id")).longValue()));
+            result.put("conditions", effectiveConditions(grouped.getOrDefault(
+                ((Number)row.get("id")).longValue(),List.of()),types));
             return result;
         }).toList();
     }
 
     public List<Map<String,Object>> effectiveConditions(long id) {
-        List<Map<String,Object>> raw=repository.conditions(id);
+        return effectiveConditions(repository.conditions(id),repository.supportTypes());
+    }
+
+    private List<Map<String,Object>> effectiveConditions(List<Map<String,Object>> raw,List<Map<String,Object>> types) {
         Map<String,Map<String,Object>> unique=new LinkedHashMap<>();
         LocalDate today=LocalDate.now(clock);
         for (var row:raw) {
             String code=row.get("code").toString();
             if (unique.containsKey(code)) continue; // Una declaración de función prevalece sobre recinto.
             Map<String,Object> item=new LinkedHashMap<>();
-            row.forEach((key,value)->item.put(key.toLowerCase(Locale.ROOT),value==null?null:value.toString()));
+            row.forEach((key,value)->{if(!"function_id".equalsIgnoreCase(key))item.put(key.toLowerCase(Locale.ROOT),value==null?null:value.toString());});
             item.put("id",((Number)row.get("id")).longValue());
             boolean hasEvidence=row.get("source")!=null && row.get("reviewed_at")!=null;
             boolean expired=row.get("valid_until")!=null && LocalDate.parse(row.get("valid_until").toString()).isBefore(today);
@@ -72,7 +86,7 @@ public class CatalogService {
             }
             unique.put(code,item);
         }
-        for (var type:repository.supportTypes()) {
+        for (var type:types) {
             String code=type.get("code").toString();
             unique.computeIfAbsent(code,k->new LinkedHashMap<>(Map.of("code",code,"label",type.get("label"),"state","NO_CONFIRMADO","scope","FUNCION","verification_note","Sin información documentada.")));
         }
@@ -83,7 +97,8 @@ public class CatalogService {
     public List<Map<String,Object>> search(String q,String district,String category,String date,String price,List<String> needs) {
         if (q!=null && q.length()>150) throw new IllegalArgumentException("La búsqueda admite hasta 150 caracteres.");
         if (needs==null) needs=List.of();
-        var validCodes=repository.supportTypes().stream().map(r->r.get("code").toString()).toList();
+        var types=repository.supportTypes();
+        var validCodes=types.stream().map(r->r.get("code").toString()).toList();
         if (!validCodes.containsAll(needs)) throw new IllegalArgumentException("Hay un apoyo no reconocido.");
         LocalDate today=LocalDate.now(clock);
         LocalDate start=null, end=null;
@@ -98,7 +113,7 @@ public class CatalogService {
         final LocalDate from=start,to=end;
         final List<String> required=List.copyOf(needs);
         String query=normalized(q);
-        return all().stream().filter(f->{
+        return all(types).stream().filter(f->{
             String haystack=normalized(f.get("title")+" "+f.get("category")+" "+f.get("venue"));
             if(!query.isEmpty() && !haystack.contains(query)) return false;
             if(district!=null && !district.isBlank() && !normalized(district).equals(normalized(f.get("district").toString()))) return false;
