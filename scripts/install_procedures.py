@@ -71,4 +71,4 @@ if __name__=='__main__':
         if args.backup: backup(db,r'C:/Program Files/MySQL/MySQL Server 8.0/bin',config)
         install(db);grant_execute(db)
         assert before==digest(snapshot(db)), 'Cambió el contenido de las tablas.'
-    print('Cinco procedimientos instalados. Datos conservados; credenciales no publicadas.')
+    print('Procedimientos instalados. Datos conservados; credenciales no publicadas.')

@@ -51,6 +51,12 @@ class ProcedureTests(unittest.TestCase):
 
     def test_04_health(self):self.assertEqual(self.call('cal_health')[0]['ok'],1)
 
+    def test_11_bulk_conditions_match_the_existing_per_function_contract(self):
+        bulk=self.call('cal_catalog_conditions')
+        for function in self.call('cal_list_functions'):
+            rows=[{k:v for k,v in row.items() if k!='function_id'} for row in bulk if row['function_id']==function['id']]
+            self.assertEqual(rows,list(self.call('cal_function_conditions',(function['id'],))))
+
     def test_05_report_returns_id_and_pending_state(self):
         self.db.begin()
         try:

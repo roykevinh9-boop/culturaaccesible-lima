@@ -46,4 +46,6 @@ Esto es una mejora de inversión de dependencias, no una migración completa a C
 
 En Python, `main.py` solo compone la aplicación. `api/schemas.py` valida entradas, `api/routes.py` traduce errores HTTP y `application/services.py` coordina las operaciones sin importar FastAPI. Se conservan `model.py`, `assistant.py` y las rutas públicas para compatibilidad con los datos y pruebas existentes.
 
-Los archivos SQL se agrupan por propósito y las rutas del instalador y de las pruebas se actualizan juntas. El manifiesto centraliza la ubicación y el orden de las cinco rutinas. La reorganización conserva nombres de procedimientos, tablas y datos; no requiere migrar las tablas existentes.
+Los archivos SQL se agrupan por propósito y las rutas del instalador y de las pruebas se actualizan juntas. El manifiesto centraliza la ubicación y el orden de las seis rutinas. La actualización del 25/10 añade `cal_catalog_conditions`: el servicio agrupa sus resultados y carga tipos de apoyo una sola vez por operación. Las cinco rutinas previas conservan sus nombres y firmas; las tablas y sus datos no cambian.
+
+La interfaz incorpora filtros progresivos, selección visible, deshacer limpieza y recuperación explícita de fallos. `dialog-controller.js` mantiene el recorrido de Tab dentro del diálogo abierto. La revisión técnica y sus límites se documentan en `Revision_UX_2026-10-25.md`.

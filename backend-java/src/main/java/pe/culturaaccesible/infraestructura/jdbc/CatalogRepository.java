@@ -21,6 +21,10 @@ public class CatalogRepository implements CatalogStore {
         return procedures.execute(CatalogProcedure.FUNCTION_CONDITIONS, Map.of("p_function_id", functionId));
     }
 
+    public List<Map<String,Object>> catalogConditions() {
+        return procedures.execute(CatalogProcedure.CATALOG_CONDITIONS, Map.of());
+    }
+
     public List<Map<String,Object>> supportTypes() {
         return procedures.execute(CatalogProcedure.SUPPORT_TYPES, Map.of());
     }

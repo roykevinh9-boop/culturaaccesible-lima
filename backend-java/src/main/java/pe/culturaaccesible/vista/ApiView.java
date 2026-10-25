@@ -11,6 +11,7 @@ public final class ApiView {
                                   boolean demo, String source, String consulted_at) {}
     public record HealthResponse(String status, String database, String application) {}
     public record MessageResponse(String message) {}
+    public record ValidationResponse(String message, Map<String,String> fields) {}
 
     public static CatalogResponse catalog(List<Map<String, Object>> items, String source) {
         List<Map<String, Object>> snapshot = List.copyOf(items);

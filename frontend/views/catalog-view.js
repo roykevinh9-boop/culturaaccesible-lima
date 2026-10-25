@@ -10,13 +10,43 @@ const art={Teatro:['teatro','◒'],Museo:['museo','▥'],'Música':['musica','�
 export class CatalogView {
   onOpen=()=>{};
   metadata(meta){
+    this.supportLabels=new Map(meta.supports.map(s=>[s.code,s.label]));
     for(const [id,values] of [['district',meta.districts],['category',meta.categories]]) {$(id).replaceChildren($(id).options[0]);for(const value of values){const option=element('option','',value);option.value=value;$(id).append(option);}}
     $('support-filters').replaceChildren(...meta.supports.map(type=>{const label=element('label','support-chip');const input=element('input');input.type='checkbox';input.name='needs';input.value=type.code;label.append(input,element('span','',type.label));return label;}));
   }
   filters(){const data=new FormData($('search-form'));return {source:data.get('source'),q:data.get('q').trim(),date:data.get('date'),district:data.get('district'),category:data.get('category'),price:data.get('price'),needs:data.getAll('needs')};}
-  setFilters(filters){const source=this.filters().source;$('search-form').reset();document.querySelector(`[name=source][value=${source}]`).checked=true;for(const key of ['q','date','district','category','price'])if(filters[key]!==undefined){const id=key==='q'?'search':key;$(id).value=filters[key];}document.querySelectorAll('[name=needs]').forEach(input=>input.checked=(filters.needs||[]).includes(input.value));}
-  loading(value){$('loading').hidden=!value;$('results').setAttribute('aria-busy',String(value));if(value){$('catalog-error').hidden=true;$('empty').hidden=true;$('result-count').textContent='Buscando en el catálogo…';}}
-  error(message){$('catalog-error').textContent=message;$('catalog-error').hidden=false;$('result-count').textContent='No se pudo completar la consulta.';$('results').replaceChildren();$('empty').hidden=true;}
+  setFilters(filters){
+    const source=filters.source||this.filters().source;
+    $('search-form').reset();document.querySelector(`[name=source][value=${source}]`).checked=true;
+    for(const key of ['q','date','district','category','price'])if(filters[key]!==undefined)$(key==='q'?'search':key).value=filters[key];
+    document.querySelectorAll('[name=needs]').forEach(input=>input.checked=(filters.needs||[]).includes(input.value));
+  }
+  undoAvailable(value){$('undo-filters').hidden=!value;}
+  activeFilters(filters,onRemove){
+    const buttons=[];
+    const add=(key,value,label)=>{
+      const button=element('button','active-filter',label+' ×');button.type='button';
+      button.setAttribute('aria-label','Quitar filtro: '+label);
+      button.addEventListener('click',()=>{onRemove(key,value);($('active-filters').querySelector('button')||$('search')).focus();});buttons.push(button);
+    };
+    if(filters.q)add('q',filters.q,'Búsqueda: '+filters.q);
+    for(const key of ['date','price','district','category'])if(filters[key]&&!['all'].includes(filters[key])){
+      add(key,filters[key],$(key).selectedOptions[0]?.textContent||filters[key]);
+    }
+    for(const code of filters.needs)add('needs',code,this.supportLabels.get(code)||code);
+    $('active-filters').replaceChildren(...buttons);$('active-filter-panel').hidden=!buttons.length;
+    const advanced=Number(Boolean(filters.district))+Number(Boolean(filters.category))+filters.needs.length;
+    $('advanced-count').textContent=[advanced?`${advanced} ${advanced===1?'activo':'activos'}`:'',filters.source==='demo'?'Ejemplos ficticios':''].filter(Boolean).join(' · ');
+  }
+  loading(value){
+    $('loading').hidden=!value;$('results').setAttribute('aria-busy',String(value));$('retry-catalog').disabled=value;
+    if(value){$('catalog-error').hidden=true;$('empty').hidden=true;$('result-count').textContent='Buscando en el catálogo…';}
+  }
+  error(message){
+    $('catalog-error-message').textContent=message;$('catalog-error').hidden=false;
+    $('retry-catalog').disabled=false;$('result-count').textContent='No se pudo completar la consulta.';
+    $('results').replaceChildren();$('empty').hidden=true;
+  }
   results(data){$('results').replaceChildren(...data.items.map(item=>this.card(item)));$('empty').hidden=data.total!==0;$('result-count').textContent=`${data.total} ${data.total===1?'función encontrada':'funciones encontradas'} · ${data.demo?'ejemplos ficticios':'cartelera cultural con fuentes'}`;}
   card(item){
     const card=element('article','event-card');
@@ -31,7 +61,7 @@ export class CatalogView {
   detail(item,{estimate,report,share}){
     $('detail-category').textContent=`${item.category} · ${item.district}`;
     const root=$('detail-content');root.replaceChildren();
-    const title=element('h2','detail-heading',item.title);title.id='detail-title';
+    const title=element('h2','detail-heading',item.title);title.id='detail-title';title.tabIndex=-1;
     root.append(title,element('p','detail-subtitle',`${formatDate(item.date)} · ${item.time?item.time.slice(0,5):'Horario por confirmar'} · ${item.venue}`),element('p','notice',item.demo?'Ejemplo ficticio para demostrar el sistema. No existe una reserva real.':`Información recuperada el ${item.consulted_at||'17/10/2026'}. Consulta cambios, horarios y entradas con el organizador.`),element('p','detail-description',item.description));
     if(item.image_url)root.append(this.photo(item));
     const official=this.link(item.official_url,'Consultar evento y entradas en la fuente oficial');if(official)root.append(official);
@@ -51,10 +81,32 @@ export class CatalogView {
       else {const form=element('form','estimate-form');const label=element('label','','Mes de referencia');const select=element('select');select.setAttribute('aria-label','Mes de referencia para estimar precio');const months=['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'];months.forEach((month,index)=>{const o=element('option','',month);o.value=index+1;select.append(o);});select.value=Number(item.date.slice(5,7));label.append(select);const button=element('button','secondary-button','Consultar precio orientativo');button.type='submit';const output=element('div');output.setAttribute('role','status');output.setAttribute('aria-live','polite');form.append(label,button);form.addEventListener('submit',async event=>{event.preventDefault();button.disabled=true;output.replaceChildren(element('p','','Consultando la estimación…'));try{const value=await estimate({category:item.category,district:item.district,month:Number(select.value)});const result=element('div','price-result');result.append(element('strong','',money.format(value.estimated_price)),element('p','',`Clasificación independiente: ${value.predicted_range}`),element('p','',value.message),element('small','',`Modelo: ${value.model}. El rango es una clase estimada, no un intervalo de confianza.`));if(value.models_disagree)result.append(element('p','notice','Los dos modelos discrepan en el umbral de S/ 40. Esta demostración no permite confirmar tu presupuesto; consulta el precio oficial.'));output.replaceChildren(result);}catch(error){output.replaceChildren(element('p','notice error',error.message));}finally{button.disabled=false;}});pricing.append(form,output);}
     }root.append(pricing);
     const actionSection=element('section','detail-section');actionSection.append(element('h3','','Comparte el plan, conserva la información'));const actions=element('div','detail-actions');const copy=element('button','secondary-button','Copiar enlace de esta ficha');copy.type='button';const shareBox=element('div');copy.addEventListener('click',()=>share(item.id,shareBox));actions.append(copy);actionSection.append(actions,shareBox);root.append(actionSection);
-    const reporting=element('section','detail-section');reporting.append(element('h3','','¿Encontraste información para revisar?'));const form=element('form','report-form');const label=element('label','','Describe qué dato necesita revisión');const textarea=element('textarea');textarea.id='report-comment';textarea.required=true;textarea.minLength=10;textarea.maxLength=1000;textarea.rows=3;label.htmlFor=textarea.id;textarea.placeholder='Por ejemplo: la fuente de esta condición parece desactualizada.';const button=element('button','secondary-button',item.demo?'Enviar reporte de prueba':'Enviar reporte para revisión');button.type='submit';const status=element('div','report-status');status.setAttribute('role','status');form.append(label,textarea,element('p','','No incluyas diagnósticos, teléfonos ni otros datos personales. El reporte queda pendiente de revisión.'),button,status);form.addEventListener('submit',async event=>{event.preventDefault();button.disabled=true;status.textContent='Guardando reporte…';try{const value=await report({function_id:item.id,comment:textarea.value});status.textContent=`Reporte CAL-${value.id}: ${value.message}`;form.reset();}catch(error){status.textContent=error.message;}finally{button.disabled=false;}});reporting.append(form);root.append(reporting);
+    const reporting=element('section','detail-section');reporting.append(element('h3','','¿Encontraste información para revisar?'));
+    const form=element('form','report-form');form.noValidate=true;
+    const label=element('label','','Describe qué dato necesita revisión');label.htmlFor='report-comment';
+    const textarea=element('textarea');textarea.id='report-comment';textarea.required=true;textarea.minLength=10;textarea.maxLength=1000;textarea.rows=3;
+    textarea.setAttribute('aria-describedby','report-hint report-error');
+    textarea.placeholder='Por ejemplo: la fuente de esta condición parece desactualizada.';
+    const hint=element('p','','Escribe de 10 a 1000 caracteres. No incluyas datos personales. El reporte queda pendiente de revisión.');hint.id='report-hint';
+    const errorBox=element('p','field-error');errorBox.id='report-error';errorBox.hidden=true;errorBox.setAttribute('role','alert');
+    const button=element('button','secondary-button',item.demo?'Enviar reporte de prueba':'Enviar reporte para revisión');button.type='submit';
+    const status=element('div','report-status');status.setAttribute('role','status');status.setAttribute('aria-live','polite');
+    const invalid=message=>{errorBox.textContent=message;errorBox.hidden=false;textarea.setAttribute('aria-invalid','true');textarea.focus();};
+    textarea.addEventListener('input',()=>{errorBox.hidden=true;textarea.removeAttribute('aria-invalid');});
+    form.append(label,textarea,hint,errorBox,button,status);
+    form.addEventListener('submit',async event=>{
+      event.preventDefault();const comment=textarea.value.trim();
+      if(comment.length<10||comment.length>1000){invalid('Escribe entre 10 y 1000 caracteres para explicar qué dato revisar.');return;}
+      button.disabled=true;status.textContent='Guardando reporte…';errorBox.hidden=true;textarea.removeAttribute('aria-invalid');
+      try{const value=await report({function_id:item.id,comment});status.textContent=`Reporte CAL-${value.id}: ${value.message}`;form.reset();}
+      catch(error){if(error.fields?.comment){status.textContent='';invalid(error.fields.comment);}else status.textContent=error.message;}
+      finally{button.disabled=false;}
+    });
+    reporting.append(form);root.append(reporting);
+
   }
   price(item){return item.official_price===null?'Precio por confirmar':Number(item.official_price)===0?'Ingreso gratuito'+(item.demo?' · ejemplo':''):`${item.price_from?'Desde ':''}${money.format(item.official_price)}${item.demo?' · precio ficticio':''}`;}
   link(value,text){try{const url=new URL(value);if(!['https:','http:'].includes(url.protocol))return null;const a=element('a','secondary-button official-link',text);a.href=url.href;a.target='_blank';a.rel='noopener noreferrer';return a;}catch{return null;}}
   photo(item){const figure=element('figure','event-photo');if(item.image_url){try{const url=new URL(item.image_url);if(url.protocol!=='https:')throw Error();const img=element('img');img.src=url.href;img.alt=item.image_alt||`Afiche de ${item.title}`;img.loading='lazy';img.decoding='async';img.addEventListener('error',()=>{img.hidden=true;figure.prepend(element('div','photo-fallback',`Imagen no disponible · ${item.title}`));},{once:true});figure.append(img,element('figcaption','',`Imagen: ${item.image_credit||'organizador'}`));}catch{figure.append(element('div','photo-fallback',item.title));}}else{const [cls,symbol]=art[item.category]||['museo','◈'];figure.classList.add('event-art',cls);const mark=element('span','category-art',symbol);mark.setAttribute('aria-hidden','true');figure.append(mark);}return figure;}
-  toast(message){$('toast').textContent=message;$('toast').hidden=false;clearTimeout(this.toastTimer);this.toastTimer=setTimeout(()=>$('toast').hidden=true,4000);}
+  toast(message){$('toast').textContent=message;$('toast').hidden=false;clearTimeout(this.toastTimer);this.toastTimer=setTimeout(()=>$('toast').hidden=true,6000);}
 }

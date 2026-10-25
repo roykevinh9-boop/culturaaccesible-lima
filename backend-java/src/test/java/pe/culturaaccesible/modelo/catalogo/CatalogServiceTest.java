@@ -14,6 +14,7 @@ class CatalogServiceTest {
         int writes=0;
         @Override public boolean healthy(){return true;}
         @Override public List<Map<String,Object>> functions(){return List.of(function);}
+        @Override public List<Map<String,Object>> catalogConditions(){return rows.stream().map(row->{Map<String,Object> result=new HashMap<>(row);result.put("function_id",function.get("id"));return result;}).toList();}
         @Override public List<Map<String,Object>> conditions(long id){return rows;}
         @Override public List<Map<String,Object>> supportTypes(){return List.of(Map.of("code","lsp","label","Interpretación en LSP"));}
         @Override public long createReport(long id,Long condition,String comment){writes++;return 17L;}
