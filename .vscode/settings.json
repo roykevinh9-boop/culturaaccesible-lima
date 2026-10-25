@@ -1,13 +1,14 @@
 {
   "java.configuration.updateBuildConfiguration": "automatic",
   "files.encoding": "utf8",
+  "explorer.compactFolders": false,
   "files.exclude": {
     "**/__pycache__": true,
     ".local": true
   },
   "search.exclude": {
     ".local": true,
-    "backend/target": true
+    "backend-java/target": true
   },
   "java.compile.nullAnalysis.mode": "automatic",
   "terminal.integrated.defaultProfile.windows": "CMD del proyecto",

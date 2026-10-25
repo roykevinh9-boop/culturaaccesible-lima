@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-24T23:25:28.442358-05:00",
+  "branch": "feature/java-mvc-explicito",
+  "java_module": "backend-java",
+  "java_mvc_packages": [
+    "modelo",
+    "vista",
+    "controlador"
+  ],
+  "sql_directory": "database/procedures",
+  "checks": {
+    "java": 29,
+    "integration": 39,
+    "faults": 4
+  },
+  "total": 72,
+  "passed": true,
+  "jar_without_old_packages": true,
+  "mysql": "real_local",
+  "scope": "JAR nuevo en puerto auxiliar 18082; contratos de API y fallos controlados; datos y procedimientos MySQL sin cambios.",
+  "startup_smoke": {
+    "new_module": "backend-java",
+    "http_port": 8080,
+    "database": "mysql",
+    "status": "ok"
+  }
+}

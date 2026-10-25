@@ -17,15 +17,27 @@ CulturaAccesibleLima/
 │       ├── css/styles.css            Maquetación adaptable
 │       ├── css/theme.css             Colores y barra persistente
 │       └── js/app.js                 Conecta modelo, vista y controlador
-├── backend/src/main/java/pe/culturaaccesible/
-│   ├── api/                          Controlador REST y errores HTTP
-│   ├── catalog/                      Reglas y puerto CatalogStore
-│   ├── infrastructure/jdbc/
-│   │   ├── CatalogProcedure.java      Contratos de las rutinas
-│   │   ├── StoredProcedureExecutor.java Invocación mediante SimpleJdbcCall
-│   │   └── CatalogRepository.java     Adaptador de CatalogStore, sin SQL
-│   ├── chat/                         Servicio de conversación
-│   └── pricing/                      Servicio de precios
+├── backend-java/                     Servidor Java 17 y Spring MVC
+│   ├── pom.xml                       Dependencias y compilación Maven
+│   └── src/
+│       ├── main/java/pe/culturaaccesible/
+│       │   ├── Application.java      Inicio de Spring Boot
+│       │   ├── modelo/
+│       │   │   ├── catalogo/         CatalogService: filtros, evidencia y reportes
+│       │   │   ├── chat/             ChatService: coordinación de AccesI
+│       │   │   ├── precios/          PricingService: orientación de precios
+│       │   │   └── puertos/          CatalogStore: contrato de persistencia
+│       │   ├── vista/
+│       │   │   └── ApiView.java      Representaciones JSON de catálogo, salud y errores
+│       │   ├── controlador/
+│       │   │   ├── ApiController.java Rutas HTTP y coordinación del modelo y la vista
+│       │   │   └── ApiErrors.java    Traducción de errores a respuestas HTTP
+│       │   └── infraestructura/jdbc/
+│       │       ├── CatalogProcedure.java Contratos de procedimientos MySQL
+│       │       ├── StoredProcedureExecutor.java Invocación mediante SimpleJdbcCall
+│       │       └── CatalogRepository.java Adaptador de CatalogStore, sin SQL
+│       ├── main/resources/           Configuración del servidor Java
+│       └── test/java/pe/culturaaccesible/ Pruebas de modelo, vista e infraestructura
 ├── python-service/
 │   ├── main.py                       Inicio de FastAPI
 │   ├── api/                          Rutas y validación de entradas
@@ -53,7 +65,9 @@ CulturaAccesibleLima/
 └── docs/                             Diagramas, informes y evidencias
 ```
 
-La división MVC es explícita en la interfaz. El servidor Java usa Spring MVC para su API y mantiene reglas y persistencia separadas mediante un puerto. Python conserva un servicio auxiliar: sus modelos predictivos no son las entidades de la base de datos. Los eventos, recintos y condiciones se definen en el esquema MySQL; no se agregan archivos de entidades vacíos para imitar otro framework.
+Java se identifica desde la raíz como `backend-java`. Dentro de su código, los paquetes `modelo`, `vista` y `controlador` tienen responsabilidades y clases ejecutables. `controlador` recibe las solicitudes, coordina los servicios de `modelo` y utiliza `vista/ApiView` para presentar las respuestas de catálogo, salud y errores en JSON. Las pantallas HTML y su MVC JavaScript se encuentran en `frontend`.
+
+La persistencia se conecta al modelo mediante `CatalogStore`; el adaptador se encuentra en `infraestructura/jdbc` y los procedimientos SQL en `database`. Python conserva su servicio auxiliar para AccesI y precios. Los eventos, recintos y condiciones permanecen en el esquema MySQL.
 
 Maven publica `views/index.html` como página inicial del JAR y copia el resto del frontend respetando sus carpetas. Por eso la URL de inicio sigue siendo `/`, mientras que los estilos se sirven desde `/static/css/`. Abrir la carpeta completa en VS Code permite ver esta organización sin mezclar los lenguajes.
 
@@ -65,4 +79,4 @@ Para probar la persistencia: ejecutar `node --test scripts/test_support_preferen
 
 ## Separación Java y SQL
 
-`CatalogRepository` convierte entradas y resultados; `StoredProcedureExecutor` configura las invocaciones y `CatalogProcedure` identifica sus parámetros. La lectura y escritura de tablas vive en los procedimientos MySQL. `python scripts/verify_structure.py` comprueba que no se introduzcan consultas ni instrucciones CALL en Java y que el manifiesto incluya todas las rutinas.
+`CatalogRepository` convierte entradas y resultados; `StoredProcedureExecutor` configura las invocaciones y `CatalogProcedure` identifica sus parámetros. La lectura y escritura de tablas vive en los procedimientos MySQL. `python scripts/verify_structure.py` comprueba los tres paquetes MVC Java, la correspondencia entre paquetes y carpetas, la separación del modelo, la ausencia de consultas SQL en Java y la cobertura del manifiesto de rutinas.

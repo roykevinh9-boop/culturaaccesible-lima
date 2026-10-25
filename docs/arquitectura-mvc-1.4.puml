@@ -9,13 +9,27 @@ package Navegador {
   View --> Controller : acciones
   Controller --> Model
 }
-package Java {
-  [ApiController] as API
-  [CatalogService] as Service
-  interface CatalogStore as Port
-  [CatalogRepository JDBC] as JDBC
-  [StoredProcedureExecutor] as Procedures
+package "backend-java · Java 17 / Spring MVC" {
+  package controlador {
+    [ApiController] as API
+    [ApiErrors] as Errors
+  }
+  package modelo {
+    [CatalogService] as Service
+    interface CatalogStore as Port
+    [ChatService y PricingService] as PythonClients
+  }
+  package vista {
+    [ApiView · JSON] as JsonView
+  }
+  package "infraestructura.jdbc" {
+    [CatalogRepository JDBC] as JDBC
+    [StoredProcedureExecutor] as Procedures
+  }
   API --> Service
+  API --> JsonView : representa resultados
+  Errors --> JsonView : representa errores
+  API --> PythonClients
   Service --> Port
   JDBC ..|> Port
   JDBC --> Procedures : contrato de rutina
@@ -30,7 +44,7 @@ package Python {
   Routes --> UseCases
   UseCases --> ML
 }
-[ChatService y PricingService] --> Routes : HTTP
+PythonClients --> Routes : HTTP
 note bottom of Service
 Inversión de dependencias aplicada al catálogo.
 Todavía depende de Spring y errores HTTP.
