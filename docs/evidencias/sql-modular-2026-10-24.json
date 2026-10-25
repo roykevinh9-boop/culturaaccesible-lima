@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-24T23:13:55.447781-05:00",
+  "branch": "feature/stored-procedures-modular",
+  "checks": {
+    "java": 26,
+    "python": 43,
+    "integration": 39,
+    "migration": 9,
+    "procedures": 10,
+    "faults": 4,
+    "javascript": 6
+  },
+  "total": 137,
+  "java_contains_sql": false,
+  "stored_procedures": 5,
+  "main_catalog": {
+    "official": 49,
+    "demo": 8
+  },
+  "scope": "JAR nuevo en puerto auxiliar 18082, MySQL local real; migración y rutinas en esquemas efímeros propios; comprobación de estructura adicional.",
+  "startup_smoke": {
+    "new_paths_used": true,
+    "database": "mysql",
+    "official_functions": 49,
+    "demo_functions": 8,
+    "http_port": 8080
+  }
+}

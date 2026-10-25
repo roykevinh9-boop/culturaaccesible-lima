@@ -17,7 +17,7 @@ class ProcedureTests(unittest.TestCase):
         cls.db=pymysql.connect(host='127.0.0.1',port=CONFIG['db_port'],user='root',password=CONFIG['root_password'],charset='utf8mb4',autocommit=True,client_flag=pymysql.constants.CLIENT.MULTI_STATEMENTS)
         with cls.db.cursor() as c:c.execute(f'CREATE DATABASE {cls.name} CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci')
         cls.db.select_db(cls.name)
-        execute_sql(cls.db,ROOT/'database/01_schema.sql');execute_sql(cls.db,ROOT/'database/02_demo.sql')
+        execute_sql(cls.db,ROOT/'database/schema/01_schema.sql');execute_sql(cls.db,ROOT/'database/seeds/02_demo.sql')
         install(cls.db)
 
     @classmethod

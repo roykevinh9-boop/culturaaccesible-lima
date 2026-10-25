@@ -22,10 +22,10 @@ La reorganización mantiene la lógica de interacción ya implementada. Los cont
 
 ## Principio de Arquitectura Limpia aplicado
 
-`CatalogService` depende del contrato `catalog/port/CatalogStore`. `CatalogRepository` implementa ese contrato y llama mediante JDBC a los procedimientos de MySQL; las consultas están en `database/procedures/`. El servicio puede recibir otra implementación sin importar JDBC. Spring realiza la inyección de la implementación concreta al iniciar.
+`CatalogService` depende del contrato `catalog/port/CatalogStore`. `CatalogRepository` implementa ese contrato y delega en `StoredProcedureExecutor`; `CatalogProcedure` define los nombres y los parámetros de las rutinas. `SimpleJdbcCall` construye la invocación parametrizada. Las sentencias SQL están en `database/procedures/catalog`, `reports` y `system`; Java no conserva cadenas CALL. El servicio puede recibir otra implementación sin importar JDBC. Spring inyecta la implementación concreta al iniciar.
 
 Esto es una mejora de inversión de dependencias, no una migración completa a Clean Architecture: el servicio aún tiene anotaciones Spring y errores HTTP; los contratos utilizan mapas; los clientes de precios y chat todavía contienen transporte HTTP. Separar entidades tipadas, excepciones de dominio y puertos de esos servicios es trabajo posterior.
 
 En Python, `main.py` solo compone la aplicación. `api/schemas.py` valida entradas, `api/routes.py` traduce errores HTTP y `application/services.py` coordina las operaciones sin importar FastAPI. Se conservan `model.py`, `assistant.py` y las rutas públicas para compatibilidad con los datos y pruebas existentes.
 
-Los archivos SQL conservan los nombres usados por el instalador para evitar romper las instalaciones existentes. La reorganización no borra tablas ni transforma los datos guardados.
+Los archivos SQL se agrupan por propósito y las rutas del instalador y de las pruebas se actualizan juntas. El manifiesto centraliza la ubicación y el orden de las cinco rutinas. La reorganización conserva nombres de procedimientos, tablas y datos; no requiere migrar las tablas existentes.

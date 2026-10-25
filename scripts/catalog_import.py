@@ -19,7 +19,7 @@ def migrate(connection):
         if cursor.fetchone()[2]=='NO':cursor.execute('ALTER TABLE funciones MODIFY hora TIME NULL')
 
 def import_catalog(connection,force=False):
-    path=ROOT/'database/catalogo-oficial.json'
+    path=ROOT/'database/seeds/catalogo-oficial.json'
     if not path.exists():return
     content=path.read_bytes();digest=hashlib.sha256(content).hexdigest()
     stamp=ROOT/'.local/catalog-import.sha256'
